@@ -87,12 +87,14 @@ Hooks.once("init", () => {
             game.settings.register(module_id, cfg.name, cfg.data);
         }
     });
+});
 
+Hooks.once("babele.init", () => {
     // Register Babele compendium translations
     if (typeof Babele !== 'undefined' &&
         game.i18n.lang === module_lang &&
         game.settings.get(module_id, "enableCompendiumTranslation")) {
-        Babele.get().register({
+        game.babele.register({
             module: module_id,
             lang: module_lang,
             dir: "compendium"
@@ -171,19 +173,20 @@ function onRenderSheetPCSystem(app, html, options) {
 // --------- BABELE COMPENDIUM CONVERTERS ---------
 
 function registerConverters() {
-    Babele.get().registerConverters({
-        'classNameFormula': convertClass,
-        'classRequirements': convertClassRequirements,
-        'alignment': convertAlignment,
-        'type': convertType,
-        'languages': convertLanguages,
-        'race': convertRace,
-        'monstername': convertMonsterName,
-        'source': convertSource,
-        'monsterenvironment': convertMonsterEnvironment,
-        'monstertoken': convertMonsterToken,
-        'range': convertRange,
-        'weight': convertWeight,
+    game.babele.registerConverters({
+        // 'classNameFormula': convertClass,
+        // 'classRequirements': convertClassRequirements,
+        // 'alignment': convertAlignment,
+        // 'type': convertType,
+        // 'languages': convertLanguages,
+        // 'race': convertRace,
+        // 'monstername': convertMonsterName,
+        // 'source': convertSource,
+        // 'monsterenvironment': convertMonsterEnvironment,
+        // 'monstertoken': convertMonsterToken,
+        // 'range': convertRange,
+        // 'weight': convertWeight,
+        'advancement': convertAdvancement,
     });
 }
 
@@ -206,12 +209,12 @@ const classes = {
 
 function convertClass(c) {
     if (c && typeof c === 'string') {
-         let translated = c;
-         const names = Object.keys(classes);
-         names.forEach(name => {
+        let translated = c;
+        const names = Object.keys(classes);
+        names.forEach(name => {
             translated = translated.replaceAll(name.toLowerCase(), classes[name].toLowerCase())
-         });
-         return translated;
+        });
+        return translated;
     }
 }
 
@@ -376,7 +379,6 @@ var races = {
 }
 
 function convertRace(r, t, data) {
-    console.log("RACE", r, t);
     return races[r.toString().toLowerCase()] ? races[r.toString().toLowerCase()] : t;
 }
 
@@ -567,15 +569,15 @@ function convertMonsterEnvironment(m, translation, data) {
 // Range
 
 function round(num) {
-	return Math.round((num + Number.EPSILON) * 100) / 100;
+    return Math.round((num + Number.EPSILON) * 100) / 100;
 }
 
 function footsToMeters(ft) {
-	return round(parseInt(ft) * 0.3);
+    return round(parseInt(ft) * 0.3);
 }
 
 function milesToKilometers(mi) {
-	return round(parseInt(mi) * 1.5);
+    return round(parseInt(mi) * 1.5);
 }
 
 function convertRange(range) {
@@ -590,8 +592,8 @@ function convertRange(range) {
         return mergeObject(range, { value: footsToMeters(range.value), units: 'm' });
     }
 
-    if(range.units === 'mi') {
-        if(range.long) {
+    if (range.units === 'mi') {
+        if (range.long) {
             range = mergeObject(range, { long: milesToKilometers(range.long) });
         }
         return mergeObject(range, { value: milesToKilometers(range.value), units: 'km' });
@@ -603,7 +605,7 @@ function convertRange(range) {
 // Weight
 
 function lbToKg(lb) {
-	return parseInt(lb)/2;
+    return parseInt(lb) / 2;
 }
 
 function convertWeight(value) {
@@ -612,4 +614,23 @@ function convertWeight(value) {
     }
 
     return lbToKg(value);
+}
+
+function convertAdvancement(m, translation, data) {
+    if (translation == null) {
+        return m;
+    }
+
+    for (let key in translation) {
+        const t = translation[key];
+        const found = m.find(a => a._id === key);
+        if (found) {
+            if (t.title)
+                found.title = t.title;
+            if (t.hint)
+                found.hint = t.hint;
+        }
+    }
+
+    return m;
 }

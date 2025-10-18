@@ -1,7 +1,9 @@
 {
     "DND5E.ABILITY": {
         "Configure": {
-            "Title": "{ability} bearbeiten"
+            "Title": "{ability} bearbeiten",
+            "CheckLabel": "{ability}-Wurf",
+            "SaveLabel": "{ability}-Rettungswurf"
         },
         "SECTIONS": {
             "Bonuses": {
@@ -21,7 +23,9 @@
             "Monster": "Monster",
             "Standard": "Standard",
             "Time": "Zeit",
-            "Vehicle": "Fahrzeug"
+            "Vehicle": "Fahrzeug",
+            "Combat": "Kampf",
+            "Rest": "Rast"
         },
         "FIELDS": {
             "activation": {
@@ -43,6 +47,75 @@
                     "label": "Aktivierungswert"
                 }
             }
+        },
+        "Type": {
+            "Action": {
+                "Header": "Aktionen",
+                "Label": "Aktion"
+            },
+            "BonusAction": {
+                "Header": "Bonusaktion",
+                "Label": "Bonusaktion"
+            },
+            "Crew": {
+                "Counted": {
+                    "one": "{number} Crew-Aktion",
+                    "other": "{number} Crew-Aktionen"
+                },
+                "Header": "Crew-Aktionen",
+                "Label": "Crew-Aktion"
+            },
+            "Day": {
+                "Header": "Tage",
+                "Label": "Tag"
+            },
+            "Encounter": {
+                "Label": "Beginn der Begegnung"
+            },
+            "Hour": {
+                "Header": "Stunden",
+                "Label": "Stunde"
+            },
+            "Lair": {
+                "Header": "Hort-Aktionen",
+                "Label": "Hort-Aktion"
+            },
+            "Legendary": {
+                "Counted": {
+                    "one": "{number} legendäre Aktion",
+                    "other": "{number} legendäre Aktionen"
+                },
+                "Header": "Legendäre Aktionen",
+                "Label": "Legendäre Aktion"
+            },
+            "LongRest": {
+                "Label": "Ende einer langen Rast"
+            },
+            "Minute": {
+                "Header": "Minuten",
+                "Label": "Minute"
+            },
+            "Mythic": {
+                "Header": "Mythische Aktionen",
+                "Label": "Mythische Aktion"
+            },
+            "Reaction": {
+                "Header": "Reaktionen",
+                "Label": "Reaktion"
+            },
+            "ShortRest": {
+                "Label": "Ende einer kurzen Rast"
+            },
+            "TurnEnd": {
+                "Label": "Ende des Zuges"
+            },
+            "TurnStart": {
+                "Label": "Beginn des Zuges"
+            }
+        },
+        "Warning": {
+            "NoActions": "Keine {type} verfügbar, aber für die Aktivierung sind mindestens {required} erforderlich.",
+            "NotEnoughActions": "Nicht genügend {type}, um dies zu aktivieren — {required} erforderlich, aber nur {available} verfügbar."
         }
     },
     "DND5E.ACTIVITY": {
@@ -100,17 +173,28 @@
                 },
                 "locked": {
                     "hint": "Attributswert kann nicht erhöht werden.",
-                    "label": "Gesperrt"
+                    "label": "Gesperrt",
+                    "locked": "Attribut kann nicht verbessert werden.",
+                    "unlocked": "Attribut kann verbessert werden."
                 },
                 "points": {
                     "decrease": "Punkte verringern",
                     "hint": "Anzahl der Punkte, die einem freigeschalteten Attributswert zugewiesen werden können.",
                     "increase": "Punkte erhöhen",
                     "label": "Punkte"
+                },
+                "max": {
+                    "hint": "Increase the maximum score from what is allowed on the actor.",
+                    "label": "Maximum"
+                },
+                "recommendation": {
+                    "hint": "Epic Boon feat recommended by this class.",
+                    "label": "Empfehlung"
                 }
             },
             "Feat": {
-                "Hint": "Talent hierher ziehen um es statt einer Erhöhung der Attributswerte zu wählen."
+                "Hint": "Talent hierher ziehen um es statt einer Erhöhung der Attributswerte zu wählen.",
+                "ASIName": "Attributswertverbesserung"
             },
             "Hint": "Erlaubt dem Spieler, einen oder mehrere Attributswerte zu erhöhen oder ein optionales Talent zu wählen.",
             "LockedHint": "Werte sind nicht veränderbar, wenn ein Talent gewählt wurde.",
@@ -122,7 +206,19 @@
             "Warning": {
                 "Level": "Muss mindestens Stufe {Stufe} sein, um dieses Merkmal zu erhalten.",
                 "Type": "Nur Merkmale vom Typ \"Talent\" können gewählt werden."
-            }
+            },
+            "Action": {
+                "Select": "Wähle Talent"
+            },
+            "Details": "Verbesserungsdetails",
+            "Journal": {
+                "DescriptionEpic": "<p>Du erhältst ein episches Geschenk-Talent oder ein anderes Talent deiner Wahl, für das du die Voraussetzungen erfüllst.</p>",
+                "DescriptionEpicRecommendation": "<p>Du erhältst ein episches Geschenk-Talent oder ein anderes Talent deiner Wahl, für das du die Voraussetzungen erfüllst. {recommendation} wird empfohlen.</p>",
+                "DescriptionLegacy": "<p>Wenn du die {firstLevelOrdinal}. Stufe erreichst und erneut auf der {otherLevelsOrdinal}. Stufe, kannst du einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um jeweils 1 erhöhen. Wie üblich kannst du mit diesem Merkmal keinen Attributswert über {maxAbilityScore} hinaus steigern.</p><p>Wenn die optionalen Talentregeln verwendet werden, kannst du auf dieses Merkmal verzichten, um stattdessen ein Talent deiner Wahl zu wählen.</p>",
+                "DescriptionModern": "<p>Du erhältst das Talent „Attributswertverbesserung“ oder ein anderes Talent deiner Wahl, für das du die Voraussetzungen erfüllst. Du erhältst dieses Merkmal erneut auf den Stufen {otherLevels} deiner Klasse {class}.</p>",
+                "Name": "Attributswertverbesserung"
+            },
+            "TitleEpic": "Epic Boon"
         },
         "SPELLCONFIG": {
             "FIELDS": {
@@ -131,6 +227,30 @@
                         "hint": "Erfordert einen Zauberplatz, der ausgegeben werden muss, wenn die Limitierte Nutzungen genutzt werden. Wenn das Kästchen nicht markiert ist, handelt es sich um zusätzliche kostenlose Verwendungen, die keinen Platz verbrauchen.",
                         "label": "Benötigt Zauberplatz"
                     }
+                },
+                "spell": {
+                    "label": "Zauber-Details",
+                    "ability": {
+                        "label": "Fähigkeit"
+                    },
+                    "method": {
+                        "label": "Zauberwirkungsmethode"
+                    },
+                    "prepared": {
+                        "label": "Vorbereitet"
+                    },
+                    "uses": {
+                        "max": {
+                            "label": "Anwendungen"
+                        },
+                        "per": {
+                            "label": "Periode"
+                        },
+                        "requireSlot": {
+                            "label": "Benötigt Zauberslot",
+                            "hint": "Erfordert die Ausgabe eines Zauberplatzes, wenn die begrenzten Anwendungen verwendet werden. Wenn dies nicht aktiviert ist, zählen die Anwendungen als zusätzliche freie Verwendungen, die keinen Zauberplatz verbrauchen."
+                        }
+                    }
                 }
             },
             "FreeCasting": "Kostenloses Zauberwirken"
@@ -138,7 +258,305 @@
         "Subclass": {
             "FlowHint": "Wähle eine Unterklasse im Merkmale Reiter nachdem der Stufenaufstieg abgeschlossen ist.",
             "Hint": "Gib an, auf welcher Stufe diese Klasse ihre Unterklasse erhält.",
-            "Title": "Unterklasse"
+            "Title": "Unterklasse",
+            "Action": {
+                "Select": "Unterklasse auswählen"
+            },
+            "Warning": {
+                "InvalidType": "Nur Unterklassen können ausgewählt werden."
+            }
+        },
+        "Action": {
+            "Create": "Fortschritt erstellen",
+            "Delete": "Fortschritt löschen",
+            "Duplicate": "Fortschritt duplizieren",
+            "Edit": "Fortschritt bearbeiten",
+            "View": "Fortschritt anzeigen"
+        },
+        "Config": {
+            "AnyLevel": "Beliebig",
+            "Details": "Fortschrittsdetails"
+        },
+        "Defaults": {
+            "BackgroundFeat": "Hintergrund-Talent",
+            "BackgroundFeature": "Hintergrund-Merkmal",
+            "BackgroundProficiencies": "Hintergrunds-Fertigkeiten",
+            "ChooseLanguages": "Wähle Sprachen"
+        },
+        "HitPoints": {
+            "Action": {
+                "Roll": "Würfle {die}"
+            },
+            "Average": "Durchschnitt",
+            "Hint": "Verfolge die Trefferpunkte des Spielers für jede Stufe in der Klasse.",
+            "MaxAtFirstLevel": "Maximal bei Stufe 1: <strong>{max}</strong>",
+            "Roll": "Würfle {class} Trefferpunkte",
+            "Starting": "Trefferpunkte auf Stufe 1",
+            "TakeAverage": "Durchschnitt nehmen",
+            "Title": "Trefferpunkte",
+            "Warning": {
+                "Empty": "Trefferpunkte müssen gewürfelt oder der Durchschnittswert muss genommen werden.",
+                "Invalid": "Trefferpunkte müssen eine gültige ganze Zahl sein."
+            }
+        },
+        "ItemChoice": {
+            "Action": {
+                "SelectGeneric": "Wähle Eintrag",
+                "SelectSpecific": "Wähle {type}"
+            },
+            "Choose": "wähle {count}",
+            "Chosen": "Gewählt: {current} von {max}",
+            "Details": "Eintragsauswahl-Details",
+            "DropHint": "Ziehe Gegenstände hierher, um sie der Liste hinzuzufügen, aus der bei diesem Fortschritt gewählt werden kann.",
+            "FIELDS": {
+                "allowDrops": {
+                    "hint": "Erlaube Spielern, ihre eigenen Auswahlmöglichkeiten in diesen Fortschritt zu ziehen.",
+                    "label": "Drops erlauben"
+                },
+                "choices": {
+                    "hint": "Gib an, wie viele Auswahlmöglichkeiten auf jeder Stufe erlaubt sind.",
+                    "label": "Auswahlen",
+                    "FIELDS": {
+                        "count": {
+                            "label": "Anzahl"
+                        },
+                        "replacement": {
+                            "label": "Ersetzbarkeit erlauben"
+                        }
+                    }
+                },
+                "pool": {
+                    "label": "Gegenstandsoptionen"
+                },
+                "restriction": {
+                    "level": {
+                        "Available": "Jede verfügbare Stufe",
+                        "hint": "Erlaube nur Auswahlen aus Zaubern dieser Stufe.",
+                        "label": "Zauberstufe"
+                    },
+                    "list": {
+                        "hint": "Erlaube nur Zauber aus diesen Listen.",
+                        "label": "Zauberlisten"
+                    },
+                    "subtype": {
+                        "label": "Untertyp"
+                    },
+                    "type": {
+                        "label": "Typ"
+                    }
+                },
+                "type": {
+                    "Any": "Beliebig",
+                    "hint": "Beschränke, welche Gegenstandstypen gewählt werden können.",
+                    "label": "Gegenstandstyp"
+                }
+            },
+            "Hint": "Biete dem Spieler eine Auswahl an Gegenständen (wie Ausrüstung, Merkmale oder Zauber), die er für seinen Charakter auf einer oder mehreren Stufen wählen kann.",
+            "Replacement": {
+                "None": "Kein Ersatz",
+                "Title": "ersetzen"
+            },
+            "Title": "Gegenstände wählen",
+            "Warning": {
+                "InvalidType": "Nur Gegenstände des Typs {type} können für diese Auswahl gewählt werden.",
+                "MaxSelected": "Es können keine weiteren Gegenstände ausgewählt werden. Deaktiviere zunächst bestehende Auswahlen.",
+                "NoOriginal": "Die zuvor gewählte Option ist für den Ersatz nicht mehr verfügbar.",
+                "SpellLevelAvailable": "Nur Zauber der Stufe {level} oder niedriger können für diesen Fortschritt gewählt werden.",
+                "SpellLevelSpecific": "Nur Zauber der Stufe {level} können für diesen Fortschritt gewählt werden.",
+                "SpellList": "Nur Zauber aus der Zauberliste {lists} können für diesen Fortschritt gewählt werden."
+            }
+        },
+        "ItemGrant": {
+            "Details": "Gewährungsdetails",
+            "DropHint": "Ziehe Gegenstände hierher, um sie der Liste hinzuzufügen, die durch diesen Fortschritt gewährt wird.",
+            "FIELDS": {
+                "items": {
+                    "label": "Gegenstände"
+                },
+                "optional": {
+                    "label": "Optional",
+                    "hint": "Wenn der gesamte Fortschritt als optional markiert ist, können Spieler auf jeden der folgenden Gegenstände verzichten. Andernfalls werden alle nicht-optionalen Gegenstände automatisch gewährt."
+                }
+            },
+            "Hint": "Gewähre dem Charakter Gegenstände (wie Ausrüstung, Merkmale oder Zauber), wenn er eine bestimmte Stufe erreicht.",
+            "Title": "Gegenstände gewähren",
+            "Warning": {
+                "Container": "Der Inhalt von Behältern wird nicht zusammen mit den Behältern hinzugefügt.",
+                "Duplicate": "Dieser Gegenstand ist bereits in diesem Fortschritt enthalten.",
+                "Recursive": "Du kannst einem Fortschritt keinen Gegenstand gewähren, der Teil desselben Fortschritts ist."
+            }
+        },
+        "Manager": {
+            "Action": {
+                "Complete": "Abschließen",
+                "NextStep": "Weiter",
+                "PreviousStep": "Zurück",
+                "Restart": "Neustart"
+            },
+            "ClosePrompt": {
+                "Action": {
+                    "Continue": "Weiter",
+                    "Stop": "Fortschritt beenden"
+                },
+                "Message": "<p>Wenn der Fortschrittsvorgang abgebrochen wird, werden alle bisher getroffenen Auswahlen verworfen und keine Änderungen am Charakter vorgenommen.</p>",
+                "Title": "Fortschritt beenden"
+            },
+            "RestartPrompt": {
+                "Message": "Sind Sie sicher, dass Sie alle bisherigen Entscheidungen rückgängig machen möchten?",
+                "Title": "Neustart der Auswahl"
+            },
+            "Steps": "Schritt {current} von {total}",
+            "Title": {
+                "Default": "Fortschritt",
+                "LevelIncreased": "Stufenaufstieg",
+                "LevelNewClass": "Klasse hinzugefügen",
+                "ModifyChoices": "Auswahl ändern"
+            }
+        },
+        "Migration": {
+            "Action": {
+                "Confirm": "Migrationen anwenden"
+            },
+            "Hint": "Wähle, welche der folgenden Fortschritte zu {name} hinzugefügt werden sollen.",
+            "Selection": "Fortschrittsauswahl",
+            "Title": "Fortschritt migrieren"
+        },
+        "ScaleValue": {
+            "Action": {
+                "CopyFormula": "Formel kopieren"
+            },
+            "Details": "Skalierungswert-Details",
+            "FIELDS": {
+                "distance": {
+                    "units": {
+                        "label": "Entfernungseinheiten"
+                    }
+                },
+                "identifier": {
+                    "label": "Bezeichner"
+                },
+                "scale": {
+                    "label": "Skala"
+                },
+                "type": {
+                    "label": "Skalierungstyp"
+                }
+            },
+            "Hint": "Ein einzelner Wert, der sich mit dem Stufenanstieg einer Klasse verändert und in Würfelformeln verfügbar ist (z. B. der Kampfkünste-Würfel eines Mönchs).",
+            "Title": "Skalierungswert",
+            "Type": {
+                "CR": {
+                    "FIELDS": {
+                        "value": {
+                            "label": "HG"
+                        }
+                    },
+                    "Hint": "Verwende dies, um den Herausforderungsgrad (Challenge Rating) von Kreaturen für Merkmale wie Gestaltwandlung darzustellen.",
+                    "Label": "Herausforderungsgrad"
+                },
+                "Dice": {
+                    "FIELDS": {
+                        "faces": {
+                            "label": "Seiten"
+                        },
+                        "number": {
+                            "label": "Anzahl"
+                        }
+                    },
+                    "Hint": "Verwende dies für Würfelwerte wie bardische Inspiration, hinterhältigen Angriff oder Überlegenheitswürfel.",
+                    "Identifier": "Dieser Skalierungswert für die aktuelle Stufe ist in einer Formel verfügbar mit:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> – gesamte Formel (<code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> – gesamter Würfel (<code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> – Anzahl der Würfel (<code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> – Anzahl der Seiten (<code>6</code>)",
+                    "Label": "Würfel"
+                },
+                "Distance": {
+                    "Hint": "Verwende dies für numerische Werte, die eine Distanz darstellen, z. B. Bewegungsrate ohne Rüstung oder den Radius einer Aura des Schutzes.",
+                    "Label": "Distanz"
+                },
+                "Number": {
+                    "Hint": "Verwende dies für rein numerische Werte wie Bonus auf Wutschaden oder Anzahl der täglichen Anwendungen.",
+                    "Label": "Numerisch"
+                },
+                "String": {
+                    "FIELDS": {
+                        "value": {
+                            "label": "Wert"
+                        }
+                    },
+                    "Hint": "Verwende dies, wenn du dir über den Typ des Skalierungswerts nicht sicher bist oder wenn der Typ keine Rolle spielt.",
+                    "Identifier": "Dieser Skalierungswert für die aktuelle Stufe ist in einer Formel verfügbar mit:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+                    "Label": "Beliebig"
+                }
+            }
+        },
+        "Size": {
+            "DefaultHint": {
+                "Multiple": "Wähle deine Größe aus {sizes}.",
+                "Single": "Deine Größe ist {size}."
+            },
+            "FIELDS": {
+                "sizes": {
+                    "label": "Größen"
+                }
+            },
+            "Hint": "Lege die Größe eines Charakters fest.",
+            "Title": "Größe"
+        },
+        "Trait": {
+            "Action": {
+                "AddChoice": "Wahl hinzufügen",
+                "RemoveChoice": "Wahl entfernen"
+            },
+            "ChoicesRemaining": "Wählen Sie {count} weitere {type}",
+            "Details": "Trait Details",
+            "FIELDS": {
+                "allowReplacements": {
+                    "hint": "If a trait is already set on the actor, allow the player to choose from any other trait as a replacement.",
+                    "label": "Allow Replacements"
+                },
+                "choices": {
+                    "hint": "The following traits will be presented as a choice to the player.",
+                    "label": "Choices",
+                    "FIELDS": {
+                        "count": {
+                            "label": "Count"
+                        },
+                        "pool": {
+                            "label": "Traits"
+                        }
+                    }
+                },
+                "grants": {
+                    "hint": "The following traits will be granted to the character as long as they don't already possess that trait.",
+                    "label": "Guaranteed"
+                },
+                "mode": {
+                    "label": "Mode"
+                }
+            },
+            "Hint": "Gewähre einem Charakter bestimmte Merkmale oder gib ihm die Möglichkeit, Merkmale auszuwählen (z. B. Fertigkeiten, Kenntnisse, Sprachen).",
+            "Mode": {
+                "Default": {
+                    "Hint": "Erhalte ein Merkmal oder eine Fertigkeit.",
+                    "Label": "Standard"
+                },
+                "Expertise": {
+                    "Hint": "Erhalte Expertise in einem Merkmal, in dem du bereits geübt bist.",
+                    "Label": "Expertise"
+                },
+                "Force": {
+                    "Hint": "Erhalte Expertise in einem Merkmal, unabhängig davon, ob du bereits darin geübt bist.",
+                    "Label": "Erzwungene Expertise"
+                },
+                "Mastery": {
+                    "Hint": "Erhalte Waffenmeisterschaft in einer Waffe, mit der du bereits geübt bist.",
+                    "Label": "Waffenmeisterschaft"
+                },
+                "Upgrade": {
+                    "Hint": "Erhalte Übung in einem Merkmal, sofern du sie noch nicht hast, andernfalls erhalte Expertise.",
+                    "Label": "Aufwertung"
+                }
+            },
+            "TraitType": "Merkmalstyp",
+            "Title": "Merkmale"
         }
     },
     "DND5E.ATTACK": {
@@ -208,7 +626,8 @@
             "OneHanded": "Einhändig",
             "Thrown": "Wurfwaffe",
             "ThrownOffhand": "Nebenhand Wurfwaffe",
-            "TwoHanded": "Zweihändig"
+            "TwoHanded": "Zweihändig",
+            "Ranged": "Fernkampf"
         },
         "Title": {
             "one": "Angriff",
@@ -224,6 +643,10 @@
         "Weapon": {
             "Melee": "Nahkampfwaffe",
             "Ranged": "Fernkampfwaffe"
+        },
+        "Formatted": {
+            "2014": "{type} {classification} Angriff",
+            "2024": "{type}-Angriffswurf"
         }
     },
     "DND5E.AbbreviationCR": "HG",
@@ -581,6 +1004,10 @@
                 },
                 "uuid": {
                     "label": "Zauber der gewirkt wird"
+                },
+                "ability": {
+                    "label": "Zauberattribut",
+                    "hint": "Attribut, mit dem das normale Zauberattribut der Kreatur überschrieben werden kann."
                 }
             }
         },
@@ -638,6 +1065,19 @@
                     "hint": "Attribute, die von dieser Klasse am häufigsten verwendet werden. Dient zur Bestimmung der Voraussetzung für Klassenkombinationen.",
                     "label": "Primärattribut"
                 }
+            },
+            "hd": {
+                "label": "Trefferwürfel",
+                "additional": {
+                    "label": "Zusätzliche Trefferwürfel",
+                    "hint": "Formel für Trefferwürfel, die für diese Klasse über die normale Menge hinaus verfügbar sind."
+                },
+                "spent": {
+                    "label": "Verbrauchte Trefferwürfel"
+                }
+            },
+            "properties": {
+                "label": "Klassen-Eigenschaften"
             }
         },
         "Multiclass": {
@@ -676,7 +1116,8 @@
                 "BulletFirearm": "Kugel, Feuerwaffe",
                 "BulletSling": "Kugel, Schleuder",
                 "Label": "Munition",
-                "Needle": "Nadel"
+                "Needle": "Nadel",
+                "EnergyCell": "Energiezelle"
             },
             "Food": {
                 "Label": "Nahrung"
@@ -702,6 +1143,9 @@
             },
             "Wand": {
                 "Label": "Zauberstab"
+            },
+            "Wondrous": {
+                "Label": "Wundersamer Gegenstand"
             }
         }
     },
@@ -769,7 +1213,8 @@
             "SlotLevel": "Zauberplatzgrad"
         },
         "Target": {
-            "ThisItem": "Dieses Item"
+            "ThisItem": "Dieses Item",
+            "UnknownItem": "ein unbekannter Gegenstand"
         },
         "Type": {
             "ActivityUses": {
@@ -831,6 +1276,10 @@
             "Use": {
                 "one": "Nutzung",
                 "other": "Nutzungen"
+            },
+            "Action": {
+                "Prompt": "Verbrauche {type}?",
+                "PromptHint": "Verbrauche {cost} ({available} verfügbar)."
             }
         },
         "Warning": {
@@ -880,7 +1329,8 @@
             "HasDarkvision": "Hat Dunkelsicht",
             "HasSpellcasting": "Hat Zauberwirken",
             "Label": "Filter",
-            "SearchResults": "Ergebnisse Durchsuchen"
+            "SearchResults": "Ergebnisse Durchsuchen",
+            "Grouped": "{type} ({group})"
         },
         "Locked": "Gesperrt",
         "Selection": {
@@ -1173,7 +1623,9 @@
         "Scaling": {
             "Half": "Jede zweite Stufe",
             "None": "Keine Skalierung",
-            "Whole": "Jede Stufe"
+            "Whole": "Jede Stufe",
+            "HalfCantrip": "Halbe Zaubertrick-Skalierung",
+            "WholeCantrip": "Zaubertrick-Skalierung"
         },
         "Title": "Schaden"
     },
@@ -1321,7 +1773,8 @@
                 "Create": "Erstelle Verzauberung",
                 "Delete": "Entferne Verzauberung"
             },
-            "Empty": "Keine zugehörigen Verzauberungen. Verwende die Schaltfläche <i class=\"fas fa-plus\"></i> oben, um eine zu erstellen, oder wähle eine vorhandene Verzauberung aus dem Dropdown-Menü aus."
+            "Empty": "Keine zugehörigen Verzauberungen. Verwende die Schaltfläche <i class=\"fas fa-plus\"></i> oben, um eine zu erstellen, oder wähle eine vorhandene Verzauberung aus dem Dropdown-Menü aus.",
+            "Active": "{name} (aktiv)"
         },
         "FIELDS": {
             "effects": {
@@ -1358,7 +1811,11 @@
                     "hint": "ID, die verwendet wird, um zu bestimmen, ob die Charakterstufe oder eine bestimmte Klassenstufe für die Begrenzung der Verzauberungsstufe verwendet werden soll.",
                     "label": "Klassen-ID"
                 },
-                "label": "Verzauberung Konfiguration"
+                "label": "Verzauberung Konfiguration",
+                "self": {
+                    "label": "Selbst automatisch verzaubern",
+                    "hint": "Wendet die ausgewählte Verzauberung automatisch auf den Gegenstand an, der diese Aktivität enthält, wenn sie verwendet wird, und entfernt sie wieder, wenn die Aktivität erneut ausgeführt wird."
+                }
             },
             "restrictions": {
                 "allowMagical": {
@@ -1379,6 +1836,33 @@
                     "Any": "Jeder verzauberbare Typ",
                     "hint": "Typ des Items, auf das diese Verzauberung angewendet werden kann.",
                     "label": "Item-Typ"
+                }
+            },
+            "effects.element": {
+                "level": {
+                    "label": "Stufenbegrenzung",
+                    "hint": "Stufenbereich, der erforderlich ist, um diese Verzauberung zu verwenden.",
+                    "max": {
+                        "label": "Maximale Stufe"
+                    },
+                    "min": {
+                        "label": "Minimale Stufe"
+                    }
+                },
+                "riders": {
+                    "label": "Verknüpfungen",
+                    "activity": {
+                        "label": "Zusätzliche Aktivitäten",
+                        "hint": "Diese zusätzlichen Aktivitäten werden dem verzauberten Gegenstand hinzugefügt, wenn die Verzauberung angewendet wird, und entfernt, wenn die Verzauberung aufgehoben wird."
+                    },
+                    "effect": {
+                        "label": "Zusätzliche Effekte",
+                        "hint": "Diese zusätzlichen Effekte werden dem verzauberten Gegenstand hinzugefügt, wenn die Verzauberung angewendet wird, und entfernt, wenn die Verzauberung aufgehoben wird."
+                    },
+                    "item": {
+                        "label": "Zusätzliche Gegenstände",
+                        "hint": "Diese zusätzlichen Gegenstände werden der Kreatur hinzugefügt, wenn einer ihrer Gegenstände verzaubert wird, und entfernt, falls die Verzauberung aufgehoben wird."
+                    }
                 }
             }
         },
@@ -1431,6 +1915,12 @@
         "Warning": {
             "NotOnActor": "Verzauberungen können nur Items hinzugefügt werden, nicht direkt Akteuren.",
             "Override": "Dieser Wert wird durch eine Verzauberung verändert und kann nicht bearbeitet werden. Deaktiviere die Verzauberung im Reiter Effekte, um sie zu bearbeiten."
+        },
+        "Period": {
+            "AtWill": "Nach Belieben",
+            "LongRest": "Lange Rast",
+            "Never": "Niemals",
+            "ShortRest": "Kurze Rast"
         }
     },
     "DND5E.EQUIPMENT": {
@@ -1567,6 +2057,9 @@
             "Charm": "Bezauberung",
             "EpicBoon": "Epische Gabe",
             "Label": "Übernatürliches Geschenk"
+        },
+        "Vehicle": {
+            "Label": "Fahrzeugmerkmal"
         }
     },
     "DND5E.FeatureActionRecharge": "Aktion Nachladen",
@@ -1654,6 +2147,26 @@
         "Vehicle": {
             "one": "Fahrzeug",
             "other": "Fahrzeuge"
+        },
+        "Action": {
+            "ChangePace": "Tempo ändern",
+            "Remove": "Mitglied entfernen",
+            "View": "Mitglied anzeigen"
+        },
+        "Config": {
+            "Art": {
+                "Label": "Mitgliedskunst",
+                "portraits": "Porträts",
+                "tokens": "Tokens"
+            },
+            "Legend": "Gruppenbogen-Optionen"
+        },
+        "Distribute": {
+            "noxp": "Gemeinsame Währung verteilen",
+            "xp": "Erfahrung & Währung verteilen"
+        },
+        "Warning": {
+            "PhysicalItemOnly": "Nur physische Gegenstände werden unterstützt."
         }
     },
     "DND5E.GroupControls": "Steuerung",
@@ -1716,7 +2229,13 @@
             "Decrease": "Verringern",
             "Increase": "Erhöhen"
         },
-        "Config": "Trefferwürfel anpassen"
+        "Config": "Trefferwürfel anpassen",
+        "Abbreviation": "TW",
+        "Available": "{number} verfügbar",
+        "Counted": {
+            "one": "{number} Trefferwürfel",
+            "other": "{number} Trefferwürfel"
+        }
     },
     "DND5E.HP": "TP",
     "DND5E.HPFormula": "Trefferpunkteformel",
@@ -2078,10 +2597,25 @@
                 "level": {
                     "hint": "Charakter- oder Klassenstufe, die für die Auswahl dieses Merkmals beim Stufenaufstieg erforderlich ist.",
                     "label": "Benötigte Stufe"
+                },
+                "items": {
+                    "hint": "Bezeichner für Gegenstände, die der Charakter besitzen muss, bevor er diesen Gegenstand auswählen kann.",
+                    "label": "Erforderliche Gegenstände"
+                },
+                "label": "Voraussetzungen",
+                "repeatable": {
+                    "hint": "Dieses Merkmal kann mehr als einmal gewählt werden.",
+                    "label": "Wiederholbar"
                 }
             }
         },
-        "Header": "Merkmal Voraussetzungen"
+        "Header": "Merkmal Voraussetzungen",
+        "Warning": {
+            "InvalidLevel": "muss mindestens Stufe {level} sein",
+            "Message": "{actor} {requirements} um {type} zu wählen.",
+            "MissingItem": "{items} müssen vorher gewählt worden sein.",
+            "NotRepeatable": "darf nicht vorher gewählt worden sein."
+        }
     },
     "DND5E.Price": "Preis",
     "DND5E.Proficiency": "Übungsbonus",
@@ -2127,6 +2661,10 @@
                     "label": "Reichweitenwert"
                 }
             }
+        },
+        "Formatted": {
+            "Range": "Reichweite {range}",
+            "Reach": "Reichweite {reach}"
         }
     },
     "DND5E.ROLL": {
@@ -2135,7 +2673,8 @@
             "Maximum": "Maximaler Wurf",
             "Minimum": "Minimaler Wurf"
         },
-        "Section": "{label} Würfe"
+        "Section": "{label} Würfe",
+        "Status": "Status"
     },
     "DND5E.RacialTraits": "Volkseigenschaften",
     "DND5E.Range": "Reichweite",
@@ -2374,7 +2913,38 @@
                         "label": "Verlinkte Kreatur"
                     }
                 },
-                "label": "Beschwörungs Profil"
+                "label": "Beschwörungs Profil",
+                "element": {
+                    "count": {
+                        "label": "Anzahl"
+                    },
+                    "cr": {
+                        "label": "Herausforderungsgrad",
+                        "abbr": "HG",
+                        "hint": "Maximaler Herausforderungsgrad der beschworenen Kreatur."
+                    },
+                    "level": {
+                        "label": "Stufenbegrenzung",
+                        "hint": "Stufenbereich, der erforderlich ist, um dieses Profil zu verwenden.",
+                        "max": {
+                            "label": "Maximale Stufe"
+                        },
+                        "min": {
+                            "label": "Minimale Stufe"
+                        }
+                    },
+                    "name": {
+                        "label": "Anzeigename",
+                        "hint": "Name des Profils, der im Verwendungsdialog angezeigt wird."
+                    },
+                    "types": {
+                        "label": "Kreaturentypen",
+                        "hint": "Liste der Kreaturentypen, aus denen die beschworene Kreatur ausgewählt werden kann."
+                    },
+                    "uuid": {
+                        "label": "Verknüpfte Kreatur"
+                    }
+                }
             },
             "summon": {
                 "identifier": {
@@ -2454,8 +3024,8 @@
             "Reference": "Referenz"
         },
         "RequiresConcentration": "Benötigt Konzentration",
-        "SaveDC": "Zauber SG",
-        "Values": "Zauber Werte"
+        "SaveDC": "Zauber-SG",
+        "Values": "Zauber-Werte"
     },
     "DND5E.SenseBlindsight": "Blindsicht",
     "DND5E.SenseDarkvision": "Dunkelsicht",
@@ -2553,7 +3123,9 @@
         "Add": "Spezies Hinzufügen",
         "Features": "Spezies Merkmal",
         "Label": "Spezies",
-        "Name": "Spezies Name"
+        "Name": "Spezies Name",
+        "AddLegacy": "Rasse hinzufügen",
+        "FeaturesLegacy": "Rassenmerkmale"
     },
     "DND5E.Speed": "Bewegungswert",
     "DND5E.SpeedConditions": "Bewegungsbedingung",
@@ -2571,7 +3143,7 @@
     "DND5E.SpellComponent": "Zauberkomponenten",
     "DND5E.SpellComponents": "Zauber Komponenten",
     "DND5E.SpellCreate": "Zauber erschaffen",
-    "DND5E.SpellDC": "Zauber SG",
+    "DND5E.SpellDC": "Z.-SG",
     "DND5E.SpellDetails": "Zauber Details",
     "DND5E.SpellEffects": "Zauber Effekte",
     "DND5E.SpellHeader": {
@@ -2611,7 +3183,8 @@
     "DND5E.SpellPreparation": {
         "Formula": "Vorbereitungs-Formel",
         "Label": "Zaubervorbereitung",
-        "Mode": "Zaubervorbereitungsmodus"
+        "Mode": "Zaubervorbereitungsmodus",
+        "Method": "Zauberwirken-Methode"
     },
     "DND5E.SpellPrepared": "Vorbereitet",
     "DND5E.SpellProgArt": "Artifizient",
@@ -2758,6 +3331,161 @@
         },
         "Warning": {
             "PlaceTemplate": "Die Messschablone konnte nicht platziert werden."
+        },
+        "Count": {
+            "Any": "Beliebig",
+            "Every": "Jede"
+        },
+        "Formatted": "{count} {type}",
+        "Type": {
+            "Ally": {
+                "Label": "Verbündeter",
+                "Counted": {
+                    "any": "beliebige Verbündete",
+                    "every": "jeder Verbündete",
+                    "one": "{number} Verbündeter",
+                    "other": "{number} Verbündete"
+                }
+            },
+            "Any": {
+                "Label": "Beliebig"
+            },
+            "Circle": {
+                "Label": "Kreis",
+                "Counted": {
+                    "one": "{number} Kreis",
+                    "other": "{number} Kreise"
+                }
+            },
+            "Cone": {
+                "Label": "Kegel",
+                "Counted": {
+                    "one": "{number} Kegel",
+                    "other": "{number} Kegel"
+                }
+            },
+            "Creature": {
+                "Label": "Kreatur",
+                "Counted": {
+                    "any": "beliebige Kreaturen",
+                    "every": "jede Kreatur",
+                    "one": "{number} Kreatur",
+                    "other": "{number} Kreaturen"
+                }
+            },
+            "CreatureOrObject": {
+                "Label": "Kreatur oder Objekt",
+                "Counted": {
+                    "any": "beliebige Kreaturen oder Objekte",
+                    "every": "jede Kreatur oder jedes Objekt",
+                    "one": "{number} Kreatur oder Objekt",
+                    "other": "{number} Kreaturen oder Objekte"
+                }
+            },
+            "Cube": {
+                "Label": "Würfel",
+                "Counted": {
+                    "one": "{number} Würfel",
+                    "other": "{number} Würfel"
+                }
+            },
+            "Cylinder": {
+                "Label": "Zylinder",
+                "Counted": {
+                    "one": "{number} Zylinder",
+                    "other": "{number} Zylinder"
+                }
+            },
+            "Emanation": {
+                "Label": "Radius",
+                "Counted": {
+                    "one": "{number} Radius",
+                    "other": "{number} Radien"
+                }
+            },
+            "Enemy": {
+                "Label": "Feind",
+                "Counted": {
+                    "any": "beliebige Feinde",
+                    "every": "jeder Feind",
+                    "one": "{number} Feind",
+                    "other": "{number} Feinde"
+                }
+            },
+            "Line": {
+                "Label": "Linie",
+                "Counted": {
+                    "one": "{number} Linie",
+                    "other": "{number} Linien"
+                }
+            },
+            "Object": {
+                "Label": "Objekt",
+                "Counted": {
+                    "any": "beliebige Objekte",
+                    "every": "jedes Objekt",
+                    "one": "{number} Objekt",
+                    "other": "{number} Objekte"
+                }
+            },
+            "Radius": {
+                "Label": "Radius",
+                "Counted": {
+                    "one": "{number} Radius",
+                    "other": "{number} Radien"
+                }
+            },
+            "Self": {
+                "Label": "Selbst"
+            },
+            "Sphere": {
+                "Label": "Sphäre",
+                "Counted": {
+                    "one": "{number} Sphäre",
+                    "other": "{number} Sphären"
+                }
+            },
+            "Space": {
+                "Label": "Feld",
+                "Counted": {
+                    "any": "beliebige Felder",
+                    "every": "jedes Feld",
+                    "one": "{number} Feld",
+                    "other": "{number} Felder"
+                }
+            },
+            "Square": {
+                "Label": "Quadrat",
+                "Counted": {
+                    "one": "{number} Quadrat",
+                    "other": "{number} Quadrate"
+                }
+            },
+            "Target": {
+                "Label": "Ziel",
+                "Counted": {
+                    "any": "beliebige Ziele",
+                    "every": "jedes Ziel",
+                    "one": "{number} Ziel",
+                    "other": "{number} Ziele"
+                }
+            },
+            "Wall": {
+                "Label": "Wand",
+                "Counted": {
+                    "one": "{number} Wand",
+                    "other": "{number} Wände"
+                }
+            },
+            "WillingCreature": {
+                "Label": "Willige Kreatur",
+                "Counted": {
+                    "any": "beliebige willige Kreaturen",
+                    "every": "jede willige Kreatur",
+                    "one": "{number} willige Kreatur",
+                    "other": "{number} willige Kreaturen"
+                }
+            }
         }
     },
     "DND5E.TMP": "TMP",
@@ -2954,7 +3682,44 @@
                 "Formula": "Eigene Formel",
                 "LoseAll": "Alle Nutzungen verlieren",
                 "RecoverAll": "Alle Nutzungen Wiederherstellen"
-            }
+            },
+            "Combat": "Kampf",
+            "Never": "Nie",
+            "Period": {
+                "Dawn": {
+                    "Label": "Morgengrauen"
+                },
+                "Day": {
+                    "Label": "Tag"
+                },
+                "Dusk": {
+                    "Label": "Abenddämmerung"
+                },
+                "Initiative": {
+                    "Label": "Initiative"
+                },
+                "LongRest": {
+                    "Label": "Lange Rast",
+                    "Abbreviation": "LR"
+                },
+                "ShortRest": {
+                    "Label": "Kurze Rast",
+                    "Abbreviation": "KR"
+                },
+                "Turn": {
+                    "Label": "Jede Runde"
+                },
+                "TurnEnd": {
+                    "Label": "Rundenende",
+                    "Abbreviation": "Ende"
+                },
+                "TurnStart": {
+                    "Label": "Rundenbeginn",
+                    "Abbreviation": "Beginn"
+                }
+            },
+            "Special": "Spezial",
+            "Time": "Zeit"
         }
     },
     "DND5E.UTILITY": {
@@ -3059,6 +3824,11 @@
             "mastery": {
                 "hint": "Spezielles Waffenattribut für Charaktere freigeschaltet, die die Waffenmeisterschaft oder ein verwandtes Merkmal besitzen.",
                 "label": "Meisterschaft"
+            },
+            "armor": {
+                "value": {
+                    "label": "Rüstungsklasse"
+                }
             }
         },
         "Mastery": {
@@ -3120,7 +3890,8 @@
         "Activity": "Aktivität",
         "Warning": {
             "SelectType": "{name}-Type muss für die Erstellung ausgewählt sein."
-        }
+        },
+        "Advancement": "Fortschritt"
     },
     "EDITOR.DND5E.Inline": {
         "ApplyStatus": "Status auf ausgewählte Token anwenden",
@@ -3142,7 +3913,16 @@
             "NoActivityOnItem": "{item} von {actor} hat keine Aktivität mit dem Namen {activity}.",
             "NoActor": "Es konnte kein ausgewählter oder zugewiesener Akteur gefunden werden um diesen Wurf auszuführen",
             "NoItemOnActor": "{actor} hat kein Item mit dem Namen {item}."
-        }
+        },
+        "AttackExtended": "<em>{type}</em>: {parts}",
+        "AttackLong": "{formula} zum Treffen",
+        "AttackShort": "{formula}",
+        "CheckUsing": "{check} mit {tool}",
+        "DamageExtended": "<em>Treffer:</em> {damage} Schaden",
+        "DamageDouble": "{first} plus {second}",
+        "ItemActivity": "{item} ({activity})",
+        "PassiveShort": "passiv {check}",
+        "PassiveLong": "passiver {check}-Wert"
     },
     "EFFECT.DND5E": {
         "StatusBleeding": "Bluten",
@@ -3388,7 +4168,8 @@
             "Hint": "Automatisches Einklappen von Schadens-, Treffer- und Effektfächern, die in Chat-Karten erscheinen.",
             "Name": "Fächer im Chat zusammenklappen",
             "Never": "Alle ausklappen",
-            "Older": "Ältere Fächer zusammenklappen"
+            "Older": "Ältere Fächer zusammenklappen",
+            "Manual": "Nie einklappen"
         },
         "DEFAULTSKILLS": {
             "Hint": "Die Fertigkeiten, die unabhängig vom Grad der Übung, Standardmäßig auf den NPC-Bögen erscheinen",
@@ -3410,6 +4191,160 @@
         "THEME": {
             "Hint": "Thema, das standardmäßig auf die Benutzeroberfläche und alle Blätter angewendet wird. Die Automatik wird durch die Einstellungen Ihres Browsers oder Betriebssystems bestimmt.",
             "Name": "Thema"
+        },
+        "AUTOMATION": {
+            "Movement": {
+                "Name": "Bewegungsautomatisierung deaktivieren",
+                "Hint": "Wende keine Bewegungsstrafen für schwieriges Gelände an und verhindere nicht, dass sich Kreaturen gemäß der Regelversion gegenseitig durchqueren."
+            }
+        },
+        "COMBAT": {
+            "Hint": "Verschiedene Konfigurationsoptionen, die den Kampf beeinflussen.",
+            "Label": "Kampf konfigurieren",
+            "Name": "Kampf",
+            "DexTiebreaker": {
+                "Name": "Geschicklichkeits-Tiebreaker",
+                "Hint": "Füge den rohen Geschicklichkeitswert hinzu, um Gleichstände bei der Initiative zu brechen."
+            },
+            "InitiativeScore": {
+                "Name": "Initiativwert",
+                "Hint": "Verwende den Initiativwert einer Kreatur (10 + Bonus), anstatt für die Initiative zu würfeln.",
+                "All": "Wert für alle verwenden",
+                "None": "Immer Initiative würfeln",
+                "NPCs": "Wert für SL-NSCs verwenden"
+            }
+        },
+        "CRITICAL": {
+            "Name": "Kritischer Schaden",
+            "MaxDice": {
+                "Name": "Würfel maximieren",
+                "Hint": "Mache kritische Treffer tödlicher, indem du die Werte der Basis-Schadenswürfel maximierst."
+            },
+            "MultiplyModifiers": {
+                "Name": "Modifikatoren multiplizieren",
+                "Hint": "Mache kritische Treffer tödlicher, indem du neben den gewürfelten Würfeln auch Nicht-Würfel-Modifikatoren multiplizierst."
+            }
+        },
+        "General": "Allgemein",
+        "LOYALTY": {
+            "Hint": "Aktiviere die optionale Loyalitätsverfolgung.",
+            "Name": "Loyalitätswert"
+        },
+        "METRIC": {
+            "LengthUnits": {
+                "Name": "Metrische Längeneinheiten verwenden",
+                "Hint": "Verwendet standardmäßig Meter statt Fuß für Bewegung und Sinne."
+            },
+            "VolumeUnits": {
+                "Name": "Metrische Volumeneinheiten verwenden",
+                "Hint": "Verwendet standardmäßig Liter statt Kubikfuß für das Fassungsvermögen von Behältern."
+            },
+            "WeightUnits": {
+                "Name": "Metrische Gewichtseinheiten verwenden",
+                "Hint": "Ersetzt alle Verweise auf Pfund (lbs) durch Kilogramm (kg) und passt die Berechnungen für Belastung entsprechend an."
+            }
+        },
+        "NPCS": {
+            "Name": "NSCs",
+            "AutoRecharge": {
+                "Name": "Fähigkeiten wiederaufladen",
+                "Hint": "Würfle automatisch zu Beginn des NSC-Zuges, um Fähigkeiten wieder aufzuladen.",
+                "No": "Nicht automatisch aufladen",
+                "Silent": "Aufladen ohne Chatnachricht",
+                "Yes": "Aufladen und Chatnachricht anzeigen"
+            },
+            "AutoRollNPCHP": {
+                "Name": "Trefferpunkte",
+                "Hint": "Lege fest, ob beim Erstellen eines neuen Tokens die maximalen TP des NSC gewürfelt werden sollen.",
+                "No": "Nicht würfeln",
+                "Silent": "Würfeln ohne Chatnachricht",
+                "Yes": "Würfeln und Chatnachricht erstellen"
+            }
+        },
+        "PERMISSIONS": {
+            "AllowRests": {
+                "Hint": "Erlaube Spielern, direkt aus dem Charakterbogen heraus zu rasten. Wenn deaktiviert, können Spieler nur rasten, wenn der Spielleiter dies für die Gruppe anfordert.",
+                "Name": "Individuelle Ruhepausen erlauben"
+            },
+            "AllowSummoning": {
+                "Hint": "Erlaube Spielern, Beschwörungsfähigkeiten zu verwenden, um Akteure zu beschwören. Spieler benötigen außerdem die Kernberechtigung 'Tokens erstellen'.",
+                "Name": "Beschwörung erlauben"
+            },
+            "AllowTransformation": {
+                "Hint": "Erlaube Spielern, ihre eigenen Akteure zu verwandeln. Spieler benötigen außerdem die Kernberechtigungen 'Akteure erstellen' und 'Tokens erstellen'.",
+                "Name": "Transformation erlauben"
+            }
+        },
+        "VARIANT": {
+            "Hint": "Aktiviere und konfiguriere Regelvarianten, die vom System angeboten werden.",
+            "Label": "Regelvarianten konfigurieren",
+            "Name": "Regelvarianten",
+            "AllowFeats": {
+                "Hint": "Erlaube Spielern, anstelle einer Attributsverbesserung ein Talent zu wählen, wenn sie nach den Legacy-Regeln aufsteigen.",
+                "Name": "Talente erlauben"
+            },
+            "CurrencyWeight": {
+                "Hint": "Getragenes Geld beeinflusst die Belastung des Charakters.",
+                "Name": "Gewicht von Münzen berücksichtigen"
+            },
+            "Encumbrance": {
+                "Hint": "Aktiviere die automatische Nachverfolgung der Belastung und die Anwendung von Statuseffekten für Charaktere, die zu viel tragen.",
+                "Name": "Belastungsverfolgung",
+                "None": "Keine",
+                "Normal": "Normal (maximale Traglast)",
+                "Variant": "Variante (belastet & stark belastet)"
+            },
+            "HonorScore": {
+                "Hint": "Aktiviere die optionale Fähigkeit 'Ehre'.",
+                "Name": "Ehre-Fähigkeitswert"
+            },
+            "LevelingMode": {
+                "Hint": "Bestimme, wie die Spieler neue Stufen erlangen.",
+                "Name": "Stufenaufstiegsmodus",
+                "NoXP": "Stufenaufstieg ohne Erfahrungspunkte",
+                "XP": "Erfahrungspunkte",
+                "XPBoons": "Erfahrungspunkte mit epischen Segnungen"
+            },
+            "ProficiencyModifier": {
+                "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
+                "Dice": "DMG: Würfel (1W4, 1W6, 1W8, 1W10, 1W12)",
+                "Hint": "Konfiguriere, ob der Übungsbonus ein fester Bonus oder ein Würfelwurf ist.",
+                "Name": "Übungsbonus-Variante"
+            },
+            "Rest": {
+                "Epic": "Epischer Heroismus (LR: 1 Stunde, KR: 1 Minute)",
+                "Gritty": "Harte Realität (LR: 7 Tage, KR: 8 Stunden)",
+                "Hint": "Lege fest, welche Rastvariante im Spielsystem verwendet werden soll.",
+                "Name": "Rastvariante",
+                "Normal": "Spielerhandbuch (LR: 8 Stunden, KR: 1 Stunde)"
+            },
+            "SanityScore": {
+                "Hint": "Aktiviere die optionale Fähigkeit 'Geistige Stabilität'.",
+                "Name": "Geistige-Stabilität-Fähigkeitswert"
+            }
+        },
+        "VISIBILITY": {
+            "Hint": "Verschiedene Konfigurationsoptionen, die steuern, welche Informationen für Spieler sichtbar sind und welche der SL geheim halten kann.",
+            "Label": "Sichtbarkeit konfigurieren",
+            "Name": "Sichtbarkeit",
+            "Attack": {
+                "Name": "Sichtbarkeit von Angriffsergebnissen",
+                "Hint": "Steuere die Sichtbarkeit von Angriffswürfen in Chatkarten für Spieler.",
+                "All": "Ergebnisse & Ziel-RK anzeigen",
+                "HideAC": "Nur Ergebnisse anzeigen",
+                "None": "Alles verbergen"
+            },
+            "Challenge": {
+                "All": "Alles anzeigen",
+                "Hint": "Steuere, welche Schwierigkeitsgrade (DCs) für Spieler sichtbar sind und ob Erfolge/Fehlschläge hervorgehoben werden.",
+                "Name": "Sichtbarkeit von Herausforderungen",
+                "None": "Alles verbergen",
+                "Player": "Nur von anderen Spielern anzeigen"
+            },
+            "ItemDescriptions": {
+                "Hint": "Verberge die Beschreibungen von NSC-Gegenständen vor Spielern, wenn sie vom SL im Chat gepostet werden. Betrifft nur Gegenstände ohne gesonderte Chatbeschreibung.",
+                "Name": "NSC-Beschreibungen verbergen"
+            }
         }
     },
     "SHEETS.DND5E": {
@@ -3463,5 +4398,1562 @@
     "TYPES.JournalEntryPage.rule": "Regel",
     "TYPES.JournalEntryPage.spells": "Zauberliste",
     "TYPES.JournalEntryPage.subclass": "Unterklassenübersicht",
-    "dnd5e-DE.ProficiencyAbbrev": "ÜB"
+    "dnd5e-DE.ProficiencyAbbrev": "ÜB",
+    "TYPES.Actor.encounter": "Begegnung",
+    "TYPES.Actor.encounterPl": "Begegnungen",
+    "TYPES.ChatMessage": {
+        "request": "Anforderungsnachricht",
+        "rest": "Rast-Nachricht",
+        "turn": "Kampf-Zug-Nachricht"
+    },
+    "TYPES.Item.facility": "Facility",
+    "TYPES.Item.facilityPl": "Facilities",
+    "TYPES.RegionBehavior": {
+        "dnd5e.difficultTerrain": "Schwieriges Gelände",
+        "dnd5e.rotateArea": "Rotationsbereich"
+    },
+    "DND5E.AbilityModifierShort": "Mod",
+    "DND5E.ACTIVEEFFECT": {
+        "AttributeKeyTooltip": "Eine Liste häufiger Schlüssel findest du im <a href=\"{url}\">Wiki</a>.",
+        "FIELDS": {
+            "statuses": {
+                "label": "Statusbedingungen",
+                "hint": "Solange dieser aktive Effekt wirkt, wird das Ziel so behandelt, als hätte es diese zusätzlichen Zustände."
+            }
+        }
+    },
+    "DND5E.ACTOR": {
+        "Warning": {
+            "CreateActor": "Du musst die Berechtigung 'Neue Akteure erstellen' haben, um direkt aus einem Kompendium zu beschwören.",
+            "InvalidItem": "{itemType}-Gegenstände können nicht zu einem {actorType} hinzugefügt werden.",
+            "NoActor": "Es konnte kein Akteur mit der UUID '{uuid}' zum Beschwören gefunden werden.",
+            "Singleton": "Nur ein einzelner {itemType} kann zu einem {actorType} hinzugefügt werden."
+        }
+    },
+    "DND5E.Bastion": {
+        "Action": {
+            "BastionTurn": "Advance Bastion Turn"
+        },
+        "Attack": {
+            "Automatic": "Resolve Automatically",
+            "Formula": "Attack Formula",
+            "NoActorWarning": "No character selected as target of the attack. Either select a token, or open their character sheet.",
+            "Resolve": "Resolve Attack",
+            "Result": {
+                "Damaged": "{link} damaged in the attack.",
+                "Deaths": {
+                    "one": "<strong>{deaths}</strong> defender was slain in an attack on their bastion!",
+                    "other": "<strong>{deaths}</strong> defenders were slain in an attack on their bastion!"
+                },
+                "NoDeaths": "Fended off an attack on their bastion with no casualties!",
+                "Undefended": "Undefended bastion attacked!"
+            },
+            "Title": "Bastion Attack"
+        },
+        "Button": {
+            "Label": "Show Bastion Turn Button",
+            "Hint": "Display a button for advancing bastion turns in the main game interface."
+        },
+        "Configuration": {
+            "Name": "Bastions",
+            "Label": "Configure Bastions",
+            "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024."
+        },
+        "Confirm": "Advance one bastion turn?",
+        "Duration": {
+            "Label": "Bastion Turn Duration (days)"
+        },
+        "Enabled": {
+            "Label": "Enable Bastion Functionality",
+            "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them."
+        },
+        "Gold": {
+            "Claim": "Claim Income",
+            "Claimed": "claimed",
+            "Unclaimed": "unclaimed"
+        },
+        "Label": "Bastion",
+        "Summary": {
+            "Gold": "{value} ({claimed})",
+            "NoOrders": "No orders issued to special facilities this turn.",
+            "Order": "{link} completed the <strong>{order}</strong> order."
+        },
+        "Trade": {
+            "Cancel": "Cancel Pending Trade",
+            "Invalid": "Removing a pending trade will invalidate your trade order.",
+            "Pending": "Pending trade"
+        }
+    },
+    "DND5E.BONUSES": {
+        "FIELDS": {
+            "bonuses": {
+                "label": "Globale Boni",
+                "hint": "Globale Boni als Formeln, die zu bestimmten Würfen hinzugefügt werden.",
+                "abilities": {
+                    "label": "Globale Attributsboni",
+                    "check": {
+                        "label": "Globaler Attributsproben-Bonus"
+                    },
+                    "save": {
+                        "label": "Globaler Rettungswurf-Bonus"
+                    },
+                    "skill": {
+                        "label": "Globaler Fertigkeitsproben-Bonus"
+                    }
+                },
+                "msak": {
+                    "label": "Nahkampfzauber-Boni",
+                    "attack": {
+                        "label": "Nahkampfzauber-Angriffsbonus"
+                    },
+                    "damage": {
+                        "label": "Nahkampfzauber-Schadensbonus"
+                    }
+                },
+                "mwak": {
+                    "label": "Nahkampfwaffen-Boni",
+                    "attack": {
+                        "label": "Nahkampfwaffen-Angriffsbonus"
+                    },
+                    "damage": {
+                        "label": "Nahkampfwaffen-Schadensbonus"
+                    }
+                },
+                "rsak": {
+                    "label": "Fernkampfzauber-Boni",
+                    "attack": {
+                        "label": "Fernkampfzauber-Angriffsbonus"
+                    },
+                    "damage": {
+                        "label": "Fernkampfzauber-Schadensbonus"
+                    }
+                },
+                "rwak": {
+                    "label": "Fernkampfwaffen-Boni",
+                    "attack": {
+                        "label": "Fernkampfwaffen-Angriffsbonus"
+                    },
+                    "damage": {
+                        "label": "Fernkampfwaffen-Schadensbonus"
+                    }
+                },
+                "spell": {
+                    "label": "Globale Zauber-Boni",
+                    "dc": {
+                        "label": "Globaler Zauber-SG-Bonus"
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.CONTAINER": {
+        "Details": "Behälter-Details",
+        "FIELDS": {
+            "capacity": {
+                "label": "Kapazität",
+                "count": {
+                    "label": "Gegenstandszahl"
+                },
+                "volume": {
+                    "label": "Volumen-Kapazität",
+                    "units": {
+                        "label": "Volumeneinheiten"
+                    },
+                    "value": {
+                        "label": "Maximales Volumen"
+                    }
+                },
+                "weight": {
+                    "label": "Gewichtskapazität",
+                    "units": {
+                        "label": "Gewichtseinheiten"
+                    },
+                    "value": {
+                        "label": "Maximales Gewicht"
+                    }
+                }
+            },
+            "properties": {
+                "label": "Behälter-Eigenschaften"
+            }
+        }
+    },
+    "DND5E.Challenge": "Herausforderung",
+    "DND5E.CHATMESSAGE": {
+        "Activities": "Aktivitäten",
+        "Deltas": {
+            "Recovery": "Wiederherstellung"
+        },
+        "REQUEST": {
+            "Action": {
+                "Handle": "Anfrage bearbeiten"
+            },
+            "Complete": "Anfrage erfüllt",
+            "PartyMembers": "Gruppenmitglieder"
+        },
+        "TURN": {
+            "NoCombatant": "Der Kämpfer existiert nicht mehr!"
+        }
+    },
+    "DND5E.COMBAT": {
+        "Group": {
+            "ActiveCount": "{current} von {combatants}",
+            "Title": "{name} Gruppe"
+        }
+    },
+    "DND5E.COMBATANT": {
+        "Counted": {
+            "one": "{number} Kämpfer",
+            "other": "{number} Kämpfer"
+        }
+    },
+    "DND5E.CONDITIONS": {
+        "RiderConditions": {
+            "label": "Zusätzliche Zustände",
+            "hint": "Wenn dieser aktive Effekt angewendet wird, werden diese zusätzlichen Zustände separat hinzugefügt."
+        }
+    },
+    "DND5E.CreatureTag": "{size} {type}, {alignment}",
+    "DND5E.DeathSaveBonus": "Todesrettungswurf-Bonus",
+    "DND5E.DeathSaveConfigure": "Todesrettungswürfe konfigurieren",
+    "DND5E.DisplayCard": "Im Chat anzeigen",
+    "DND5E.ENCOUNTER": {
+        "Action": {
+            "Award": "Verteile Erfahrungspunkte & Währung"
+        },
+        "Difficulty": {
+            "high": "Hohe Schwierigkeit",
+            "low": "Niedrige Schwierigkeit",
+            "moderate": "Mäßige Schwierigkeit"
+        },
+        "DropCreature": "Kreatur ablegen",
+        "Tab": {
+            "Description": "Beschreibung",
+            "Loot": "Beute",
+            "Members": "Mitglieder"
+        }
+    },
+    "DND5E.FACILITY": {
+        "Action": {
+            "DeleteDefender": "Delete Defender",
+            "DeleteOccupant": "Delete Occupant",
+            "RemoveCraft": "Remove Craft"
+        },
+        "AvailableFacility": {
+            "basic": {
+                "build": "Build Facility",
+                "free": "Free Facility"
+            },
+            "special": {
+                "free": "Add Facility"
+            }
+        },
+        "Build": {
+            "Unbuilt": "Unbuilt"
+        },
+        "Costs": {
+            "Automatic": "Deduct Automatically",
+            "Days": "{days} days",
+            "Label": "Costs",
+            "Manual": "Mark as Paid",
+            "Paid": "paid",
+            "Unpaid": "unpaid"
+        },
+        "Craft": {
+            "BaseItem": {
+                "Label": "Purchase Base Item",
+                "Hint": "If checked, the base item will be purchased at full price instead of crafted."
+            },
+            "Hint": "The items that this facility is currently in the process of crafting or harvesting, if any."
+        },
+        "Description": "Description",
+        "FIELDS": {
+            "building": {
+                "built": {
+                    "label": "Built",
+                    "hint": "Basic facilities must be built first before they can be used."
+                }
+            },
+            "defenders": {
+                "max": {
+                    "label": "Defenders"
+                }
+            },
+            "disabled": {
+                "hint": "Disabled facilities cannot be issued orders and are repaired at the beginning of the next turn.",
+                "label": "Disabled"
+            },
+            "enlargeable": {
+                "hint": "Certain special facilities may have their size categories increased for a cost.",
+                "label": "Can Be Enlarged"
+            },
+            "free": {
+                "hint": "Free facilities do not count towards your special facilities cap.",
+                "label": "Free Facility"
+            },
+            "hirelings": {
+                "max": {
+                    "label": "Hirelings"
+                }
+            },
+            "level": {
+                "label": "Level Requirement"
+            },
+            "order": {
+                "label": "Order"
+            },
+            "progress": {
+                "max": {
+                    "label": "Total"
+                },
+                "order": {
+                    "label": "Executing"
+                },
+                "value": {
+                    "label": "Current"
+                }
+            },
+            "size": {
+                "label": "Size"
+            },
+            "trade": {
+                "creatures": {
+                    "max": {
+                        "label": "Creature Capacity"
+                    }
+                },
+                "profit": {
+                    "label": "Profit Factor"
+                },
+                "stock": {
+                    "stocked": {
+                        "hint": "Appropriate for facilities that do not store a variable value of goods, but are instead considered either stocked or empty.",
+                        "label": "Stocked"
+                    },
+                    "value": {
+                        "label": "Value"
+                    },
+                    "max": {
+                        "label": "Max"
+                    }
+                }
+            },
+            "type": {
+                "subtype": {
+                    "label": "Type"
+                },
+                "value": {
+                    "label": "Category"
+                }
+            }
+        },
+        "Goods": "Goods",
+        "NoDefenders": "Bastion is undefended.",
+        "Occupants": "Occupants",
+        "Order": {
+            "Execute": "Execute Order",
+            "Issue": "Issue Order: {order}"
+        },
+        "Orders": {
+            "Label": "Orders",
+            "build": {
+                "inf": "Build",
+                "present": "Building"
+            },
+            "change": {
+                "inf": "Change",
+                "present": "Changing"
+            },
+            "craft": {
+                "inf": "Craft",
+                "present": "Crafting"
+            },
+            "empower": {
+                "inf": "Empower",
+                "present": "Empowering"
+            },
+            "enlarge": {
+                "inf": "Enlarge",
+                "present": "Enlarging"
+            },
+            "harvest": {
+                "inf": "Harvest",
+                "present": "Harvesting"
+            },
+            "maintain": {
+                "inf": "Maintain",
+                "present": "Maintaining"
+            },
+            "recruit": {
+                "inf": "Recruit",
+                "present": "Recruiting"
+            },
+            "repair": {
+                "inf": "Repair",
+                "present": "Repairing"
+            },
+            "research": {
+                "inf": "Research",
+                "present": "Researching"
+            },
+            "trade": {
+                "inf": "Trade",
+                "present": "Trading"
+            }
+        },
+        "Progress": "Progress",
+        "Properties": "Properties",
+        "Sizes": {
+            "cramped": "Cramped",
+            "roomy": "Roomy",
+            "vast": "Vast"
+        },
+        "Squares": "{squares} squares",
+        "Trade": {
+            "Buy": {
+                "Supplement": "Buy"
+            },
+            "Creatures": {
+                "Buy": "Drop animals that you wish to purchase into the slots above, and update the cost appropriately below."
+            },
+            "Price": {
+                "Label": "Base Price",
+                "Hint": "Select which stock to sell, and input the base price above."
+            },
+            "Sell": {
+                "Label": "Sell Stock",
+                "Supplement": "Sell"
+            },
+            "Stock": {
+                "Buy": "Buying",
+                "Sell": "Selling"
+            },
+            "Stocked": {
+                "Label": "Fully Stock",
+                "Hint": "Input the required cost to fully stock this facility below."
+            }
+        },
+        "Types": {
+            "Basic": {
+                "Label": {
+                    "one": "Basic Facility",
+                    "other": "Basic Facilities"
+                },
+                "Bedroom": "Bedroom",
+                "DiningRoom": "Dining Room",
+                "Parlor": "Parlor",
+                "Courtyard": "Courtyard",
+                "Kitchen": "Kitchen",
+                "Storage": "Storage"
+            },
+            "Special": {
+                "Label": {
+                    "one": "Special Facility",
+                    "other": "Special Facilities"
+                },
+                "ArcaneStudy": "Arcane Study",
+                "Armory": "Armory",
+                "Barrack": "Barrack",
+                "Garden": "Garden",
+                "Library": "Library",
+                "Sanctuary": "Sanctuary",
+                "Smithy": "Smithy",
+                "Storehouse": "Storehouse",
+                "Workshop": "Workshop",
+                "GamingHall": "Gaming Hall",
+                "Greenhouse": "Greenhouse",
+                "Laboratory": "Laboratory",
+                "Sacristy": "Sacristy",
+                "Scriptorium": "Scriptorium",
+                "Stable": "Stable",
+                "TeleportationCircle": "Teleportation Circle",
+                "Theater": "Theater",
+                "TrainingArea": "Training Area",
+                "TrophyRoom": "Trophy Room",
+                "Archive": "Archive",
+                "MeditationChamber": "Meditation Chamber",
+                "Menagerie": "Menagerie",
+                "Observatory": "Observatory",
+                "Pub": "Pub",
+                "Reliquary": "Reliquary",
+                "Demiplane": "Demiplane",
+                "Guildhall": "Guildhall",
+                "Sanctum": "Sanctum",
+                "WarRoom": "War Room"
+            }
+        },
+        "Use": {
+            "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
+        }
+    },
+    "DND5E.FEATURE": {
+        "FIELDS": {
+            "cover": {
+                "label": "Deckung",
+                "hint": "Deckung, die der Besatzung durch dieses Fahrzeugmerkmal gewährt wird."
+            },
+            "properties": {
+                "label": "Merkmaleigenschaften"
+            },
+            "requirements": {
+                "label": "Voraussetzungen"
+            },
+            "type": {
+                "label": "Merkmaltyp"
+            }
+        }
+    },
+    "DND5E.FlagsHalflingNimbleness": "Halblingsgewandtheit",
+    "DND5E.FlagsHalflingNimblenessHint": "Bewegung durch größere Kreaturen wird nicht blockiert.",
+    "DND5E.FlagsToolExpertise": "Werkzeugmeisterschaft",
+    "DND5E.FlagsToolExpertiseHint": "Verdoppelt deinen Übungsbonus für jede Fertigkeitsprobe, bei der du deine Werkzeugkenntnis anwendest.",
+    "DND5E.Gear": "Ausrüstung",
+    "DND5E.Habitat": {
+        "Categories": {
+            "Any": "Beliebig",
+            "Arctic": "Arktis",
+            "Coastal": "Küste",
+            "Desert": "Wüste",
+            "Forest": "Wald",
+            "Grassland": "Grasland",
+            "Hill": "Hügel",
+            "Mountain": "Berg",
+            "Planar": "Ebenen",
+            "Swamp": "Sumpf",
+            "Underdark": "Unterreich",
+            "Underwater": "Unterwasser",
+            "Urban": "Städtisch"
+        },
+        "Configuration": {
+            "Custom": "Benutzerdefiniert",
+            "Label": "Lebensraum",
+            "Legend": "Kategorien",
+            "Subtype": "{type}-Untertyp",
+            "Title": "Lebensraum konfigurieren"
+        },
+        "Subtype": "{type} ({subtype})"
+    },
+    "DND5E.HITPOINTS": {
+        "Counted": {
+            "one": "{number} Trefferpunkt",
+            "other": "{number} Trefferpunkte"
+        },
+        "DT": {
+            "abbr": "DT"
+        },
+        "Other": {
+            "label": "Andere Optionen"
+        }
+    },
+    "DND5E.ItemFacilityDetails": "Facility Details",
+    "DND5E.Items": "Items",
+    "DND5E.ItemSpeciesDetailsLegacy": "Rassendetails",
+    "DND5E.ITEM": {
+        "Category": {
+            "Label": "Kategorie",
+            "Physical": "Physisch"
+        },
+        "Property": {
+            "Adamantine": "Adamantit",
+            "Ammunition": "Munition",
+            "Concentration": "Konzentration",
+            "Finesse": "Finesse",
+            "Firearm": "Schusswaffe",
+            "Focus": "Fokus",
+            "Heavy": "Schwer",
+            "Light": "Leicht",
+            "Loading": "Laden",
+            "Material": "Material",
+            "Magical": "Magisch",
+            "Reach": "Reichweite",
+            "Reload": "Nachladen",
+            "Returning": "Zurückkehrend",
+            "Ritual": "Ritual",
+            "Sidekick": "Sidekick",
+            "Silvered": "Silberbeschichtet",
+            "Somatic": "Somatisch",
+            "Special": "Spezial",
+            "StealthDisadvantage": "Heimlichkeitsnachteil",
+            "Thrown": "Geworfen",
+            "Trait": "Passive Fähigkeit",
+            "TwoHanded": "Zweihändig",
+            "Versatile": "Vielseitig",
+            "Verbal": "Verbal",
+            "WeightlessContents": "Gewichtsloser Inhalt"
+        },
+        "SECTIONS": {
+            "Activities": "Aktivitäten",
+            "Advancement": "Fortschritt",
+            "Contents": "Inhalte",
+            "Description": "Beschreibung",
+            "Details": "Details",
+            "Effects": "Effekte"
+        }
+    },
+    "DND5E.JOURNALENTRY": {
+        "Navigation": {
+            "Next": "Nächster",
+            "Previous": "Vorheriger",
+            "Up": "Nach oben"
+        }
+    },
+    "DND5E.LAIR": {
+        "Label": "Hort",
+        "Action": {
+            "Label": "Hort-Aktion",
+            "Initiative": "Hort-Aktion Initiative",
+            "Uses": "Verwendet Hort-Aktion"
+        },
+        "HasLair": "Hat Hort",
+        "Inside": "Im Hort"
+    },
+    "DND5E.Language": {
+        "All": "Alle Sprachen",
+        "Label": "Sprache",
+        "Category": {
+            "Exotic": "Exotische Sprachen",
+            "Rare": "Seltene Sprachen",
+            "Standard": "Gewöhnlich Sprachen"
+        },
+        "Communication": {
+            "Label": "Fernkommunikation",
+            "Telepathy": "Telepathie"
+        },
+        "Language": {
+            "Aarakocra": "Aarakocra",
+            "Abyssal": "Abyssisch",
+            "Aquan": "Aquanisch",
+            "Auran": "Auranisch",
+            "Celestial": "Himmlisch",
+            "Common": "Gemeinsprache",
+            "CommonSign": "Gemeinsame Zeichensprache",
+            "DeepSpeech": "Tiefsprache",
+            "Draconic": "Drakonisch",
+            "Druidic": "Druidisch",
+            "Dwarvish": "Zwergisch",
+            "Elvish": "Elfisch",
+            "Giant": "Riesisch",
+            "Gith": "Gith",
+            "Gnoll": "Gnollisch",
+            "Gnomish": "Gnomisch",
+            "Goblin": "Goblinisch",
+            "Halfling": "Halblingisch",
+            "Ignan": "Ignanisch",
+            "Infernal": "Infernalisch",
+            "Orc": "Orkisch",
+            "Primordial": "Ursprache",
+            "Sylvan": "Sylvanisch",
+            "Terran": "Terranisch",
+            "ThievesCant": "Diebessprache",
+            "Undercommon": "Gemeinsprache der Unterreiche"
+        }
+    },
+    "DND5E.LegendaryAction": {
+        "Description": "Verwendet legendäre Aktionen: {uses}. Unmittelbar nach dem Zug einer anderen Kreatur kann {name} eine Verwendung ausgeben, um eine der folgenden Aktionen auszuführen. {name} erhält zu Beginn jedes eigenen Zuges alle verbrauchten Verwendungen zurück.",
+        "DescriptionLegacy": "{name} kann {usesNamed} ausführen, wobei aus den untenstehenden Optionen gewählt wird. Es kann jeweils nur eine legendäre Aktion gleichzeitig und nur am Ende des Zuges einer anderen Kreatur eingesetzt werden. {name} erhält zu Beginn seines Zuges alle verbrauchten legendären Aktionen zurück.",
+        "Label": "Legendäre Aktion",
+        "LabelPl": "Legendare Aktionen",
+        "LairUses": "{normal} ({lair} im Hort)",
+        "Max": "Maximale Legendäre Aktionen",
+        "Ordinal": {
+            "one": "{n}. Legendäre Aktion",
+            "two": "{n}. Legendäre Aktion",
+            "few": "{n}. Legendäre Aktion",
+            "other": "{n}. Legendäre Aktion"
+        },
+        "Remaining": "Verbleibende Legendäre Aktionen",
+        "Spent": "Verbrauchte Legendäre Aktionen"
+    },
+    "DND5E.LegendaryResistance": {
+        "Action": {
+            "Resist": "Legendäre Resistenz"
+        },
+        "Label": "Legendäre Resistenz",
+        "LabelPl": "Legendäre Resistenzen",
+        "Max": "Maximale legendäre Resistenzen",
+        "Ordinal": {
+            "one": "{n}. legendäre Resistenz",
+            "two": "{n}. legendäre Resistenz",
+            "few": "{n}. legendäre Resistenz",
+            "other": "{n}. legendäre Resistenz"
+        },
+        "Remaining": "Verbleibende legendäre Resistenzen",
+        "Resisted": "Genutzte legendäre Resistenzen",
+        "Spent": "Verbrauchte legendäre Resistenzen"
+    },
+    "DND5E.LevelAvg": "Durchschn. Stufe",
+    "DND5E.Loyalty": "Loyalität",
+    "DND5E.Method": "Methode",
+    "DND5E.NUMBER": {
+        "1": "eins",
+        "2": "zwei",
+        "3": "drei",
+        "4": "vier",
+        "5": "fünf",
+        "6": "sechs",
+        "7": "sieben",
+        "8": "acht",
+        "9": "neun"
+    },
+    "DND5E.ORDINAL": {
+        "one": "{number}.",
+        "two": "{number}.",
+        "few": "{number}.",
+        "other": "{number}."
+    },
+    "DND5E.Preparation": "Vorbereitung",
+    "DND5E.ProficiencyBonusAbbr": "ÜB",
+    "DND5E.Quality": "Qualität",
+    "DND5E.RacialTraitsLegacy": "Rassenmerkmale",
+    "DND5E.RechargeLong": "Aufladen nach einer langen Rast",
+    "DND5E.RechargeShort": "Aufladen nach einer kurzen oder langen Rast",
+    "DND5E.REGIONBEHAVIORS": {
+        "DIFFICULTTERRAIN": {
+            "FIELDS": {
+                "ignoredDispositions": {
+                    "hint": "Tokens with these dispositions will not be affected by this difficult terrain.",
+                    "label": "Ignored Dispositions"
+                },
+                "magical": {
+                    "hint": "This difficult terrain is created by a magical effect.",
+                    "label": "Magical"
+                },
+                "types": {
+                    "hint": "Types that best describe the source of this difficult terrain, if any.",
+                    "label": "Types"
+                }
+            },
+            "Type": {
+                "All": "All Types",
+                "Ice": "Slippery Ice",
+                "Magical": "Magical",
+                "Nonmagical": "Nonmagical",
+                "Plants": "Plants or Undergrowth",
+                "Rocks": "Rubble or Rocks",
+                "Liquid": "Shallow Liquid",
+                "Slope": "Steep Slope",
+                "Snow": "Deep Snow"
+            }
+        },
+        "ROTATEAREA": {
+            "Action": {
+                "AddPosition": "Add Position",
+                "DeletePosition": "Delete Position",
+                "RotateToPosition": "Rotate to Position"
+            },
+            "DirectionMode": {
+                "Clockwise": "Clockwise",
+                "CounterClockwise": "Counter Clockwise",
+                "Longest": "Longest",
+                "Shortest": "Shortest"
+            },
+            "FIELDS": {
+                "directionMode": {
+                    "label": "Direction Mode",
+                    "hint": "How the rotation direction is decided when moving to the next position."
+                },
+                "lights": {
+                    "ids": {
+                        "label": "Lights"
+                    }
+                },
+                "positions": {
+                    "label": "Positions",
+                    "element": {
+                        "angle": {
+                            "label": "Angle"
+                        }
+                    }
+                },
+                "regions": {
+                    "ids": {
+                        "label": "Regions"
+                    }
+                },
+                "sounds": {
+                    "ids": {
+                        "label": "Ambient Sounds"
+                    }
+                },
+                "tiles": {
+                    "ids": {
+                        "label": "Tiles"
+                    }
+                },
+                "time": {
+                    "mode": {
+                        "label": "Speed Mode",
+                        "hint": "How the rotation speed is determined from the rotation time, either the same regardless of the distance moved (fixed) or dependant on the distance rotated (variable)."
+                    },
+                    "value": {
+                        "label": "Rotation Time",
+                        "hint": "Time in miliseconds to rotate to the next position (in fixed mode) or to rotate 90˚ (in variable mode)."
+                    }
+                },
+                "walls": {
+                    "ids": {
+                        "label": "Walls"
+                    },
+                    "link": {
+                        "label": "Link Walls",
+                        "hint": "Rotate any wall segments attached to the ones specified."
+                    }
+                }
+            },
+            "SpeedMode": {
+                "Fixed": "Fixed (total rotation time)",
+                "Variable": "Variable (time to rotate 90˚)"
+            },
+            "Warning": {
+                "RecursiveRegion": "Cannot rotate same region that contains the behavior."
+            }
+        }
+    },
+    "DND5E.Remaining": "Verbleibend",
+    "DND5E.REST": {
+        "Configuration": "Rast-Einstellungen",
+        "HitDice": {
+            "AutoSpend": {
+                "Hint": "Automatisches Ausgeben von Trefferwürfeln, bis sie aufgebraucht sind oder die Gesundheit voll ist.",
+                "Label": "Automatisches Ausgeben von TW"
+            },
+            "None": "Keine Trefferwürfel mehr zum Würfeln während dieser Rast.",
+            "Select": "Wählen Sie Würfel zum Würfeln"
+        },
+        "Label": "Rast",
+        "Long": {
+            "Abbreviation": "LR",
+            "Hint": {
+                "Group": "Während einer langen Rast stellen Gruppenmitglieder Trefferpunkte, Trefferwürfel, Klassenressourcen, begrenzt nutzbare Gegenstandsaufladungen und Zauberplätze wieder her.",
+                "GroupLegacy": "Während einer langen Rast stellen Gruppenmitglieder Trefferpunkte, die Hälfte ihrer maximalen Trefferwürfel, Klassenressourcen, begrenzt nutzbare Gegenstandsaufladungen und Zauberplätze wieder her.",
+                "Normal": "Während einer langen Rast stellst du Trefferpunkte, Trefferwürfel, Klassenressourcen, begrenzt nutzbare Gegenstandsaufladungen und Zauberplätze wieder her.",
+                "NormalLegacy": "Während einer langen Rast stellst du Trefferpunkte, die Hälfte deiner maximalen Trefferwürfel, Klassenressourcen, begrenzt nutzbare Gegenstandsaufladungen und Zauberplätze wieder her."
+            },
+            "Label": "Lange Rast",
+            "LabelShort": "L. Rast",
+            "Recovery": "Erholt sich nach langer Rast",
+            "Result": {
+                "Full": "{name} nimmt eine lange Rast und stellt {health} und {dice} wieder her.",
+                "HitDice": "{name} nimmt eine lange Rast und stellt {dice} wieder her.",
+                "HitPoints": "{name} nimmt eine lange Rast und stellt {health} wieder her.",
+                "Short": "{name} nimmt eine lange Rast."
+            }
+        },
+        "NewDay": {
+            "Hint": "Stellt Fähigkeiten mit begrenzter Nutzung wieder her, die sich bei Sonnenauf- oder -untergang oder zu Beginn eines neuen Tages regenerieren.",
+            "Label": "Neuer Tag"
+        },
+        "RecoverTempHP": {
+            "Label": "Entferne temporäre Trefferpunkte"
+        },
+        "RecoverTempMaxHP": {
+            "Hint": "Entfernt alle Anpassungen am maximalen Trefferpunktewert eines Charakters.",
+            "Label": "Maximale TP wiederherstellen"
+        },
+        "Request": {
+            "AutoRest": {
+                "Hint": "Automatisch die Rast für ausgewählte Gruppenmitglieder durchführen, anstatt eine Rast-Anfrage an die Spieler zu senden.",
+                "Label": "Automatische Rast"
+            },
+            "Label": "Rast-Anforderung"
+        },
+        "Short": {
+            "Abbreviation": "SR",
+            "Hint": {
+                "Group": "Während einer kurzen Rast können Gruppenmitglieder Trefferwürfel ausgeben und Gegenstandsverwendungen wiederherstellen.",
+                "Normal": "Während einer kurzen Rast kannst du verbleibende Trefferwürfel ausgeben und Gegenstandsverwendungen wiederherstellen."
+            },
+            "Label": "Kurze Rast",
+            "LabelShort": "SR",
+            "Recovery": "Erholt sich nach kurzer Rast",
+            "Result": {
+                "Full": "{name} nimmt eine kurze Rast und gibt {dice} aus, um {health} wiederherzustellen.",
+                "Short": "{name} nimmt eine kurze Rast."
+            }
+        },
+        "Warning": {
+            "OnlyByRequest": "Rasten können nur auf Anfrage des Spielleiters durchgeführt werden."
+        }
+    },
+    "DND5E.MOVEMENT": {
+        "Action": {
+            "Configure": "Bewegungsgeschwindigkeit konfigurieren"
+        },
+        "FIELDS": {
+            "ignoredDifficultTerrain": {
+                "label": "Ignorierte schwieriges Gelände"
+            },
+            "special": {
+                "label": "Spezielle Bewegung"
+            },
+            "speeds": {
+                "label": "Bewegungsgeschwindigkeiten"
+            },
+            "units": {
+                "label": "Einheit"
+            }
+        },
+        "Hover": "Schweben",
+        "Speed": "Kampfgeschwindigkeit",
+        "Type": {
+            "Burrow": "Graben",
+            "Climb": "Klettern",
+            "Fly": "Fliegen",
+            "Swim": "Schwimmen",
+            "Walk": "Laufen"
+        }
+    },
+    "DND5E.SheetClass": {
+        "Character": "Standard-5e-Charakterbogen",
+        "ClassSummary": "Standard-5e-Klassenübersichtsbogen",
+        "Container": "Standard-5e-Behälterbogen",
+        "DifficultTerrain": "Standard-5e-Schweres-Gelände-Bogen",
+        "Encounter": "Standard-5e-Begegnungsbogen",
+        "Group": "Standard-5e-Gruppenbogen",
+        "Item": "Standard-5e-Gegenstandsbogen",
+        "JournalEntry": "Standard-5e-Tagebucheintrag",
+        "JournalEntryLegacy": "Klassischer 5e-Tagebucheintrag",
+        "MapLocation": "Standard-5e-Kartenpositionsbogen",
+        "NPC": "Standard-5e-NSC-Bogen",
+        "RotateArea": "Standard-5e-Drehbereichsbogen",
+        "Rule": "Standard-5e-Regelbogen",
+        "SpellList": "Standard-5e-Zauberliste",
+        "Token": "Standard-5e-Tokenbogen",
+        "Vehicle": "Standard-5e-Fahrzeugbogen"
+    },
+    "DND5E.SavingThrowShort": "Rettungswurf",
+    "DND5E.SkillRoll": "Würfle {ability}-({skill})-Probe",
+    "DND5E.SpellAttackBonus": "Zauberangriffsbonus",
+    "DND5E.SPELLCASTING": {
+        "METHODS": {
+            "AtWill": {
+                "label": "Nach belieben"
+            },
+            "Innate": {
+                "label": "angeborenes Zauberwirken"
+            },
+            "Ritual": {
+                "label": "Ritualzauber"
+            },
+            "Spell": {
+                "label": "Zauberwirken",
+                "Full": {
+                    "label": "Vollzauberwirker"
+                },
+                "Half": {
+                    "label": "Halbzauberwirker"
+                },
+                "Third": {
+                    "label": "Drittzauberwirker"
+                },
+                "Artificer": {
+                    "label": "Tüftler"
+                }
+            },
+            "Pact": {
+                "abbr": "Pakt",
+                "label": "Paktmagie",
+                "Full": {
+                    "label": "Paktmagie"
+                }
+            }
+        },
+        "SLOTS": {
+            "spell0": "Zaubertricks",
+            "spell1": "1. Stufe",
+            "spell2": "2. Stufe",
+            "spell3": "3. Stufe",
+            "spell4": "4. Stufe",
+            "spell5": "5. Stufe",
+            "spell6": "6. Stufe",
+            "spell7": "7. Stufe",
+            "spell8": "8. Stufe",
+            "spell9": "9. Stufe"
+        },
+        "STATES": {
+            "Unprepared": "Nicht vorbereitet",
+            "Prepared": "Vorbereitet",
+            "AlwaysPrepared": "Immer vorbereitet"
+        },
+        "Unlabeled": "Nicht zugeordnetes Zauberwirken"
+    },
+    "DND5E.SpellLevelSpell": "{level} ({n} Zauberplätze)",
+    "DND5E.SpellSlotTemporary": "Temporärer Zauberplatz",
+    "DND5E.Summary": "Zusammenfassung",
+    "DND5E.TRANSFORM": {
+        "Action": {
+            "Restore": "Verwandlung wiederherstellen",
+            "Transform": "Verwandeln"
+        },
+        "Dialog": {
+            "Title": "Verwandlung konfigurieren"
+        },
+        "FIELDS": {
+            "profiles": {
+                "element": {
+                    "cr": {
+                        "label": "Herausforderungsgrad",
+                        "abbr": "HG",
+                        "hint": "Maximaler Herausforderungsgrad der Ursprungskreatur."
+                    },
+                    "level": {
+                        "label": "Stufenbegrenzung",
+                        "hint": "Stufenbereich, der erforderlich ist, um dieses Profil zu verwenden.",
+                        "max": {
+                            "label": "Maximale Stufe"
+                        },
+                        "min": {
+                            "label": "Minimale Stufe"
+                        }
+                    },
+                    "movement": {
+                        "hint": "Bewegungsarten, die bei Ursprungskreaturen nicht erlaubt sind.",
+                        "label": "Eingeschränkte Bewegungsarten"
+                    },
+                    "name": {
+                        "hint": "Name des Profils, der im Verwendungsdialog angezeigt wird.",
+                        "label": "Anzeigename"
+                    },
+                    "sizes": {
+                        "hint": "Liste der Kreaturgrößen, aus denen die Ursprungskreatur ausgewählt werden kann.",
+                        "label": "Kreaturgrößen"
+                    },
+                    "types": {
+                        "hint": "Liste der Kreaturentypen, aus denen die Ursprungskreatur ausgewählt werden kann.",
+                        "label": "Kreaturentypen"
+                    },
+                    "uuid": {
+                        "label": "Verknüpfter Akteur"
+                    }
+                },
+                "label": "Verwandlungsprofile"
+            },
+            "transform": {
+                "label": "Verwandlungsdetails",
+                "customize": {
+                    "label": "Anpassen",
+                    "hint": "Verwende benutzerdefinierte Verwandlungseinstellungen anstelle der Standardwerte des ausgewählten Presets."
+                },
+                "identifier": {
+                    "label": "Klassenbezeichner",
+                    "hint": "Bezeichner, der bestimmt, ob die Charakterstufe oder die Stufe einer bestimmten Klasse für die Profilgrenzen verwendet wird."
+                },
+                "mode": {
+                    "label": "Modus",
+                    "hint": "Legt fest, wie die Ursprungskreaturen der Verwandlung ausgewählt werden.",
+                    "CR": "Nach Herausforderungsgrad",
+                    "Direct": "Direkte Verknüpfung"
+                },
+                "preset": {
+                    "label": "Voreinstellung"
+                }
+            }
+        },
+        "Preset": {
+            "Appearance": {
+                "Label": "Nur Erscheinungsbild"
+            },
+            "Default": "Standard",
+            "Label": "Voreinstellungen",
+            "Polymorph": {
+                "Label": "Verwandlung"
+            },
+            "WildShape": {
+                "Label": "Tiergestalt"
+            }
+        },
+        "Profile": {
+            "Action": {
+                "Create": "Profil erstellen",
+                "Delete": "Profil löschen"
+            },
+            "ChallengeRatingLabel": "Herausforderungsgrad von {cr} oder niedriger",
+            "DropHint": "Kreatur hierher ziehen",
+            "Empty": "Klicke oben auf die Schaltfläche <i class=\"fas fa-plus\"></i>, um ein Profil zu erstellen.",
+            "Label": "Verwandlungsprofil"
+        },
+        "SECTIONS": {
+            "Profiles": "Profile",
+            "Settings": "Einstellungen",
+            "Transformation": "Verwandlung"
+        },
+        "Setting": {
+            "Effects": {
+                "All": {
+                    "Hint": "Behalte alle Effekte, unabhängig von anderen Effekt-Einstellungen.",
+                    "Label": "Alle Effekte"
+                },
+                "Background": {
+                    "Label": "Hintergrundeffekte"
+                },
+                "Class": {
+                    "Label": "Klasseneffekte"
+                },
+                "Equipment": {
+                    "Label": "Ausrüstungseffekte"
+                },
+                "Feature": {
+                    "Label": "Merkmalseffekte"
+                },
+                "Origin": {
+                    "Hint": "Behalte alle Effekte, die direkt auf diesem Quellakteur erstellt wurden.",
+                    "Label": "Dieser Akteur"
+                },
+                "OtherOrigin": {
+                    "Hint": "Behalte alle Effekte, die von einem anderen Akteur auferlegt wurden.",
+                    "Label": "Andere Akteure"
+                },
+                "Spell": {
+                    "Label": "Zaubereffekte"
+                }
+            },
+            "FIELDS": {
+                "effects": {
+                    "label": "Aktive Effekte"
+                },
+                "keep": {
+                    "hint": "Diese Details werden vom Quellakteur beibehalten.",
+                    "label": "Beibehalten"
+                },
+                "merge": {
+                    "hint": "Fertigkeiten zusammenführen und jeweils den höheren Modifikator beibehalten.",
+                    "label": "Zusammenführen"
+                },
+                "minimumAC": {
+                    "hint": "Formel, die die Rüstungsklasse der verwandelten Kreatur definiert, falls die RK des Zielakteurs nicht bereits höher ist.",
+                    "label": "Minimale Rüstungsklasse"
+                },
+                "other": {
+                    "label": "Weitere Optionen"
+                },
+                "spellLists": {
+                    "hint": "Die Zauber aus diesen Zauberlisten werden beibehalten, wenn der Akteur ein passendes Objekt besitzt.",
+                    "label": "Beibehaltende Zauberlisten"
+                },
+                "tempFormula": {
+                    "hint": "Formel für temporäre TP, die bei der Verwandlung hinzugefügt werden.",
+                    "label": "Temporäre TP-Formel"
+                },
+                "transformTokens": {
+                    "label": "Tokens verwandeln"
+                }
+            },
+            "Keep": {
+                "Biography": {
+                    "Label": "Biografie"
+                },
+                "CreatureType": {
+                    "Label": "Kreaturentyp"
+                },
+                "Equipment": {
+                    "Label": "Ausrüstung"
+                },
+                "Features": {
+                    "Label": "Merkmale"
+                },
+                "GearProficiency": {
+                    "Label": "Ausrüstungsfertigkeit"
+                },
+                "Health": {
+                    "Label": "Trefferpunkte & Trefferwürfel"
+                },
+                "Languages": {
+                    "Label": "Sprachen"
+                },
+                "Mental": {
+                    "Hint": "Behalte Intelligenz-, Weisheits- und Charisma-Werte.",
+                    "Label": "Geistige Attribute"
+                },
+                "Physical": {
+                    "Hint": "Behalte Stärke-, Geschicklichkeits- und Konstitutionswerte.",
+                    "Label": "Körperliche Attribute"
+                },
+                "Proficiency": {
+                    "Label": "Übungsbonus"
+                },
+                "Resistances": {
+                    "Label": "Schadensresistenzen"
+                },
+                "Saves": {
+                    "Label": "Rettungswürfe"
+                },
+                "Self": {
+                    "Hint": "Nur Porträt- und Token-Grafiken ändern, andere Einstellungen werden ignoriert.",
+                    "Label": "Selbst"
+                },
+                "Skills": {
+                    "Label": "Fertigkeitsboni"
+                },
+                "Spells": {
+                    "Label": "Zauber"
+                },
+                "Vision": {
+                    "Label": "Sicht"
+                }
+            },
+            "Merge": {
+                "Saves": {
+                    "Label": "Rettungswürfe"
+                },
+                "Skills": {
+                    "Label": "Fertigkeiten"
+                }
+            }
+        },
+        "TemporaryClass": "Temporäre Klasse",
+        "Title": "Verwandlung",
+        "Warning": {
+            "NoOwnership": "Du hast keine Berechtigung, diesen Akteur zu verwandeln.",
+            "NoPermission": "Spielern wurde keine Erlaubnis zur Verwandlung erteilt.",
+            "OriginalActor": "Kein ursprünglicher Akteur mit der ID '{reference}' gefunden.",
+            "SourceActor": "Keine Zielkreatur für die Verwandlung gefunden."
+        }
+    },
+    "DND5E.Travel": {
+        "Label": "Travel Pace",
+        "Pace": {
+            "Fast": "Fast",
+            "Normal": "Normal",
+            "Slow": "Slow"
+        },
+        "Per": {
+            "Day": "Per Day",
+            "Hour": "Per Hour"
+        },
+        "Speed": "Travel Speed",
+        "Type": {
+            "Air": "Air",
+            "Land": "Land",
+            "Water": "Water"
+        }
+    },
+    "DND5E.Treasure": {
+        "Categories": {
+            "Any": "Beliebig",
+            "Arcana": "Arkanes",
+            "Armaments": "Bewaffnung",
+            "Implements": "Werkzeuge",
+            "Individual": "Einzeln",
+            "None": "Keine",
+            "Relics": "Relikte"
+        },
+        "Configuration": {
+            "Label": "Schatz",
+            "Title": "Schatz konfigurieren"
+        }
+    },
+    "DND5E.Unit": "Einheit",
+    "DND5E.UNITS": {
+        "DISTANCE": {
+            "Foot": {
+                "Label": "Fuß",
+                "Abbreviation": "ft"
+            },
+            "Kilometer": {
+                "Label": "Kilometer",
+                "Abbreviation": "km"
+            },
+            "Label": "Entferungseinheit",
+            "Meter": {
+                "Label": "Meter",
+                "Abbreviation": "m"
+            },
+            "Mile": {
+                "Label": "Meilen",
+                "Abbreviation": "mi"
+            }
+        },
+        "TIME": {
+            "Day": {
+                "Label": "Tag"
+            },
+            "Hour": {
+                "Label": "Stunde"
+            },
+            "Minute": {
+                "Label": "Minute"
+            },
+            "Month": {
+                "Label": "Monat"
+            },
+            "Round": {
+                "Label": "Runde",
+                "Counted": {
+                    "narrow": "{number}r",
+                    "one": "{number} Runde",
+                    "other": "{number} Runden"
+                }
+            },
+            "Second": {
+                "Label": "Sekunde"
+            },
+            "Turn": {
+                "Label": "Zug",
+                "Abbreviation": "t",
+                "Counted": {
+                    "narrow": "{number}t",
+                    "one": "{number} Zug",
+                    "other": "{number} Züge"
+                }
+            },
+            "Week": {
+                "Label": "Woche"
+            },
+            "Year": {
+                "Label": "Jahr"
+            }
+        },
+        "TRAVEL": {
+            "Kilometer": {
+                "AbbreviationHour": "km/h",
+                "AbbreviationDay": "km/d",
+                "Label": "Kilometer"
+            },
+            "Label": "Reiseeinheit",
+            "Mile": {
+                "AbbreviationDay": "mi/d",
+                "AbbreviationHour": "mph",
+                "Label": "Meilen"
+            }
+        },
+        "VOLUME": {
+            "Label": "Volumeneinheiten",
+            "CubicFoot": {
+                "Label": "Cubic Feet",
+                "Abbreviation": "ft³",
+                "Counted": {
+                    "narrow": {
+                        "one": "{number}ft³",
+                        "other": "{number}ft³"
+                    },
+                    "short": {
+                        "one": "{number} cu ft",
+                        "other": "{number} cu ft"
+                    },
+                    "long": {
+                        "one": "{number} cubic foot",
+                        "other": "{number} cubic feet"
+                    }
+                }
+            },
+            "Liter": {
+                "Label": "Liter",
+                "Abbreviation": "l"
+            }
+        },
+        "WEIGHT": {
+            "Label": "Gewichtseinheiten",
+            "Kilogram": {
+                "Label": "Kilogramm",
+                "Abbreviation": "kg"
+            },
+            "Megagram": {
+                "Label": "Tonnen",
+                "Abbreviation": "t",
+                "Counted": {
+                    "narrow": {
+                        "one": "{number}t",
+                        "other": "{number}t"
+                    },
+                    "short": {
+                        "one": "{number} t",
+                        "other": "{number} t"
+                    },
+                    "long": {
+                        "one": "{number} Tonne",
+                        "other": "{number} Tonnen"
+                    }
+                }
+            },
+            "Pound": {
+                "Label": "Pfund",
+                "Abbreviation": "lb"
+            },
+            "Ton": {
+                "Label": "Tonne",
+                "Abbreviation": "tn",
+                "Counted": {
+                    "narrow": {
+                        "one": "{number}tn",
+                        "other": "{number}tn"
+                    },
+                    "short": {
+                        "one": "{number} tn",
+                        "other": "{number} tn"
+                    },
+                    "long": {
+                        "one": "{number} ton",
+                        "other": "{number} tons"
+                    }
+                }
+            }
+        }
+    },
+    "DND5E.VEHICLE": {
+        "Action": {
+            "Create": {
+                "Equipment": "Create Equipment",
+                "Feature": "Create Feature",
+                "Weapon": "Create Weapon"
+            },
+            "Crew": {
+                "Decrease": "Decrease",
+                "Increase": "Increase"
+            },
+            "Drop": {
+                "Animal": "Drop Draft Animal",
+                "Crew": "Drop Crew",
+                "Passengers": "Drop Passengers"
+            },
+            "Uncrew": "Uncrew"
+        },
+        "Actions": {
+            "Ordinal": {
+                "one": "{n}st Action",
+                "two": "{n}nd Action",
+                "few": "{n}rd Action",
+                "other": "{n}th Action"
+            }
+        },
+        "Activation": {
+            "Crew": {
+                "label": "Crew Action"
+            }
+        },
+        "Crew": {
+            "Assigned": "Assigned",
+            "Label": "Crew",
+            "Passengers": "Passengers",
+            "Unassigned": "Unassigned"
+        },
+        "FIELDS": {
+            "attributes": {
+                "actions": {
+                    "label": "Actions",
+                    "max": {
+                        "hint": "Actions taken with a full crew complement",
+                        "label": "Maximum Actions"
+                    },
+                    "spent": {
+                        "label": "Spent Actions"
+                    },
+                    "stations": {
+                        "label": "Action Stations"
+                    },
+                    "thresholds": {
+                        "full": {
+                            "label": "Full Crew Complement"
+                        },
+                        "mid": {
+                            "label": "Partial Crew Complement"
+                        },
+                        "min": {
+                            "label": "Minimum Crew Complement"
+                        },
+                        "label": "Thresholds"
+                    }
+                },
+                "capacity": {
+                    "cargo": {
+                        "value": {
+                            "label": "Cargo"
+                        }
+                    },
+                    "label": "Capacity"
+                }
+            },
+            "crew": {
+                "max": {
+                    "label": "Crew"
+                }
+            },
+            "passengers": {
+                "max": {
+                    "label": "Passengers"
+                }
+            },
+            "traits": {
+                "beam": {
+                    "value": {
+                        "label": "Beam"
+                    }
+                },
+                "keel": {
+                    "value": {
+                        "label": "Keel"
+                    }
+                }
+            }
+        },
+        "Mishap": {
+            "label": "Mishap",
+            "Threshold": {
+                "abbr": "MT",
+                "label": "Mishap Threshold"
+            }
+        },
+        "MOUNTABLE": {
+            "FIELDS": {
+                "cover": {
+                    "label": "Cover",
+                    "hint": "Cover provided to crew operating this equipment."
+                },
+                "crew": {
+                    "label": "Crew"
+                },
+                "hp": {
+                    "label": "Hit Points",
+                    "conditions": {
+                        "label": "Health Conditions"
+                    },
+                    "dt": {
+                        "label": "Damage Threshold"
+                    },
+                    "max": {
+                        "label": "Max HP"
+                    },
+                    "value": {
+                        "label": "Current HP"
+                    }
+                },
+                "speed": {
+                    "conditions": {
+                        "label": "Speed Conditions"
+                    },
+                    "value": {
+                        "label": "Speed"
+                    }
+                }
+            }
+        },
+        "Option": {
+            "Abilities": "Show Abilities",
+            "Initiative": "Show Initiative",
+            "Quality": "Show Quality"
+        },
+        "Tabs": {
+            "Cargo": "Cargo",
+            "CrewPassengers": "Crew & Passengers"
+        },
+        "Type": {
+            "Air": {
+                "label": "Air Vehicle"
+            },
+            "label": "Vehicle Type",
+            "Land": {
+                "label": "Land Vehicle"
+            },
+            "Space": {
+                "label": "Space Vehicle"
+            },
+            "Water": {
+                "label": "Water Vehicle"
+            }
+        }
+    },
+    "KEYBINDINGS.DND5E.DragCopy": "Kopieren beim Ziehen eines Dokuments erzwingen",
+    "KEYBINDINGS.DND5E.DragMove": "Verschieben beim Ziehen eines Dokuments erzwingen",
+    "SOURCE.BOOK.FreeRules": "Freie Regeln",
+    "SOURCE.BOOK.SRD51": "Systemreferenzdokument 5.1",
+    "SOURCE.BOOK.SRD52": "Systemreferenzdokument 5.2"
 }

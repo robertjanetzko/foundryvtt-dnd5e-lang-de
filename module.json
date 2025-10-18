@@ -13,8 +13,8 @@
   "download": "https://github.com/mhilbrunner/foundryvtt-dnd5e-lang-de/releases/download/4.1.2/module.zip",
   "version": "4.1.2",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13"
   },
   "esmodules": [
     "dnd5e-de.js"
@@ -37,8 +37,8 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
         "compatibility": {
-          "minimum": "4.0.0",
-          "verified": "4.1.2"
+          "minimum": "5.0.0",
+          "verified": "5.1.10"
         }
       }
     ],

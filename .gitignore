@@ -82,3 +82,6 @@ Temporary Items
 .apdisk
 spelling_cache.bin
 .vscode
+
+# copyrighted files
+compendium/de/dnd-players-handbook.*
