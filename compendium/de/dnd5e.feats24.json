@@ -1,0 +1,82 @@
+{
+  "label": "Talente",
+  "mapping": {
+    "description": "system.description.value"
+  },
+  "folders": {
+    "Origin Feats": "Herkunfts-Talente",
+    "Epic Boon Feats": "Epische Talente",
+    "Fighting Style Feats": "Kampfstil-Talente",
+    "General Feats": "Allgemeine Talente"
+  },
+  "entries": {
+    "Boon of Combat Prowess": {
+      "name": "Gunst des Kampfgeschicks",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Unvergleichliche Zielgenauigkeit.</strong> Wenn du bei einem Angriffsfitness daneben gehst, kannst du stattdessen treffen. Sobald du diesen Vorteil genutzt hast, kannst du ihn bis zum Beginn deines nächsten Zugs nicht erneut verwenden.</p>"
+    },
+    "Boon of Dimensional Travel": {
+      "name": "Gunst der Dimensionalen Reise",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Blinkschritte.</strong> Unmittelbar nachdem du die Angriffsaktion oder die Magieaktion durchgeführt hast, kannst du dich bis zu 9m zu einem unbesetzten Raum teleportieren, den du sehen kannst.</p>"
+    },
+    "Boon of Fate": {
+      "name": "Gunst des Schicksals",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Schicksal verbessern.</strong> Wenn du oder eine andere Kreatur im Umkreis von 20m von dir bei einem D20-Test gelingt oder scheitert, kannst du 2W4 würfeln und die Gesamtsumme als Bonus oder Malus auf den Wurf anwenden. Sobald du diesen Vorteil nutzt, kannst du ihn nicht erneut verwenden, bis du Initiative würfelst oder eine kurze oder lange Rast beendest.</p><section id=\"secret-zl5SPZXJtl1mEKOl\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Die <strong>Improve Fate</strong>-Aktivität enthält einen Wurf und stellt eine Nutzung nach einer kurzen oder langen Rast automatisch wieder her. Nach deiner Initiative wird sie jedoch nicht automatisch erneuert.</p></section>"
+    },
+    "Boon of Irresistible Offense": {
+      "name": "Gunst des unwiderstehlichen Angriffs",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe deinen Stärkewert oder Geschicklichkeitswert um 1, maximal 30.</p><p><strong>Verteidigungen überwinden.</strong> Der Schaden durch Wucht-, Stich- und Hiebschaden, den du zufügst, ignoriert stets Resistenz.</p><p><strong>Überwältigender Schlag.</strong> Wenn du eine 20 auf dem W20 für einen Angriffswurf würfelst, kannst du dem Ziel zusätzlichen Schaden in Höhe des um diesen Attributswert erhöhten Wertes zufügen. Der Typ des zusätzlichen Schadens entspricht dem Typ des Angriffs.</p><section id=\"secret-B9D2nT6vBjWr9JMV\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Die Effekte dieses Talents werden nicht automatisiert. Der zusätzliche Schaden kann im Feld 'Situational Bonus' des Schadens-Würfelfensters hinzugefügt werden.</p></section>"
+    },
+    "Boon of Spell Recall": {
+      "name": "Gunst des Zauberabrufs",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe deinen Intelligenz-, Weisheits- oder Charisma-Wert um 1, maximal 30.</p><p><strong>Freies Wirken.</strong> Immer wenn du einen Zauber mit einem Zauberplatz der Stufe 1–4 wirkst, würfle [[/r 1d4]]. Wenn die gewürfelte Zahl die Stufe des Slots entspricht, wird der Slot nicht verbraucht.</p><section id=\"secret-KMAFFZCOzi6Cuemh\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Wenn die Zahl dieselbe ist, deaktiviere bei der Verwendung des Zaubers die Verbrauch-Option.</p></section>"
+    },
+    "Boon of Truesight": {
+      "name": "Segen des wahren Sehens",
+      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Eigenschaftswerte um 1, bis maximales 30.</p><p><strong>Wahres Sehen.</strong> Du verfügst über Wahres Sehen mit einer Reichweite von 20m.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Dieser aktive Effekt gewährt dir Wahres Sehen mit einer Reichweite von 20m.</p></section>"
+    },
+    "Boon of the Night Spirit": {
+      "name": "Segen des Nachtgeistes",
+      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Attributswerte um 1, bis maximal 30.</p><p><strong>Merge with Shadows.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, kannst du dir als Bonusaktion den Zustand Unsichtbar verleihen. Der Zustand endet sofort, nachdem du eine Aktion, eine Bonusaktion oder eine Reaktion ausführst.</p><p><strong>Shadowy Form.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, bist du allen Schadenarten resistent, mit Ausnahme von Psychischem Schaden und Lichtschaden.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Der aktive Effekt der Eigenschaft <strong>Boon of the Night Spirit</strong> umfasst die Resistenzen, muss aber im Reiter Effekte deines Blatts ein-/ausgeschaltet werden.</p><p>Die Aktivität <strong>Merge with Shadows</strong> umfasst einen aktiven Effekt, der den Zustand Unsichtbar anwendet.</p></section>"
+    },
+    "Archery": {
+      "name": "Bogenschiessen",
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Du erhältst einen +2 Bonus auf Angriffswürfe, die du mit Fernkampfwaffen machst.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst einen aktiven Effekt, der den Bonus zu Fernkampf-Angriffswürfen hinzufügt.</p></section>"
+    },
+    "Defense": {
+      "name": "Verteidigung",
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Solange du leichte, mittlere oder schwere Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Diese Eigenschaft enthält einen aktiven Effekt, der den Bonus auf die Rüstungsklasse gewährt. Deaktiviere ihn, wenn du keine Rüstung trägst.</p></section>"
+    },
+    "Great Weapon Fighting": {
+      "name": "Kampf mit grossen Waffen",
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Wenn du Schaden für einen Angriff mit einer Nahkampfwaffe würfelst, die du mit beiden Händen hältst, kannst du jede 1 oder 2 auf dem Schadenswürfel als 3 werten. Die Waffe muss die Eigenschaften Zweihändig oder Vielseitig besitzen, um diesen Vorteil zu erhalten.</p><section id=\"secret-jkbP75uR9eNGIRN0\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Dieser Effekt ist nicht automatisiert.</p></section>"
+    },
+    "Two-Weapon Fighting": {
+      "name": "Kampf mit zwei Waffen",
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Wenn du einen zusätzlichen Angriff machst, weil du eine Waffe mit der Eigenschaft Licht verwendest, kannst du deinen Attributmodifikator zu dem Schaden dieses Angriffs hinzufügen, sofern du ihn nicht bereits dem Schaden hinzufügst.</p><section class=\\\"secret\\\" id=\\\"secret-hYptyfGCa0gLDQRT\\\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft wird nicht automatisiert. Du kannst deinen Modifikator im Feld \"Situational Bonus\" des Schadenswurfs hinzufügen.</p></section>"
+    },
+    "Ability Score Improvement": {
+      "name": "Attributswerterhöhung",
+      "description": "<p><em>Allgemeine Eigenschaft (Voraussetzung: Stufe 4+)</em></p><p>Erhöhe einen deiner Attributwerte deiner Wahl um 2, oder erhöhe zwei deiner Attributwerte um je 1. Diese Eigenschaft kann keinen Attributwert über 20 erhöhen.</p><p><strong>Wiederholbar.</strong> Du kannst diese Eigenschaft mehr als einmal wählen.</p>"
+    },
+    "Alert": {
+      "name": "Wachsam",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiativ-Fertigkeit.</strong> Wenn du Initiative würfelst, kannst du deinen Beherrschungsbonus auf den Wurf anwenden.</p><p><strong>Initiativ-Tausch.</strong> Unmittelbar nachdem du Initiative würfelst, kannst du deine Initiative mit der Initiative eines willigen Verbündeten im gleichen Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den Zustand &Reference[Incapacitated] hat.</p><section id=\\\"secret-yzfXk3D5M1jv9ixH\\\" class=\\\"secret\\\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft berücksichtigt automatisch den Bonus auf deine Initiative.</p></section>"
+    },
+    "Grappler": {
+      "name": "Ringer",
+      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Attributserhöhung.</strong> Erhöhe deinen Stärke- oder Geschicklichkeitswert um 1, bis maximal 20.</p><p><strong>Schlagen und Greifen.</strong> Wenn du eine Kreatur mit einem Unbewaffneten Treffer als Teil der Attack-Aktion in deinem Zug triffst, kannst du sowohl Schaden als auch Grapple-Option verwenden. Du kannst diesen Vorteil nur einmal pro Zug verwenden.</p><p><strong>Angriffs-Vorteil.</strong> Du hast Vorteil bei Angriffswürfen gegen eine Kreatur, die von dir festgehalten wird.</p><p><strong>Schneller Kämpfer.</strong> Du musst keine zusätzliche Bewegung aufwenden, um eine Kreatur in deiner Nähe zu bewegen, sofern die Kreatur deine Größe hat oder kleiner ist.</p><section class=\"secret\" id=\"secret-LAjjGo55LPacAy8v\"><p><strong>Foundry-Hinweis</strong></p><p>Der Vorteil wird nicht automatisiert.</p></section>"
+    },
+    "Magic Initiate": {
+      "name": "Magiebegabter",
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Zwei Zaubertricks.</strong> Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj], @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU] oder @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber dieses Talents (wähle beim Erwerb des Talents).</p><p><strong>Zauber des 1. Grades.</strong> Wähle einen Zauber des 1. Grades aus derselben Liste, die du für deine Zaubertricks gewählt hast. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst diese Fähigkeit zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen wirken.</p><p><strong>Zauberwechsel.</strong> Immer wenn du eine neue Stufe erreichst, kannst du einen der Zauber, die du mit diesem Talent gelernt hast, durch einen anderen Zauber gleichen Grades aus der gewählten Zauberliste ersetzen.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehrmals wählen, musst aber jedes Mal eine andere Zauberliste wählen.</p><section id=\"secret-7JQCSgnGrtu9huzf\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die Zauber müssen mit den obigen Änderungen manuell zu deinem Charakterbogen hinzugefügt werden.</p></section>"
+    },
+    "Savage Attacker": {
+      "name": "Wilder Angreifer",
+      "description": "<p>Du hast gelernt, besonders verheerende Treffer zu landen. Einmal pro Runde, wenn du eine Ziel mit einer Waffe triffst, kannst du die Schadenswürfel der Waffe zweimal würfeln und jeden der Würfe gegen das Ziel verwenden.</p>"
+    },
+    "Skilled": {
+      "name": "Vielseitig",
+      "description": "<p>Du erlangst Begabung in jeder beliebigen Kombination von drei Fertigkeiten oder Werkzeugen deiner Wahl.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehr als einmal erlangen.</p>"
+    }
+  }
+}

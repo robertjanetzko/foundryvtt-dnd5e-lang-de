@@ -1,0 +1,583 @@
+{
+  "label": "Hintergründe & Spezies",
+  "mapping": {
+    "description": "system.description.value",
+    "advancements": {
+      "path": "system.advancement",
+      "converter": "advancement"
+    }
+  },
+  "folders": {
+    "Dragonborn": "Drachenblütige",
+    "Elf": "Elf",
+    "Goliath": "Goliath",
+    "Traits": "Merkmale",
+    "Orc": "Ork",
+    "Dwarf": "Zwerg",
+    "Species": "Spezies",
+    "Tiefling": "Tiefling",
+    "Gnome": "Gnom",
+    "Human": "Mensch",
+    "Backgrounds": "Hintergründe",
+    "Halfling": "Halbling"
+  },
+  "entries": {
+    "Acolyte": {
+      "name": "Tempeldiener",
+      "description": "<p><strong>Eigenschaftenwerte:</strong> Intelligenz, Weisheit, Charisma</p><p><strong>Talent:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftMagicInitia] (Cleric)</p><p><strong>Fertigkeiten:</strong> Einsicht und Religion</p><p><strong>Werkzeugbeherrschung:</strong> Kalligrafiebedarf</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulCalligraph], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagBook0000000] ( Gebete), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagHolySymbolV], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagParchment00] (10 Blätter), @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagRobe0000000], 8 GP; or (B) 50 GP</p><p>Du hast dich dem Dienst in einem Tempel verschrieben, sei es in einer Stadt oder abgelegen in einem heiligen Hain. Dort hast du Rituale zu Ehren eines Gottes oder Pantheons vollzogen. Du dientest unter einem Priester und studiertest Religion. Dank der Anleitung deines Priesters und deiner eigenen Hingabe hast du auch gelernt, wie man einen geringen Anteil göttlicher Macht im Dienst an deinem Ort der Anbetung und den dort Betenden kanalisieren kann.</p>",
+      "advancements": {
+        "kDI6zoUamHzFTvHG": {
+          "title": "Hintergrund-Attributsverbesserung",
+          "hint": "Dein Hintergrund erlaubt es dir, deine Intelligenz-, Weisheits- und Charismawerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 steigern."
+        },
+        "Lk1ScjOCqRDtX2Tg": {
+          "title": "Hintergrund-Fertigkeiten",
+          "hint": "Dein Hintergrund verleiht dir Fertigkeit in Einfühlungsvermögen und Religion. Außerdem gewährt er dir Fertigkeit im Umgang mit Kalligraphie-Utensilien."
+        },
+        "ygyW1bVUTnCnjxY2": {
+          "title": "Hintergrund-Talent",
+          "hint": "Dein Hintergrund gewährt dir das Talent 'Magieinitiat (Kleriker)'."
+        },
+        "McRHkSL3WnG2Po7g": {
+          "title": "Sprachen wählen",
+          "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei weitere Sprachen, die du aus der Tabelle der Standardsprachen auswählst oder auswürfelst."
+        }
+      }
+    },
+    "Criminal": {
+      "name": "Krimineller",
+      "description": "<p><strong>Eigenschaftenwerte:</strong> Geschicklichkeit, Konstitution, Intelligenz</p><p><strong>Talent:</strong> @UUID[Compendium.dnd-players-handbook.feats.Item.phbftAlert000000]</p><p><strong>Fertigkeiten:</strong> Fingerfertigkeit und Heimlichkeit</p><p><strong>Werkzeugbeherrschung:</strong> Diebische Werkzeuge</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbwepDagger0000], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbtulThievesToo], @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagCrowbar0000], 2 @UUID[Compendium.dnd-players-handbook.equipment.Item.phbagPouch000000], @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT], 16 GP; oder (B) 50 GP</p><p>Du hast dich in dunklen Gassen durch Taschendiebstahl oder den Einbruch in Geschäfte ernährt. Vielleicht warst du Teil einer kleinen Gang Gleichgesinnter, die aufeinander aufpassen. Oder du warst ein Einzelgänger, der sich gegen die örtliche Diebesgilde und furchterregendere Gesetzesbrecher behauptete.</p>",
+      "advancements": {
+        "8gFHAigaFboVUSgH": {
+          "title": "Hintergrund-Attributsverbesserung",
+          "hint": "Dein Hintergrund erlaubt es dir, deine Geschicklichkeits-, Konstitutions- und Intelligenzwerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 steigern."
+        },
+        "WJA48TLxfqlc3ygz": {
+          "title": "Hintergrund-Talent",
+          "hint": "Dein Hintergrund gewährt dir das Talent 'Wachsam'."
+        },
+        "CdiCt0Cr9bP9FQNO": {
+          "title": "Hintergrund-Fertigkeiten",
+          "hint": "Dein Hintergrund verleiht dir Fertigkeit in Fingerfertigkeit und Heimlichkeit. Außerdem gewährt er dir Fertigkeit im Umgang mit Diebeswerkzeugen."
+        },
+        "pLGiyOjTP7nwuwTl": {
+          "title": "Sprachen wählen",
+          "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei weitere Sprachen, die du aus der Tabelle der Standardsprachen auswählst oder auswürfelst."
+        }
+      }
+    },
+    "Sage": {
+      "name": "Gelehrter",
+      "description": "<p><strong>Attributswerte:</strong> Konstitution, Intelligenz, Weisheit</p><p><strong>Talent:</strong> Magische Initiierung (Zauberer)</p><p><strong>Fertigkeiten:</strong> Arcana und Geschichte</p><p><strong>Werkzeugbeherrschung:</strong> Kalligrafie-Utensilien</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) Viertelstab, Kalligrafie-Utensilien, Buch (Geschichte), Pergament (8 Blätter), Robe, 8 GP; or (B) 50 GP</p><p>Du verbrachtest deine formenden Jahre damit, zwischen Herrenhäusern und Klöstern zu reisen, verschiedene Gelegenheitsjobs und Dienste in Anspruch zu nehmen, im Austausch gegen Zugang zu ihren Bibliotheken. Du hast viele lange Abende damit verbracht, Bücher und Schriftrollen zu studieren, die Überlieferung des Multiversums zu erlernen — sogar die Grundzüge der Magie — und dein Geist sehnt sich nach mehr.</p>",
+      "advancements": {
+        "3O61L5uTy5jRCqJb": {
+          "title": "Hintergrund-Attributsverbesserung",
+          "hint": "Dein Hintergrund erlaubt es dir, deine Konstitutions-, Intelligenz- und Weisheitswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 steigern."
+        },
+        "DMd8rikwPlZdpP1l": {
+          "title": "Hintergrund-Fertigkeiten",
+          "hint": "Dein Hintergrund verleiht dir Fertigkeit in Arkane Kunde und Geschichte. Außerdem gewährt er dir Fertigkeit im Umgang mit Kalligrafie-Utensilien."
+        },
+        "kKt7VMmZUuRr35dP": {
+          "title": "Hintergrund-Talent",
+          "hint": "Dein Hintergrund gewährt dir das Talent 'Magieinitiat (Zauberer)'."
+        },
+        "pLGiyOjTP7nwuwTl": {
+          "title": "Sprachen wählen",
+          "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei weitere Sprachen, die du aus der Tabelle der Standardsprachen auswählst oder auswürfelst."
+        }
+      }
+    },
+    "Soldier": {
+      "name": "Soldat",
+      "description": "<p><strong>Attributswerte:</strong> Stärke, Geschicklichkeit, Konstitution</p><p><strong>Talent:</strong> Savage Attacker</p><p><strong>Fertigkeiten:</strong> Athletik und Einschüchterung</p><p><strong>Werkzeugbeherrschung:</strong> <em>Wähle eine Art von</em> <em>Gaming Set</em> (siehe Kapitel 6)</p><p><strong>Ausrüstung:</strong> <em>Wähle A oder B:</em> (A) Speer, Kurzbogen, 20 Pfeile, Gaming Set (wie oben), Heiler-Kit, Köcher, Reisekleidung, 14 GP; or (B) 50 GP</p><p>Du begannst das Kriegstraining, sobald du erwachsen wurdest, und trägst nur wenige Erinnerungen an das Leben, bevor du die Waffen ergriffen hast. Die Schlacht liegt dir im Blut. Manchmal bemerkst du, wie du reflexartig die grundlegenden Kampfübungen ausführst, die du zuerst gelernt hast. Schließlich wendest du dieses Training auf dem Schlachtfeld an, um das Reich durch Krieg zu schützen.</p>",
+      "advancements": {
+        "5hLHlmqxzoAta0uf": {
+          "title": "Hintergrund-Attributsverbesserung",
+          "hint": "Dein Hintergrund erlaubt es dir, deine Stärke-, Geschicklichkeits- und Konstitutionswerte zu erhöhen; erhöhe einen davon um 2 und einen anderen um 1, oder erhöhe alle drei um 1. Keine dieser Erhöhungen kann einen Wert über 20 steigern."
+        },
+        "y4FZ4I6wU0F8DEjO": {
+          "title": "Hintergrund-Fertigkeiten",
+          "hint": "Dein Hintergrund verleiht dir Fertigkeit in Athletik und Einschüchtern. Außerdem gewährt er dir Fertigkeit im Umgang mit einem beliebigen Spielset."
+        },
+        "tk8CFgIW7fXL0mlu": {
+          "title": "Hintergrund-Talent",
+          "hint": "Dein Hintergrund gewährt dir das Talent 'Wilder Angreifer'."
+        },
+        "pLGiyOjTP7nwuwTl": {
+          "title": "Sprachen wählen",
+          "hint": "Dein Charakter beherrscht mindestens drei Sprachen: Gemeinsprache plus zwei weitere Sprachen, die du aus der Tabelle der Standardsprachen auswählst oder auswürfelst."
+        }
+      }
+    },
+    "Tiefling, Abyssal": {
+      "name": "Tiefling, Abyssal",
+      "description": "<p>Tieflinge stammen entweder aus den Unterebenen oder haben fiendische Vorfahren, die dort ihren Ursprung hatten. Ein Tiefling (ausgesprochen TEE-fling) ist durch Blut mit einem Teufel, Dämonen oder einem anderen Übel gesegnet. Diese Verbindung zu den Unterebenen ist das fiendische Erbe des Tieflings, das mit der Aussicht auf Macht einhergeht, aber keinerlei Einfluss auf die moralische Haltung des Tieflings hat.</p><p>Ein Tiefling wählt, ob er sein fiendisches Erbe annimmt oder bedauert.</p><h3 data-anchor=\"abyssal\">Abyssal</h3><p>Die Entropie des Abyss, das Chaos des Pandemonium und die Verzweiflung von Carceri rufen Tieflinge mit abyssalem Erbe. Hörner, Fell, Hauer und eigenartige Düfte gehören zu den üblichen physischen Merkmalen solcher Tieflinge, von denen die meisten Dämonensblut durch ihre Venen fließt.</p><h3 data-anchor=\"tiefling-traits\">Tiefling-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (ca. 4–2m) oder Klein (ca. 3–1m), gewählt beim Auswählen dieser Spezies</p><p><strong>Bewegung:</strong> 9m</p><p>Als Tiefling besitzt du folgende besondere Merkmale.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit Reichweite von 20m.</p><p><strong>Fiendische Erbanlage.</strong> Du bist der Empfänger einer Erblage, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Stufen 3 und 5 erreichst, lernst du einen Zauber höherer Stufe, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise erneut zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit Zauberplätzen der passenden Stufe wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Erblage auswählst).</p><p><strong>Andernweltliche Gegenwart.</strong> Du kennst den Zauber Thaumaturgy als Zaubertrick. Wenn du ihn mit dieser Eigenschaft wirkst, verwendet der Zauber dieselbe Zauberwirkungsfähigkeit, die du auch für deine fiendische Erblage verwendest.</p><table><caption>Abyssal-Erbmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Gift-Schaden. Du kennst außerdem den Zaubertrick Poison Spray.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]</td></tr></tbody></table>",
+      "advancements": {
+        "lskxIeib6rIreZ1h": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,20–2,10 m groß) oder klein (etwa 0,90–1,20 m groß)."
+        },
+        "T8T6H9TudTleafUL": {
+          "title": "Tiefling-Merkmale"
+        },
+        "V8h8fLg4XG1QGewy": {
+          "title": "Abyssal-Tiefling-Merkmale",
+          "hint": "Du besitzt Resistenz gegen Giftschaden."
+        },
+        "VhCiGFOLtG8H93jy": {
+          "title": "Abyssal-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "KwcwntR3Ai0R5iPN": {
+          "title": "Abyssal-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "9iZufhdzY3XN7Em3": {
+          "title": "Abyssal-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "YENpPevreTnGrRVK": {
+          "title": "Andersweltliche Präsenz"
+        }
+      }
+    },
+    "Tiefling, Chthonic": {
+      "name": "Tiefling, Chthonic",
+      "description": "<p>Tieflinge stammen entweder aus den Unterebenen oder haben fiendische Vorfahren, die dort ihren Ursprung hatten. Ein Tiefling (ausgesprochen TEE-fling) ist durch Blut mit einem Teufel, einer Dämonin oder einem anderen Fiend verbunden. Diese Verbindung zu den Unterebenen ist das fiendische Erbe des Tieflings, das mit der Aussicht auf Macht einhergeht, aber keinerlei Einfluss auf die moralische Haltung des Tieflings hat.</p><p>Ein Tiefling wählt, ob er sein fiendisches Erbe annimmt oder bedauert.</p><h3 data-anchor=\"chthonic\">Chthonisch</h3><p>Tieflinge, die das chthonische Erbe tragen, spüren nicht nur den Zug von Carceri, sondern auch die Gier von Gehenna und die Düsternis von Hades. Einige dieser Tieflinge wirken ausgemergelt. Andere besitzen die unirdische Schönheit einer Succubus, oder sie haben körperliche Merkmale, wie sie bei einer Nachthexe, einem Yugoloth oder einem anderen neutral bösen fiendischen Vorfahren vorkommen.</p><h3 data-anchor=\"tiefling-traits\">Tiefling-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (ca. 4–2m) oder Klein (ca. 3–1m), gewählt beim Auswählen dieser Spezies</p><p><strong>Bewegung:</strong> 9m</p><p>Als Tiefling besitzt du folgende besondere Merkmale.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit Reichweite von 20m.</p><p><strong>Fiendische Erbe.</strong> Du bist Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Stufen 3 und 5 erreichst, lernst du einen Zauber höherer Stufe, wie in der Tabelle gezeigt. Du hast immer diesen Zauber vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise erneut zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mithilfe von Zauberplätzen der entsprechenden Stufe wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du das Erbe auswählst).</p><p><strong>Andernweltliche Gegenwart.</strong> Du kennst den Zauber Thaumaturgy als Zaubertrick. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dieselbe Zauberwirkungsfähigkeit, die du für dein Fiendish Legacy-Attribut verwendest.</p><table><caption>Fiendish Legacies</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen nekrotischen Schaden. Du kennst auch den Zaubertrick Chill Touch.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]</td></tr></tbody></table>",
+      "advancements": {
+        "lskxIeib6rIreZ1h": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,20–2,10 m groß) oder klein (etwa 0,90–1,20 m groß)."
+        },
+        "T8T6H9TudTleafUL": {
+          "title": "Tiefling-Merkmale"
+        },
+        "kcfmKwJkaV9btwJU": {
+          "title": "Andersweltliche Präsenz"
+        },
+        "O6M9VGAwHx9Kkfhj": {
+          "title": "Chthonischer-Tiefling-Merkmale",
+          "hint": "Du besitzt Resistenz gegen nekrotischen Schaden."
+        },
+        "pIi692Cevlw7qZRe": {
+          "title": "Chthonischer-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "DU7Y6D1IJSSgObJK": {
+          "title": "Chthonischer-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "R0k1RmQximNOQw1R": {
+          "title": "Chthonischer-Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        }
+      }
+    },
+    "Dragonborn": {
+      "name": "Drachenblütige",
+      "description": "<p>Die Vorfahren der Drachengeborenen schlüpften aus Eiern chromatischer und metallischer Drachen. Eine Version besagt, diese Eier seien von den Drachen-Göttern Bahamut und Tiamat gesegnet worden, die die Multiversen mit Menschen in ihrem Abbild bevölkern wollten. Eine andere Version behauptet, Drachen hätten die ersten Drachengeborenen ohne die Gaben der Götter geschaffen. Unabhängig von ihrer Herkunft haben sich Drachengeborene auf dem Materialebenen eine Heimat geschaffen.</p><p>Drachengeborene sehen aus wie flügellose, zweibeinige Drachen – schuppig, mit leuchtenden Augen und knochig gebaut, Hörnern auf dem Kopf – und ihre Färbungen sowie andere Merkmale erinnern an ihre drakonischen Vorfahren.</p><h3 data-anchor=\"dragonborn-traits\">Drachengeborene Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (ca. 5–2m groß)</p><p><strong>Bewegung:</strong> 9m</p><p>Als Drachengeborener besitzt du diese besonderen Merkmale.</p><p><strong>Drakonische Abstammung.</strong> Deine Abstammung stammt von einer Drachenprogenitorin ab. Wähle die Art des Drachen aus der Tabelle der Drakonischen Ahnen. Deine Wahl beeinflusst deinen Atemwaffe und Schadensresistenz sowie dein Erscheinungsbild.</p><table><caption>Drakonische Ahnen</caption><thead><tr><td>Drache</td><td>Schadensart</td><td>Drache</td><td>Schadensart</td></tr></thead><tbody><tr><td>Schwarz</td><td>Säure</td><td>Gold</td><td>Feuer</td></tr><tr><td>Blau</td><td>Blitz</td><td>Grün</td><td>Gift</td></tr><tr><td>Messing</td><td>Feuer</td><td>Rot</td><td>Feuer</td></tr><tr><td>Bronze</td><td>Blitz</td><td>Silber</td><td>Kalt</td></tr><tr><td>Kupfer</td><td>Säure</td><td>Weiß</td><td>Kalt</td></tr></tbody></table><p><strong>Atemwaffe.</strong> Wenn du im Verlauf deines Zuges eine Attacke ausführst, kannst du eine deiner Angriffe durch eine magische Ausatmung in einer 4,5m Kegel- oder einer 9m Linie ersetzen, die 1,5m breit ist (forme jedes Mal die Form neu). Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf bestehen (DC 8 plus Konstitutionsmodifikator plus Fertigkeitsbonus). Bei einem Fehlwurf erleidest du 1d10 Schaden der durch deine drakonische Abstammung bestimmten Schadensart. Bei Erfolg erleidende Kreaturen die Hälfte des Schadens. Dieser Schaden erhöht sich um 1d10, wenn du Stufen 5 (2d10), 11 (3d10) und 17 (4d10) erreichst. Du kannst diese Atemwaffe eine Anzahl von Malen einsetzen, gleich deinem Fertigkeitsbonus, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.</p><p><strong>Schadensresistenz.</strong> Du hast Resistenz gegen den Schadens-Typ, der durch deine drakonische Abstammung bestimmt wird.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit Reichweite von 20m.</p><p><strong>Drakonische Flugfähigkeit.</strong> Wenn du Stufe 5 erreichst, kannst du drakonische Magie kanalisieren, um dir temporäres Fliegen zu verleihen. Als Bonusaktion erhältst du temporäre Flügel auf deinem Rücken, die 10 Minuten lang halten oder bis du die Flügel wieder einziehst (keine Aktion erforderlich) bzw. bis du den Zustand Geteilt erlangst. In dieser Zeit hast du eine Fluggeschwindigkeit von deiner Geschwindigkeit. Deine Flügel scheinen aus derselbe Energie wie deine Atemwaffe zu bestehen. Nachdem du diese Eigenschaft genutzt hast, kannst du sie erst wieder verwenden, wenn du eine Lange Rast beendet hast.</p>",
+      "advancements": {
+        "65BqBxGcj6z4S803": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,50–2,10 m groß)."
+        },
+        "jOGAWKkPIAbshOpo": {
+          "title": "Drachischer Flug"
+        },
+        "rVF9CzYfmkqr9emH": {
+          "title": "Drachische Abstammung"
+        }
+      }
+    },
+    "Elf, Drow": {
+      "name": "Elf, Drow",
+      "description": "<p>Vom Gott Corellon erschaffen, konnten die ersten Elfen ihre Formen nach Belieben verändern. Diese Fähigkeit ging ihnen verloren, als Corellon sie für Vertraulichkeiten mit der Gottheit Lolth verfluchte, die versuchte, Corellons Herrschaft zu usurpieren. Als Lolth in den Abyss geworfen wurde, verleugneten die meisten Elfen sie und erhielten Corellons Vergebung, doch was Corellon ihnen genommen hatte, war für immer verloren.</p><p>Nicht mehr in der Lage, sich nach Belieben zu verwandeln, zogen sich die Elfen in die Feenwildnis zurück, wo der Kummer durch den Einfluss dieser Ebene vertieft wurde. Im Laufe der Zeit führte Neugier viele von ihnen dazu, andere Ebenen der Existenz zu erkunden, darunter Welten auf der Stoffebene.</p><p>Elfen haben spitze Ohren und keine Gesichts- und Körperbehaarung. Sie leben etwa 750 Jahre lang und schlafen nicht, sondern treten in einen Trancezustand, wenn sie Ruhe brauchen. In diesem Zustand bleiben sie sich ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken.</p><p>Eine Umgebung verwandelt Elfen subtil, nachdem sie sie über einen Jahrtausend oder mehr bewohnt hat, und sie gewährt ihnen bestimmte Arten von Magie. Drow, Hoch-Elfen und Wald-Elfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden.</p><h3 data-anchor=\"drow\">Drow</h3><p>Drow leben typischerweise im Unterreich und wurden von ihm geprägt. Einige Drow-Personen und -Gesellschaften meiden das Unterreich ganz, führen jedoch dessen Magie mit sich. Im Eberron-Setting z. B. wohnen Drow in Regenwäldern und cyclopischen Ruinen auf dem Kontinent Xen’drik.</p><h3 data-anchor=\"elf-traits\">Elf-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (ca. 5–2m)</p><p><strong>Bewegung:</strong> 9m</p><p>Als Elf besitzt du folgende Merkmale.</p><p><strong>Dunkelsicht.</strong> Du besitzt Dunkelsicht mit Reichweite von 20m.</p><p><strong>Elbenabstammung.</strong> Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Stufen 3 und 5 erreichst, lernst du einen Zauber höherer Stufe, wie in der Tabelle gezeigt. Du hast immer diesen Zauber vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise erneut zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit Zauberplätzen der passenden Stufe wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Abstammung auswählst).</p><table><caption>Drow-Abstammungsmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Der Bereich deiner Dunkelsicht erhöht sich auf 40m. Du kennst außerdem den Zauber Dancing Lights.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]</td></tr></tbody></table><p><strong>Feen-Abstammung.</strong> Du besitzt Vorteil auf Rettungswürfe, um den Zustand Charme zu vermeiden oder zu beenden.</p><p><strong>Keen Senses.</strong> Du bist in die Wahrnehmung, Wahrnehmung oder Überleben-Skill geübt.</p><p><strong>Trance.</strong> Du brauchst keinen Schlaf, und Magie kann dich nicht einschläfern. Du kannst eine Lange Rast in 4 Stunden beenden, wenn du diese Stunden in eine tranceartige Meditation investierst, in der du bei Bewusstsein bleibst.</p>",
+      "advancements": {
+        "5w2FaHXRKiN7v1rE": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,50–1,80 m groß)."
+        },
+        "boHzoT53gYPvJ9o2": {
+          "title": "Elfische Merkmale"
+        },
+        "nccRK77cXNtEHCHX": {
+          "title": "Scharfe Sinne",
+          "hint": "Du hast Fertigkeit in Einsicht, Wahrnehmung oder Überlebenskunst."
+        },
+        "LWGXpgeZc3PwUgTg": {
+          "title": "Dunkelelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "hIn6cR8fRweVWhTp": {
+          "title": "Dunkelelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "18x2qczDE0MerZfa": {
+          "title": "Dunkelelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        }
+      }
+    },
+    "Dwarf": {
+      "name": "Zwergen",
+      "description": "<p>Dwarves wurden in den alten Tagen von einer Schmiedegottheit aus der Erde gehämmert. Unter verschiedenen Welten tragen sie unterschiedliche Namen – Moradin, Reorx und andere – und dieser Gott gab den Zwergen eine Vorliebe für Stein und Metall sowie das Leben unter der Erde. Der Gott machte sie auch zähe wie die Berge und gab ihnen eine Lebensdauer von etwa 350 Jahren.</p><p>Klein und oft bärtig, gruben die ursprünglichen Zwerge Städte und Festungen in Berghänge und unter der Erde. Ihre ältesten Legenden berichten von Konflikten mit Monstern auf Bergkämmen und im Unterreich, seien es gigantische Riesen oder unterirdische Schrecken. Inspiriert von diesen Geschichten singen Zwerge jeder Kultur oft von tapferen Taten – vor allem vom Kleinen, das das Große überwindet.</p><p>Auf einigen Welten im Multiversum wurden die ersten Zwergen-Siedlungen in Hügeln oder Bergen erbaut, und die Familien, die ihre Abstammung zu diesen Siedlungen zurückführen, nennen sich Hügelzwerge oder Bergzwerge. Die Settings Greyhawk und Dragonlance haben solche Gemeinschaften.</p><h3 data-anchor=\"dwarf-traits\">Dwarf-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (etwa 4–1,5m groß)</p><p><strong>Bewegung:</strong> 9m</p><p>Als Zwerg besitzt du diese besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du besitzt Dunkelsicht mit Reichweite von 40m.</p><p><strong>Dwarven-Resilienz.</strong> Du hast Resistenz gegen Giftschaden. Du hast außerdem Vorteil bei Rettungswürfen, um den Zustand Vergiftet zu vermeiden oder zu beenden.</p><p><strong>Dwarven-Toughness.</strong> Deine Trefferpunktegrenze erhöht sich um 1, und sie erhöht sich jedes Mal, wenn du eine Stufe erhöhst, um 1 erneut.</p><p><strong>Stonecunning.</strong> Als Bonusaktion erhältst du Tremorsense mit Reichweite von 20m für 10 Minuten. Du musst auf einer Steinoberfläche oder sie berühren, um diese Tremorsense zu nutzen. Der Stein kann natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl von Malen verwenden, die deinem Fertigkeitsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest.</p>",
+      "advancements": {
+        "6HdONjMD4UozXSfC": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,20–1,50 m groß)."
+        },
+        "PphNMhWLl5mEgAZf": {
+          "title": "Zwergische Merkmale"
+        },
+        "S3kro3b0bq0Ks6Y8": {
+          "title": "Zwergische Widerstandsfähigkeit",
+          "hint": "Du besitzt Resistenz gegen Giftschaden."
+        }
+      }
+    },
+    "Gnome, Forest": {
+      "name": "Gnome, Forest",
+      "description": "<p>Gnome sind magische Leute, geschaffen von Göttern der Erfindung, Illusionen und des Lebens unter der Erde. Die frühesten Gnome wurden von anderen Menschen kaum gesehen, weil sie geheimnisvoll waren und in Wäldern und Höhlen lebten. Was ihnen an Größe fehlte, machten sie durch Cleverness wett. Sie täuschten Raubtiere mit Fallen und labyrinthartigen Gängen. Sie lernten auch Magie von Göttern wie Garl Glittergold, Baervan Wildwanderer und Baravar Cloakshadow, die sie verkleidet besuchten. Diese Magie schuf schließlich die Linien der Waldgnome und Steingnome.</p><p>Gnome sind winzige Leute mit großen Augen und spitzen Ohren, die etwa 425 Jahre leben. Viele Gnome mögen das Gefühl eines Daches über dem Kopf, auch wenn dieses „ Dach“ nichts weiter als ein Hut ist.</p><h3 data-anchor=\"gnome-traits\">Gnome-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Klein (etwa 3–1m groß)</p><p><strong>Bewegung:</strong> 9m</p><p>Als Gnom besitzt du diese besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du besitzt Dunkelsicht mit Reichweite von 20m.</p><p><strong>Gnomische Schlauheit.</strong> Du hast Vorteil auf Intelligenz-, Weisheits- und Charisma-Rettungswürfe.</p><p><strong>Gnomische Abstammung.</strong> Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht. Welche Abstammung du wählst, bestimmt deine Zauberwirkungsfähigkeit für die Zauber, die du mit dieser Eigenschaft wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst):</p><p><strong>Waldgnom.</strong> Du kennst den Zaubertrick Minor Illusion. Du hast außerdem immer den Zauber Speak with Animals vorbereitet. Du kannst ihn ohne Zauberplatz eine Anzahl von Malen entsprechend deinem Fertigkeitsbonus wirken, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest. Du kannst auch jeden von dir für den Zauber verwendeten Zauberplatz verwenden.</p>",
+      "advancements": {
+        "O7gYRGMSW3atQ2Yc": {
+          "title": "Größe",
+          "hint": "Klein (etwa 0,90–1,20 m groß)."
+        },
+        "LcGnqnqKYFw0PcE9": {
+          "title": "Gnomische Merkmale"
+        },
+        "KIOe7GcuEGboouMQ": {
+          "title": "Waldgnom-Abstammungszauber",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "5ENIyYfAxcpuh426": {
+          "title": "Waldgnom-Zaubertrick",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        }
+      }
+    },
+    "Goliath": {
+      "name": "Goliath",
+      "description": "<p>Überragt die meisten Menschen, sind Goliaths entfernte Nachfahren von Riesen. Jeder Goliath trägt die Gunst der ersten Riesen in sich – Gunst, die sich in verschiedenen übernatürlichen Gaben manifestiert, einschließlich der Fähigkeit, rasch zu wachsen und vorübergehend die Größe der gigantischen Verwandten zu erreichen.</p><p>Goliaths besitzen körperliche Merkmale, die an die Riesen in ihren Familienlinien erinnern. Einige Goliaths sehen aus wie Steinriesen, andere ähneln Feuer-Riesen. Ganz gleich welcher Riesenstamm ihnen als Verwandte zählen, haben Goliaths ihren eigenen Weg im Multiversum ge-schmiedet – frei von den inneren Konflikten, die Riesen über Äonen hindurch heimgesucht haben – und streben nach Höhen, die über die ihrer Ahnen hinausgehen.</p><h3 data-anchor=\"goliath-traits\">Goliath-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Mittelgroß (etwa 7–2,5m groß)</p><p><strong>Bewegung:</strong> 10m</p><p>Als Goliath besitzt du diese besonderen Merkmale.</p><p><strong>Riesen-Abstammung.</strong> Du bist von Riesen abgeleitet. Wähle eine der folgenden Vorteile – eine übernatürliche Gabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl Mal verwenden, die deinem Fertigkeitsbonus entspricht, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine Lange Rast beendest:</p><p><strong>Cloud’s Jaunt (Wolkenriese).</strong> Als Bonusaktion teleportierst du dich магisch bis zu 9m zu einem unbelegenen Ort, den du sehen kannst.</p><p><strong>Feuerbrunst (FeuerRiese).</strong> Wenn du ein Ziel mit einem Angriff triffst und Schaden zufügst, kannst du diesem Ziel zusätzlich 1d10 Feuerschaden zufügen.</p><p><strong>Kälte des Frosts (Frostriese).</strong> Wenn du ein Ziel mit einem Angriff triffst und Schaden zufügst, kannst du diesem Ziel zusätzlich 1d6 Kälteschaden zufügen und seine Bewegungsweite um 3m bis zum Beginn deines nächsten Zugs verringern.</p><p><strong>Hügel-Tumßel (Hügelriese).</strong> Wenn du eine große oder kleinere Kreatur mit einem Angriff triffst und ihr Schaden zufügst, kannst du diesem Ziel die Bedingung Prone geben.</p><p><strong>Stein-Toleranz (Steinriese).</strong> Wenn du Schaden erleidest, kannst du als Reaktion würfeln 1d12. Addiere deinen Konstitutionsmodifikator zu der gewürfelten Zahl und reduziere den Schaden um diese Gesamtmenge.</p><p><strong>Sturm-Gewitter (SturmRiese).</strong> Wenn du Schaden durch eine Kreatur in 20m Umkreis erleidest, kannst du eine Reaktion nutzen, um dieser Kreatur 1d8 Donner-Schaden zuzufügen.</p><p><strong>Große Form.</strong> Ab Stufe 5 kannst du deine Größe als Bonusaktion auf Large ändern, wenn du genügend Platz hast. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest (keine Aktion erforderlich). In dieser Zeit hast du Vorteil bei Stärkerkeitswürfen, und deine Bewegungen erhöht sich um 3m. Nachdem du diese Eigenschaft einmal genutzt hast, kannst du sie erst wieder verwenden, wenn du eine Lange Rast beendet hast.</p><p><strong>Überragende Gestalt.</strong> Du hast Vorteil bei jedem Fähigkeitstest, um den Gefesselt-Zustand zu beenden. Außerdem zählt du als eine Größenkategorie größer, wenn du deine Tragfähigkeit berechnest.</p>",
+      "advancements": {
+        "LETPMtBLvmzWUUb0": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 2,10–2,40 m groß)."
+        },
+        "PZxMcT5tVtvvf62P": {
+          "title": "Goliath-Merkmale"
+        },
+        "LrdYfRLrRlgsZrNn": {
+          "title": "Riesische Abstammung",
+          "hint": "Du stammst von Riesen ab. Wähle einen der folgenden Vorteile – eine übernatürliche Gabe deiner Abstammung; du kannst den gewählten Vorteil eine Anzahl von Malen einsetzen, die deinem Übungsbonus entspricht, und du erhältst alle verbrauchten Einsätze nach einer langen Rast zurück."
+        },
+        "9cKoMls1KVDsdD4A": {
+          "title": "Goliath-Merkmale"
+        }
+      }
+    },
+    "Halfling": {
+      "name": "Halblinge",
+      "description": "<p>Vom Leben, der Heimat und dem Schutz durch Götter geführt und geliebt, neigen Halblinge zu ländlichen Zufluchten, in denen Familie und Gemeinschaft das Leben prägen. Dennoch besitzen viele Halblinge einen mutigen, abenteuerlichen Geist, der sie auf Entdeckungsreisen führt, um eine größere Welt zu erkunden und unterwegs neue Freunde zu finden. Ihre Größe – ähnlich der eines menschlichen Kindes – hilft ihnen, durch Menschenmengen zu gehen und durch enge Räume zu gleiten.</p><p>Jeder, der Zeit mit Halblingen verbracht hat, besonders mit halblingsstarken Abenteurern, hat wahrscheinlich das gerühmte „Glück der Halblinge“ in Aktion gesehen. Wenn ein Halbling in mortal danger gerät, scheint eine unsichtbare Kraft auf der Seite des Halblings einzugreifen. Viele Halblinge glauben an die Macht des Glücks, und sie schreiben dieses ungewöhnliche Geschenk einem oder mehreren ihrer wohlwollenden Götter zu, darunter Yondalla, Brandobaris und Charmalaine. Dasselbe Geschenk könnte zu ihren robusten Lebensspannen beitragen (etwa 150 Jahre).</p><p>Halbling-Gemeinschaften gibt es in allen Varianten. Für jedes abgeschiedene Dorf, das sich in einem unberührten Teil der Welt versteckt, gibt es eine kriminelle Organisation wie den Boromar-Clan im Eberron-Setting oder eine territoriale Gruppe Halblinge wie jene im Dark Sun-Setting.</p><p>Halblinge, die das Leben unter der Erde bevorzugen, werden manchmal als Strongheart Halflings oder Stouts bezeichnet. Nomadische Halblinge sowie jene, die unter Menschen und anderen großen Leuten leben, werden manchmal als Lightfoot Halflings oder Tallfellows bezeichnet.</p><h3 data-anchor=\"halfling-traits\">Halfling-Merkmale</h3><p><strong>Kreaturen-Typ:</strong> Humanoide</p><p><strong>Größe:</strong> Klein (etwa 2–1m groß)</p><p><strong>Bewegung:</strong> 9m</p><p>Als Halbling besitzt du diese besonderen Merkmale.</p><p><strong>Mut.</strong> Du hast Vorteil bei Rettungswürfen, um Furcht zu widerstehen oder sie zu beenden.</p><p><strong>Halblingsflussigkeit.</strong> Du kannst dich durch den Raum jeder Kreatur bewegen, die eine höhere Größe hat als du, aber du kannst dich nicht im selben Raum aufhalten.</p><p><strong>Glück.</strong> Wenn du bei einem D20-Test eine 1 würfelst, kannst du den Würfel erneut werfen und musst das neue Ergebnis verwenden.</p><p><strong>Natürlich Heimlich.</strong> Du kannst die Aktion Verbergen auch dann nutzen, wenn du durch eine Kreatur verdeckt bist, die mindestens eine Größenausdehnung größer ist als du.</p>",
+      "advancements": {
+        "GYp1vi82hSEoe3mO": {
+          "title": "Größe",
+          "hint": "Klein (etwa 0,60–0,90 m groß)."
+        },
+        "GFHErdA52SfUBvB5": {
+          "title": "Halbling-Merkmale"
+        }
+      }
+    },
+    "Elf, High": {
+      "name": "Hochelf",
+      "description": "<p>Von dem Gott Corellon erschaffen, konnten die ersten Elfen ihre Gestalt nach Belieben verändern. Diese Fähigkeit verloren sie, als Corellon sie dafür verfluchte, mit der Gottheit Lolth zu konspirieren, die vergeblich versuchte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abgrund verstoßen wurde, sagten sich die meisten Elfen von ihr los und erlangten Corellons Vergebung, doch das, was Corellon ihnen genommen hatte, blieb für immer verloren.</p><p>Da sie ihre Gestalt nicht mehr nach Belieben wandeln konnten, zogen sich die Elfen in die Feenwildnis zurück, wo ihr Kummer durch den Einfluss dieser Ebene noch vertieft wurde. Mit der Zeit führte ihre Neugier viele von ihnen dazu, andere Ebenen der Existenz zu erkunden, einschließlich Welten der Materiellen Ebene.</p><p>Elfen haben spitze Ohren und keine Gesichts- oder Körperbehaarung. Sie leben etwa 750 Jahre. Sie schlafen nicht, sondern versetzen sich zur Ruhe in eine Trance. In diesem Zustand bleiben sie ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken.</p><p>Ein Lebensraum verändert Elfen subtil, wenn sie ihn ein Jahrtausend oder länger bewohnen, und verleiht ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden.</p><h3 data-anchor=\"high-elves\">Hochelfen</h3><p>Hochelfen wurden mit der Magie der Übergänge zwischen der Feenwildnis und der Materiellen Ebene durchdrungen. Auf manchen Welten bezeichnen sich Hochelfen mit anderen Namen. Im Setting der Vergessenen Reiche nennen sie sich beispielsweise Sonnen- oder Mondelfen, im Dragonlance-Setting Silvanesti und Qualinesti und im Eberron-Setting Aereni.</p><h3 data-anchor=\"elf-traits\">Elfische Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoid</p><p><strong>Größe: </strong>Mittelgroß (etwa 5–2m groß)</p><p><strong>Geschwindigkeit:</strong> 9m</p><p>Als Elf besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht. </strong>Du hast Dunkelsicht mit einer Reichweite von 20m.</p><p><strong>Elfische Abstammung. </strong>Du stammst aus einer Linie, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du jeweils einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen des entsprechenden Grades wirken. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du die Abstammung auswählst).</p><table><caption>Merkmale der Hochelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du kennst den Zaubertrick @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]. Immer wenn du eine Lange Rast beendest, kannst du diesen Zaubertrick durch einen anderen Zaubertrick aus der @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz] ersetzen.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]</td></tr></tbody></table><p><strong>Feenabstammung.</strong> Du hast Vorteil auf Rettungswürfe, die du ablegst, um den Zustand Bezaubert zu vermeiden oder zu beenden.</p><p><strong>Geschärfte Sinne.</strong> Du bist geübt in der Fertigkeit Einsicht, Wahrnehmung oder Überleben.</p><p><strong>Trance.</strong> Du musst nicht schlafen, und Magie kann dich nicht einschlafen lassen. Du kannst eine Lange Rast in 4 Stunden beenden, wenn du diese Zeit in einer tranceartigen Meditation verbringst, während der du bei Bewusstsein bleibst.</p>",
+      "advancements": {
+        "5w2FaHXRKiN7v1rE": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,50–1,80 m groß)."
+        },
+        "boHzoT53gYPvJ9o2": {
+          "title": "Elfische Merkmale"
+        },
+        "wyzOrBj4qIVsCKc7": {
+          "title": "Scharfe Sinne",
+          "hint": "Du hast Fertigkeit in Einsicht, Wahrnehmung oder Überlebenskunst."
+        },
+        "hraql8YRB41ssDA6": {
+          "title": "Hochelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "iztB4GPENKXiA72M": {
+          "title": "Hochelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "1LZlC6uInez1oV7n": {
+          "title": "Hochelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        }
+      }
+    },
+    "Human": {
+      "name": "Menschen",
+      "description": "<p>Menschen findet man überall im Multiversum – sie sind so vielfältig wie zahlreich und bemühen sich, in den Jahren, die ihnen gegeben sind, so viel wie möglich zu erreichen. Ihre Zielstrebigkeit und Einfallsreichtum werden auf vielen Welten bewundert, respektiert und gefürchtet.</p><p>Menschen sind in ihrem Erscheinungsbild ebenso unterschiedlich wie die Völker der Erde, und sie verehren viele Götter. Gelehrte streiten über den Ursprung der Menschheit, doch eines der frühesten bekannten menschlichen Treffen soll in Sigil stattgefunden haben – der torusförmigen Stadt im Zentrum des Multiversums, dem Ort, an dem die Gemeinsame Sprache entstand. Von dort aus könnten sich die Menschen in alle Teile des Multiversums verbreitet haben und den kosmopolitischen Geist der „Stadt der Türen“ mit sich getragen haben.</p><h3 data-anchor=\"human-traits\">Menschliche Merkmale</h3><p><strong>Kreaturentyp: </strong>Humanoid</p><p><strong>Größe: </strong>Mittelgroß (etwa 4–2m groß) oder Klein (etwa 2–1m groß), gewählt beim Auswählen dieser Spezies</p><p><strong>Geschwindigkeit: </strong>9m</p><p>Als Mensch besitzt du die folgenden besonderen Merkmale.</p><p><strong>Einfallsreich. </strong>Du erhältst Heldenhafte Inspiration, wann immer du eine Lange Rast beendest.</p><p><strong>Fähig. </strong>Du erhältst Fertigkeit in einer Fertigkeit deiner Wahl.</p><p><strong>Vielseitig.</strong> Du erhältst ein Ursprungstalent deiner Wahl (siehe Kapitel 5). „Fähig“ wird empfohlen.</p>",
+      "advancements": {
+        "dLxv96vt2B2KOEe2": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,20–2,10 m groß) oder klein (etwa 0,60–1,20 m groß), wählbar, wenn du diese Spezies auswählst."
+        },
+        "2H3yQa0PfjBgXw2W": {
+          "title": "Menschliche Merkmale"
+        },
+        "xIdIaWtTj1cBERln": {
+          "title": "Geschickt",
+          "hint": "Du erhältst Fertigkeit in einer Fähigkeit deiner Wahl."
+        },
+        "KB8IQLwyuL6SOFnv": {
+          "title": "Vielseitig",
+          "hint": "Du erhältst ein Ursprungs-Talent deiner Wahl. 'Geschickt' wird empfohlen."
+        }
+      }
+    },
+    "Tiefling, Infernal": {
+      "name": "Tiefling, Infernalisch",
+      "description": "<p>Tieflinge werden entweder in den Unteren Ebenen geboren oder stammen von teuflischen Ahnen ab, die dort ihren Ursprung haben. Ein Tiefling (ausgesprochen TIE-fling) ist durch Blut mit einem Teufel, Dämon oder einem anderen Unheilswesen verbunden. Diese Verbindung zu den Unteren Ebenen ist das teuflische Erbe des Tieflings – sie birgt das Versprechen von Macht, beeinflusst jedoch nicht die moralische Gesinnung des Tieflings.</p><p>Ein Tiefling entscheidet selbst, ob er sein teuflisches Erbe annimmt oder verflucht.</p><h3 data-anchor=\"infernal\">Infernalisch</h3><p>Das infernalische Erbe verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein schwacher Geruch nach Schwefel oder Rauch sind typische körperliche Merkmale solcher Tieflinge, deren Abstammung meist auf Teufel zurückgeht.</p><h3 data-anchor=\"tiefling-traits\">Merkmale des Tieflings</h3><p><strong>Kreaturentyp:</strong> Humanoid</p><p><strong>Größe:</strong> Mittelgroß (etwa 4–2m groß) oder Klein (etwa 3–1m groß), gewählt beim Auswählen dieser Spezies</p><p><strong>Geschwindigkeit:</strong> 9m</p><p>Als Tiefling besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit einer Reichweite von 20m.</p><p><strong>Teuflisches Erbe.</strong> Du bist der Träger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du jeweils einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen des entsprechenden Grades wirken. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><p><strong>Übernatürliche Präsenz.</strong> Du kennst den Zaubertrick @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dasselbe Zauberattribut, das du auch für dein Merkmal „Teuflisches Erbe“ verwendest.</p><table><caption>Teuflische Erblinien</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Außerdem kennst du den Zaubertrick @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireBolt00].</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHellishReb]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]</td></tr></tbody></table>",
+      "advancements": {
+        "lskxIeib6rIreZ1h": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,20–2,10 m groß) oder klein (etwa 0,90–1,20 m groß)."
+        },
+        "T8T6H9TudTleafUL": {
+          "title": "Tiefling-Merkmale"
+        },
+        "bD2XFMWGPkFJLr2w": {
+          "title": "Andersweltliche Präsenz"
+        },
+        "9V9xGP0Fsqh3NDsB": {
+          "title": "Infernalische Tiefling-Merkmale",
+          "hint": "Du besitzt Resistenz gegen Feuerschaden."
+        },
+        "gMovXMwHeD9cCL99": {
+          "title": "Infernalische Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "ol3SWLw2FTNEiXrb": {
+          "title": "Infernalische Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        },
+        "cj8h25IH0Zvdy3Bm": {
+          "title": "Infernalische Tiefling-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma ist deine Zauberfertigkeit für die Zauber, die du mit diesem Merkmal wirkst."
+        }
+      }
+    },
+    "Orc": {
+      "name": "Ork",
+      "description": "<p>Orks führen ihre Erschaffung auf Gruumsh zurück – einen mächtigen Gott, der die weiten Ebenen der Materiellen Ebene durchstreifte. Gruumsh stattete seine Kinder mit Gaben aus, die ihnen helfen sollten, große Ebenen, weite Höhlen und tobende Meere zu durchwandern und den dort lauernden Monstern zu trotzen. Selbst wenn sie ihre Hingabe anderen Göttern zuwenden, behalten Orks Gruumshs Gaben: Ausdauer, Entschlossenheit und die Fähigkeit, in der Dunkelheit zu sehen.</p><p>Orks sind im Durchschnitt groß und kräftig gebaut. Sie haben graue Haut, scharf zugespitzte Ohren und ausgeprägte untere Eckzähne, die kleinen Stoßzähnen ähneln. Auf manchen Welten werden jungen Orks Geschichten von den großen Reisen und Prüfungen ihrer Ahnen erzählt. Inspiriert von diesen Erzählungen fragen sich viele Orks, wann Gruumsh sie rufen wird, um die heroischen Taten der Vergangenheit zu übertreffen, und ob sie sich seines Wohlwollens als würdig erweisen. Andere Orks lassen die alten Geschichten gerne hinter sich und gehen ihren eigenen Weg.</p><h3 data-anchor=\"orc-traits\">Merkmale der Orks</h3><p><strong>Kreaturentyp: </strong>Humanoid</p><p><strong>Größe: </strong>Mittelgroß (etwa 6–2m groß)</p><p><strong>Geschwindigkeit:</strong> 9m</p><p>Als Ork besitzt du die folgenden besonderen Merkmale.</p><p><strong>Adrenalinschub.</strong> Du kannst die Aktion Sprinten als Bonusaktion ausführen. Wenn du dies tust, erhältst du eine Anzahl an temporären Trefferpunkten, die deinem Übungsbonus entspricht. Du kannst dieses Merkmal so oft einsetzen, wie dein Übungsbonus beträgt, und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Kurze oder Lange Rast beendest.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit einer Reichweite von 40m.</p><p><strong>Unerbittliche Ausdauer.</strong> Wenn du auf 0 Trefferpunkte reduziert wirst, aber nicht sofort stirbst, kannst du stattdessen auf 1 Trefferpunkt fallen. Nachdem du dieses Merkmal eingesetzt hast, kannst du es erst wieder verwenden, wenn du eine Lange Rast beendest.</p>",
+      "advancements": {
+        "B2sUOuY0KhoULqlX": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,80–2,10 m groß)."
+        },
+        "C2ehwp5W2SMJ88Wy": {
+          "title": "Ork-Merkmale"
+        }
+      }
+    },
+    "Gnome, Rock": {
+      "name": "Gnom, Fels",
+      "description": "<p>Gnome sind magische Wesen, erschaffen von Göttern der Erfindung, der Illusion und des Lebens unter der Erde. Die frühesten Gnome wurden von anderen Völkern nur selten gesehen, da sie ein geheimes Wesen pflegten und dazu neigten, in Wäldern und Höhlen zu leben. Was ihnen an Größe fehlte, machten sie durch Klugheit wett. Sie verwirrten Raubtiere mit Fallen und labyrinthartigen Tunneln. Zudem erlernten sie Magie von Göttern wie Garl Glitzergold, Baervan Wildwanderer und Baravar Schattenmantel, die sie in Verkleidung besuchten. Diese Magie führte schließlich zur Entstehung der Abstammungslinien der Waldgnome und Felsgnome.</p><p>Gnome sind kleine Wesen mit großen Augen und spitzen Ohren, die etwa 425 Jahre alt werden. Viele Gnome mögen das Gefühl eines Daches über dem Kopf – selbst wenn dieses „Dach“ nichts weiter als ein Hut ist.</p><h3 data-anchor=\"gnome-traits\">Gnomische Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoid</p><p><strong>Größe:</strong> Klein (etwa 3–1m groß)</p><p><strong>Geschwindigkeit:</strong> 9m</p><p>Als Gnom besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit einer Reichweite von 20m.</p><p><strong>Gnomische Gerissenheit.</strong> Du hast Vorteil auf Rettungswürfe für Intelligenz, Weisheit und Charisma.</p><p><strong>Gnomische Abstammung.</strong> Du stammst aus einer Linie, die dir übernatürliche Fähigkeiten verleiht. Unabhängig davon, welche Abstammung du wählst, ist Intelligenz, Weisheit oder Charisma dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du die Abstammung auswählst):</p><p><strong>Felsgnom.</strong> Du kennst die Zaubertricks @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMending000] und @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi]. Außerdem kannst du 10 Minuten aufwenden, um <em>Zauberei</em> zu wirken und dabei ein winziges mechanisches Gerät (RK 5, 1 TP) zu erschaffen – etwa ein Spielzeug, einen Feueranzünder oder eine Spieluhr. Wenn du das Gerät erschaffst, bestimmst du seine Funktion, indem du einen Effekt aus <em>Zauberei</em> wählst. Das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur es mit einer Bonusaktion durch Berührung aktiviert. Wenn der gewählte Effekt Auswahlmöglichkeiten enthält, wählst du beim Erschaffen des Geräts eine davon. Wenn du beispielsweise den Effekt zum Entzünden oder Löschen von Feuer wählst, entscheidest du, ob das Gerät Feuer entzündet oder löscht; es kann nicht beides. Du kannst bis zu drei solcher Geräte gleichzeitig besitzen, und jedes zerfällt 8 Stunden nach seiner Erschaffung oder wenn du es als Aktion der Nutzung durch Berührung demontierst.</p>",
+      "advancements": {
+        "O7gYRGMSW3atQ2Yc": {
+          "title": "Größe",
+          "hint": "Klein (etwa 0,90–1,20 m groß)."
+        },
+        "LcGnqnqKYFw0PcE9": {
+          "title": "Gnomische Merkmale"
+        },
+        "RNvJhB97kaJrZTfU": {
+          "title": "Felsengnom-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        }
+      }
+    },
+    "Elf, Wood": {
+      "name": "Elf, Wald",
+      "description": "<p>Von dem Gott Corellon erschaffen, konnten die ersten Elfen ihre Gestalt nach Belieben verändern. Diese Fähigkeit verloren sie, als Corellon sie dafür verfluchte, mit der Gottheit Lolth zu konspirieren, die vergeblich versucht hatte, Corellons Herrschaft an sich zu reißen. Als Lolth in den Abgrund verbannt wurde, sagten sich die meisten Elfen von ihr los und erlangten Corellons Vergebung, doch das, was Corellon ihnen genommen hatte, blieb für immer verloren.</p><p>Da sie ihre Gestalt nicht mehr nach Belieben wandeln konnten, zogen sich die Elfen in die Feenwildnis zurück, wo ihr Kummer durch den Einfluss dieser Ebene noch vertieft wurde. Mit der Zeit führte ihre Neugier viele von ihnen dazu, andere Ebenen der Existenz zu erkunden, einschließlich Welten der Materiellen Ebene.</p><p>Elfen haben spitze Ohren und keine Gesichts- oder Körperbehaarung. Sie leben etwa 750 Jahre. Sie schlafen nicht, sondern versetzen sich zur Ruhe in eine Trance. In diesem Zustand bleiben sie ihrer Umgebung bewusst, während sie in Erinnerungen und Meditationen versinken.</p><p>Ein Lebensraum verändert Elfen subtil, wenn sie ihn ein Jahrtausend oder länger bewohnen, und verleiht ihnen bestimmte Arten von Magie. Drow, Hochelfen und Waldelfen sind Beispiele für Elfen, die auf diese Weise verwandelt wurden.</p><h3 data-anchor=\"wood-elves\">Waldelfen</h3><p>Waldelfen tragen die Magie uralter Wälder in sich. Sie sind unter vielen anderen Namen bekannt, darunter Wilde Elfen, Grüne Elfen und Forstelben. Die Grugach sind zurückgezogene Waldelfen des Greyhawk-Settings, während die Kagonesti und die Tairnadal Waldelfen der Dragonlance- bzw. Eberron-Welten sind.</p><h3 data-anchor=\"elf-traits\">Elfische Merkmale</h3><p><strong>Kreaturentyp:</strong> Humanoid</p><p><strong>Größe:</strong> Mittelgroß (etwa 5–2m groß)</p><p><strong>Geschwindigkeit:</strong> 9m</p><p>Als Elf besitzt du die folgenden besonderen Merkmale.</p><p><strong>Dunkelsicht.</strong> Du hast Dunkelsicht mit einer Reichweite von 20m.</p><p><strong>Elfische Abstammung.</strong> Du stammst aus einer Linie, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du jeweils einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen des entsprechenden Grades wirken. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du die Abstammung auswählst).</p><table><caption>Merkmale der Waldelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Deine Geschwindigkeit erhöht sich auf 10m. Außerdem kennst du den Zaubertrick @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft].</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]</td></tr></tbody></table><p><strong>Feenabstammung.</strong> Du hast Vorteil auf Rettungswürfe, die du ablegst, um den Zustand Bezaubert zu vermeiden oder zu beenden.</p><p><strong>Geschärfte Sinne.</strong> Du bist geübt in der Fertigkeit Einsicht, Wahrnehmung oder Überleben.</p><p><strong>Trance.</strong> Du musst nicht schlafen, und Magie kann dich nicht einschlafen lassen. Du kannst eine Lange Rast in 4 Stunden beenden, wenn du diese Zeit in einer tranceartigen Meditation verbringst, während der du bei Bewusstsein bleibst.</p>",
+      "advancements": {
+        "5w2FaHXRKiN7v1rE": {
+          "title": "Größe",
+          "hint": "Mittelgroß (etwa 1,50–1,80 m groß)."
+        },
+        "boHzoT53gYPvJ9o2": {
+          "title": "Elfische Merkmale"
+        },
+        "YFS9oEa9Iw1molNm": {
+          "title": "Waldelf-Merkmale"
+        },
+        "FRJszO7cYchbaGzt": {
+          "title": "Waldelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "zFsEPXauTgmYxqiJ": {
+          "title": "Waldelf-Merkmale",
+          "hint": "Intelligenz, Weisheit oder Charisma kann als deine Zauberfertigkeit gewählt werden."
+        },
+        "RwuXccrKfMuuWLKr": {
+          "title": "Scharfe Sinne",
+          "hint": "Du hast Fertigkeit in Einsicht, Wahrnehmung oder Überlebenskunst."
+        }
+      }
+    },
+    "Fiendish Legacy, Abyssal": {
+      "name": "Teuflisches Erbe, Abyssisch",
+      "description": "<p>Du bist der Träger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du jeweils einen Zauber höheren Grades, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst die Fähigkeit, ihn auf diese Weise zu wirken, zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen des entsprechenden Grades wirken. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber, die du mit diesem Merkmal wirkst (wähle das Attribut, wenn du das Erbe auswählst).</p><h3 data-anchor=\"abyssal\">Abyssisch</h3><p>Die Entropie des Abgrunds, das Chaos des Pandämoniums und die Verzweiflung von Carceri rufen nach Tieflingen, die das abyssische Erbe in sich tragen. Hörner, Fell, Hauer und eigenartige Gerüche sind häufige körperliche Merkmale solcher Tieflinge, in deren Adern das Blut von Dämonen fließt.</p><table><caption>Abyssische Erbmerkmale</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Giftschaden. Außerdem kennst du den Zaubertrick @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPoisonSpra].</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofSickn]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHoldPerson]</td></tr></tbody></table><section class=\"secret\" id=\"secret-AZFLMUN7pgAxMG7Q\"><p><strong>Foundry-Hinweis</strong></p><p>Die Resistenz und die Zauber werden dir automatisch gewährt, und du wirst während des Stufenaufstiegs aufgefordert, dein Zauberattribut zu wählen.</p></section>"
+    },
+    "Adrenaline Rush": {
+      "name": "Adrenalinschub",
+      "description": "<p>Du kannst die Aktion Sprinten als Bonusaktion ausführen. Wenn du dies tust, erhältst du eine Anzahl an temporären Trefferpunkten, die deinem Übungsbonus entspricht. Du kannst dieses Merkmal so oft einsetzen, wie dein Übungsbonus beträgt, und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Kurze oder Lange Rast beendest.</p>"
+    },
+    "Brave": {
+      "name": "Tapferkeit",
+      "description": "<p>Du hast Vorteil auf Rettungswürfe, die du ablegst, um den Zustand &amp;Reference[Frightened] zu vermeiden oder zu beenden.</p>"
+    },
+    "Breath Weapon": {
+      "name": "Atemwaffe",
+      "description": "<p>Wenn du in deinem Zug die Aktion Angriff ausführst, kannst du einen deiner Angriffe durch ein Ausatmen magischer Energie ersetzen – entweder in einem 4,5m Kegel oder einer 9m Linie, die 1,5m breit ist (du wählst die Form jedes Mal, wenn du sie einsetzt).</p><p>Jede Kreatur in diesem Bereich muss einen Rettungswurf auf Geschicklichkeit ablegen (SG = 8 + dein Konstitutionsmodifikator + dein Übungsbonus). Bei einem misslungenen Rettungswurf erleidet die Kreatur 1W10 Schaden des Typs, der durch dein Merkmal „Drakonische Abstammung“ bestimmt wird. Bei einem erfolgreichen Wurf erleidet die Kreatur nur halben Schaden.</p><p>Der Schaden erhöht sich um 1W10, wenn du die Charakterstufen 5 (2W10), 11 (3W10) und 17 (4W10) erreichst. Du kannst diese Atemwaffe so oft einsetzen, wie dein Übungsbonus beträgt, und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Lange Rast beendest.</p><section class=\"secret\" id=\"secret-iuhfGfxgl8GeYWBf\"><p><strong>Foundry-Hinweis</strong></p><p>Die Aktivitäten <strong>Atemwaffe (Kegel)</strong> und <strong>Atemwaffe (Linie)</strong> sind beide für ihre jeweilige Schablonenform konfiguriert und beinhalten jeden Schadensarttyp. Der Schaden skaliert zudem mit deinem Level.</p><p>Du kannst den Schadenstyp im Schadensdialog auswählen. Danach merkt sich das System deine Auswahl. Du kannst die Aktivitäten bearbeiten, um andere Schadensarten zu entfernen, falls du die Auswahl überspringen möchtest.</p><p>Die folgenden Zusatzobjekte enthalten den Schadenstyp und die Schadensresistenz, die mit deiner Drachischen Abstammung verbunden sind: @UUID[Compendium.dnd-players-handbook.origins.Item.brwAcidBreathWea], @UUID[Compendium.dnd-players-handbook.origins.Item.brwColdBreathWea], @UUID[Compendium.dnd-players-handbook.origins.Item.brwFireBreathWea], @UUID[Compendium.dnd-players-handbook.origins.Item.brwLightningBrea], @UUID[Compendium.dnd-players-handbook.origins.Item.brwPoisonBreathW]</p></section>",
+      "advancements": {
+        "xY9Dhqm7e1PUp8FD": {
+          "title": "Atemwaffen-Schaden"
+        }
+      }
+    },
+    "Fiendish Legacy, Chthonic": {
+      "name": "Teuflische Erbschaft, Chthonisch",
+      "description": "<p>Du bist Empfänger einer Erbschaft, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Stufen 3 und 5 erreichst, lernst du einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise erneut zu wirken, nachdem du eine Lange Rast beendet hast. Du kannst den Zauber auch mit allen Zauberplätzen wirken, die du auf der entsprechenden Stufe hast. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Sprüche, die du mit dieser Veranlagung wirkst (wähle die Fähigkeit, wenn du die Erbschaft wählst).</p><h3 data-anchor=\"chthonic\">Chthonisch</h3><p>Tieflinge mit der chthonischen Erbschaft spüren nicht nur den Drang von Carceri, sondern auch die Gier Gehenna und die Dunkelheit von Hades. Einige dieser Tieflinge wirken kadaverartig. Andere besitzen die unirdische Schönheit einer Succubus, oder sie tragen physische Merkmale mit sich, die mit einer Nachthexe, einem Yugoloth oder einem anderen neutral bösen teuflischen Vorfahren gemeinsam haben.</p><table><caption>Merkmale der chthonischen Erbschaft</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen nekrotischen Schaden. Du kennst auch den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplChillTouch]-Zaubertrick.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplRayofEnfee]</td></tr></tbody></table><section class=\"secret\" id=\"secret-GmBAOZVbkBYItbCL\"><p><strong>Foundry-Hinweis</strong></p><p>Resistenz und Zauber werden dir automatisch gewährt und du wirst während des Voranschreitens der Stufe dazu aufgefordert, die Zauberfähigkeit zu wählen.</p></section>"
+    },
+    "Cloud's Jaunt": {
+      "name": "Wolken-Ausflug",
+      "description": "<p>Als Bonusaktion teleportierst du dich magisch bis zu 9m zu einem unbesetzten Raum, den du sehen kannst.</p>"
+    },
+    "Draconic Flight": {
+      "name": "Drakonischer Flug",
+      "description": "<p>Wenn du Stufe 5 erreichst, kannst du drakonische Magie kanalisieren, um dir vorübergehende Flugfähigkeit zu verleihen. Als Bonusaktion wachsen spektrale Flügel auf deinem Rücken, die 10 Minuten lang halten oder bis du die Flügel wieder einziehst (keine Aktion erforderlich) oder dich im Zustand incapacitated befindest. In dieser Zeit hast du eine Fluggeschwindigkeit gleich deiner Geschwindigkeit. Deine Flügel scheinen aus derselben Energie wie deine Atemwaffe zu bestehen. Nachdem du diese Eigenschaft einmal benutzt hast, kannst du sie erst wieder verwenden, nachdem du eine Lange Rast beendet hast.</p><section class=\"secret\" id=\"secret-pP4PH5jVYBp1OEa3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft enthält einen Active Effect, der deine Fluggeschwindigkeit auf 30 ft. erhöht, wodurch sie der Basisschritt-Gehgeschwindigkeit der Spezies entspricht.</p></section>"
+    },
+    "Elven Lineage, Drow": {
+      "name": "Elbenlinie, Drow",
+      "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du Stufen 3 und 5 erreichst, lernst du einen höherstufigen Zauber, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberslot wirken, und du erhältst die Fähigkeit, ihn auf diese Weise zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit jedem Zauberslot wirken, den du auf der entsprechenden Stufe hast. Intelligenz, Weisheit oder Charisma ist deine Zauberfähigkeit für die Zauber, die du mit dieser Veranlagung wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><h3>Drow-Abstammungsmerkmale</h3><table><thead><tr><td><p>Stufe 1</p></td><td><p>Stufe 3</p></td><td><p>Stufe 5</p></td></tr></thead><tbody><tr><td><p>Der Reichweite deines Dunkelsichts erhöht sich auf 40m. Du kennst auch den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDancingLig]-Zaubertrick.</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFaerieFire]</p></td><td><p>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]</p></td></tr></tbody></table><section class=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry-Hinweis</strong></p><p>Du erhältst automatisch die relevanten Merkmale und Zauber, wenn du die Spezies auswählst und beim Stufenaufstieg weiterentwickelst.</p></section>"
+    },
+    "Dwarven Resilience": {
+      "name": "Zwergische Unverwüstlichkeit",
+      "description": "<p>Du hast Resistenz gegen Giftschaden. Außerdem hast du Vorteil bei Rettungswürfen, die du machst, um den Zustand Giftend zu vermeiden oder zu beenden.</p><section id=\"secret-EDaMIgklKLK2il2D\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Du erhältst automatisch Resistenz gegen Giftschaden, aber nicht den Vorteil bei Rettungswürfen, Giftzustand zu vermeiden/zu beenden.</p></section>"
+    },
+    "Dwarven Toughness": {
+      "name": "Dwarven Toughness",
+      "description": "<p>Deine Trefferpunkte-Maximum erhöhen sich um 1 und steigt um weitere 1, jedes Mal, wenn du eine Stufe aufsteigst.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry-Hinweis</strong></p><p>Die Erhöhung des Trefferpunkte-Maximums wird automatisch mit jeder Stufe gehandhabt.</p></section>"
+    },
+    "Fey Ancestry": {
+      "name": "Feenblut",
+      "description": "<p>Du hast Vorteil bei Rettungswürfen, die du machst, um den Zustand &amp;Reference[Charmed] zu vermeiden oder zu beenden.</p>"
+    },
+    "Fire's Burn": {
+      "name": "Feuers Brennen",
+      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm außerdem 1d10 Feuerschaden zufügen.</p>"
+    },
+    "Gnomish Lineage, Forest": {
+      "name": "Gnomenabstammung, Wald",
+      "description": "<p>Du kennst den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMinorIllus] Zaubertrick. Du hast außerdem immer den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA] Zauber vorbereitet. Du kannst ihn ohne einen Zauberslot so oft wirken, wie dein Beherrschungsbonus beträgt, und du erhältst alle verbrauchten Nutzungen zurück, wenn du eine lange Rast beendest. Du kannst auch jeden Zauberslot verwenden, den du besitzt, um den Zauber zu wirken.</p><section id=\"secret-CwVBuqSGI27gl6R9\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Die kostenfreien Wirkungen sind im Zauber enthalten.</p></section>"
+    },
+    "Frost's Chill": {
+      "name": "Frosts Kälte",
+      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1d6 Kälteschaden zufügen und seine Bewegungsweite um 3m verringern, bis zum Beginn deines nächsten Zugs.</p><section id=\"secret-jxuUuY0r33aiP0zL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Dieser Eigenschaft enthält einen Aktiven Effekt, der zur Verfolgung verwendet werden kann und seine Bewegungsweite um 10 verringert.</p></section>"
+    },
+    "Giant Ancestry": {
+      "name": "Riesenabstammung",
+      "description": "<p>Du stammst von Riesen ab. Wähle eine der folgenden Eigenschaften – eine übernatürliche Gabe aus deiner Abstammung; du kannst die gewählte Eigenschaft so oft einsetzen, wie dein Beherrschungsbonus beträgt, und alle verbrauchten Nutzungen erhältst du zurück, wenn du eine lange Rast beendest:</p><p><strong>Wolkenausflug (Wolkenriese).</strong> Als Bonusaktion teleportierst du dich magisch bis zu 9m in einen unbesetzten Bereich, den du sehen kannst.</p><p><strong>Feuers Brennen (Feuer-Riese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1d10 Feuerschaden zufügen.</p><p><strong>Frosts Kälte (Frostriese).</strong> Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1d6 Kälteschaden zufügen und seine Bewegungsweite um 3m verringern, bis zum Beginn deines nächsten Zugs.</p><p><strong>Hügelsturz (Hügelriese).</strong> Wenn du eine Kreatur der Größe Groß oder kleiner mit einem Angriffswurf triffst und ihr Schaden zufügst, kannst du dem Ziel die Bedingung 'Liegend' geben.</p><p><strong>Steins Ausdauer (Steinriese).</strong> Wenn du Schaden erleidest, kannst du eine Reaktion verwenden, um 1W12 zu würfeln. Addiere deinen Konstitutionsmodifikator zur gewürfelten Zahl und reduziere den Schaden um diese Gesamtsumme.</p><p><strong>Sturms Donner (Sturmriese).</strong> Wenn du Schaden von einer Kreatur in Reichweite von 20m erleidest, kannst du eine Reaktion verwenden, um dieser Kreatur 1d8 Donnerschaden zuzufügen.</p>"
+    },
+    "Gnomish Cunning": {
+      "name": "Gnomenlist",
+      "description": "<p>Du hast Vorteil bei Rettungswürfen gegen Intelligenz-, Weisheit- und Charisma-Würfe.</p>"
+    },
+    "Halfling Nimbleness": {
+      "name": "Halblingsgewandheit",
+      "description": "<p>Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, doch du kannst nicht im selben Raum anhalten.</p>"
+    },
+    "Elven Lineage, High Elf": {
+      "name": "Elfenabstammung, Hochelf",
+      "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du einen Zauber höherer Stufe, wie in der Tabelle angegeben. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberslot wirken, und du erhältst diese Fähigkeit wieder, wenn du eine lange Rast beendest. Du kannst den Zauber auch mit allen dir zur Verfügung stehenden Zauberslots der entsprechenden Stufe wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung auswählst).</p><table><caption>Merkmale der Hochelfen-Abstammung</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du kennst den Zaubertrick Prestidigitation. Nachdem du eine lange Rast beendet hast, kannst du diesen Zaubertrick durch einen anderen Zaubertrick aus der Zauberliste des Zauberers ersetzen.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDetectMagi]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMistyStep0]</td></tr></tbody></table><section class=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry Note</strong></p><p>Du erhältst automatisch die relevanten Merkmale und Zauber, wenn du die Spezies wählst und im Level voranschreitest.</p></section>"
+    },
+    "Hill's Tumble": {
+      "name": "Hügelsturz",
+      "description": "<p>Wenn du eine Kreatur der Größe Groß oder kleiner mit einem Angriffswurf triumphierst und ihr Schaden zufügst, kannst du diesem Ziel die &amp;Reference[Liegend] Bedingung geben.</p>"
+    },
+    "Fiendish Legacy, Infernal": {
+      "name": "Fiendish Legacy, Infernal",
+      "description": "<p>Du bist der Empfänger eines Erbes, das dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, lernst du einen Zauber höherer Stufe, wie in der Tabelle gezeigt. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken, und du erhältst die Fähigkeit, ihn auf diese Weise erneut zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit allen dir der entsprechenden Stufe zustehenden Zauberplätzen wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit aus, wenn du das Erbe auswählst).</p><h3 data-anchor=\\\"infernal\\\">Infernal</h3><p>Die höllische Erbschaft verbindet Tieflinge nicht nur mit Gehenna, sondern auch mit den Neun Höllen und den tobenden Schlachtfeldern von Acheron. Hörner, Stacheln, Schwänze, goldene Augen und ein leichter Geruch von Schwefel oder Rauch sind häufige körperliche Merkmale solcher Tieflinge, von denen die meisten ihre Abstammung von Dämonen ableiten.</p><table><caption>Merkmale der Infernal Legacy</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Du hast Resistenz gegen Feuerschaden. Du kennst außerdem den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireBolt00] Zaubertrick.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplHellishReb]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDarkness00]</td></tr></tbody></table><section class=\\\"secret\\\" id=\\\"secret-UpLnecebx3jeydEG\\\"><p><strong>Foundry-Hinweis</strong></p><p>Die Resistenz und die Zauber werden dir automatisch gewährt, und du wirst während des Aufstiegs aufgefordert, deine Zauberwirkungsfähigkeit zu wählen.</p></section>"
+    },
+    "Keen Senses": {
+      "name": "Scharfe Sinne",
+      "description": "<p>Du bist in der Fertigkeit Einsicht, Wahrnehmung oder Überleben geübt.</p><section id=\\\"secret-Tecxufp7EFDVqTEY\\\" class=\\\"secret\\\"><p><strong>Foundry-Hinweis</strong></p><p>Du wirst nach der Auswahl dieser Spezies nach deiner Wahl gefragt.</p></section>"
+    },
+    "Large Form": {
+      "name": "Large Form",
+      "description": "<p>Ab Charakterstufe 5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest (keine Aktion erforderlich). In diesem Zeitraum hast du Vorteil bei Stärke‑Checks, und deine Bewegungsgeschwindigkeit erhöht sich um 3m. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p><section class=\\\"secret\\\" id=\\\"secret-MnS2QCGjgh6nXxEa\\\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die deine Größe automatisch erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>"
+    },
+    "Luck": {
+      "name": "Luck",
+      "description": "<p>Wenn du eine 1 bei einem D20‑Wurf eines Tests würfelst, kannst du den Würfel erneut werfen, und du musst das neue Ergebnis verwenden.</p>"
+    },
+    "Naturally Stealthy": {
+      "name": "Angeborene Verstohlenheit",
+      "description": "<p>Du kannst die &amp;Reference[Hide] Aktion auch dann ausführen, wenn du von einer Kreatur verdeckt bist, die mindestens eine Größenkategorie größer ist als du.</p>"
+    },
+    "Otherworldly Presence": {
+      "name": "Otherworldly Presence",
+      "description": "<p>Du kennst den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg] Zaubertrick. Wenn du ihn mit diesem Merkmal wirkst, verwendet der Zauber dieselbe Zauberwirkungsfähigkeit, die du für dein Fiendish Legacy‑Merkmal verwendest.</p><section id=\\\"secret-i3PjM9HLuO2Xcae7\\\" class=\\\"secret\\\"><p><strong>Foundry-Hinweis</strong></p><p>Wenn dir dieser Zauber gewährt wird, kannst du deine Zauberwirkungsfähigkeit wählen.</p></section>"
+    },
+    "Powerful Build": {
+      "name": "Powerful Build",
+      "description": "<p>Du hast Vorteil bei allen Fähigkeitstests, die du machst, um den &amp;Reference[Grappled] Zustand zu beenden. Du zählst außerdem als eine Größe größer, wenn du deine Tragfähigkeit bestimmst.</p><section class=\\\"secret\\\" id=\\\"secret-7qaTRjmRe4PD41G3\\\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die automatisch deine Größe erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>"
+    },
+    "Relentless Endurance": {
+      "name": "Durchhaltevermögen",
+      "description": "<p>Wenn du auf 0 Trefferpunkte reduziert wirst, aber nicht sofort tot bist, kannst du stattdessen auf 1 Trefferpunkt fallen. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p>"
+    },
+    "Resourceful": {
+      "name": "Resourceful",
+      "description": "<p>Du erhältst @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbAppendixCRule.JournalEntryPage.AQ1oTG7jHy5kZuN9] sobald du eine Lange Rast beendest.</p><section id=\"secret-76Fxj5ArEsAJk2ZO\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Die Verwendung der Aktivität dieser Eigenschaft führt nicht automatisch zur Heroic Inspiration.</p></section>"
+    },
+    "Gnomish Lineage, Rock": {
+      "name": "Gnomish Lineage, Rock",
+      "description": "<p>Du kennst die @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplMending000] und @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPrestidigi] Zaubertricks. Zusätzlich kannst du 10 Minuten damit verbringen, <em>Prestidigitation</em> zu wirken, um ein winziges Uhrwerkgerät (AC 5, 1 HP) zu erschaffen, wie z. B. ein Spielzeug, ein Feueranzünder oder eine Musikbox. Wenn du das Gerät erschaffst, legst du seine Funktion fest, indem du eine der Effekte aus <em>Prestidigitation</em> wählst; das Gerät erzeugt diesen Effekt, wann immer du oder eine andere Kreatur eine Bonusaktion nutzt, um es durch Berührung zu aktivieren. Falls der gewählte Effekt Optionen enthält, wählst du eine dieser Optionen für das Gerät, wenn du es erschaffst. Zum Beispiel, wählst du den Zauber-Effekt ignite-extinguish, bestimmst du, ob das Gerät Feuer entzündet oder Feuer löscht; das Gerät tut nicht beides. Du kannst zu jeder Zeit drei solcher Geräte besitzen, und jedes zerfällt 8 Stunden nach seiner Erzeugung oder wenn du es durch Berührung als Utilize-Aktion zerlegst.</p>"
+    },
+    "Skillful": {
+      "name": "Skillful",
+      "description": "<p>Du erhältst Fertigkeitenbeherrschung in einer Fertigkeit deiner Wahl.</p><section id=\"secret-lvP62g2xTxkz2VN3\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Du wirst bei der Auswahl dieser Spezies nach deiner Wahl gefragt.</p></section>"
+    },
+    "Stonecunning": {
+      "name": "Steingespür",
+      "description": "<p>Als Bonusaktion erhältst du Tremorsense mit einer Reichweite von 20m für 10 Minuten. Du musst dich auf einer Steinoberfläche befinden oder diese berühren, um Tremorsense zu nutzen. Der Stein kann natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl von Mal verwenden, die deinem Beherrschungsbonus entspricht, und alle verbrauchten Nutzungen wiederherstellen, wenn du eine Lange Rast beendest.</p><section class=\"secret\" id=\"secret-7BtT80083mC3Eavg\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst die begrenzten Nutzungen und einen Active Effect, der dir die 20m Tremorsense gewährt. Sie aktualisiert nicht automatisch die Sicht deines Tokens.</p></section>"
+    },
+    "Stone's Endurance": {
+      "name": "Stone's Endurance",
+      "description": "<p>Wenn du Schaden nimmst, kannst du eine Reaktion verwenden, um 1W12 zu würfeln. Füge deinen Konstitutionsmodifikator zu dem Würfelergebnis hinzu und reduziere den Schaden um diese Summe.</p>"
+    },
+    "Storm's Thunder": {
+      "name": "Storm's Thunder",
+      "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 20m von dir erleidest, kannst du eine Reaktion verwenden, um dieser Kreatur 1W8 Donner-Schaden zuzufügen.</p>"
+    },
+    "Trance": {
+      "name": "Trance",
+      "description": "<p>Du musst nicht schlafen, und Magie kann dich nicht schlafen legen. Du kannst eine Lange Rast in 4 Stunden beenden, wenn du diese Stunden in einer tranceartigen Meditation verbringst, während der du bei Bewusstsein bleibst.</p>"
+    },
+    "Versatile": {
+      "name": "Vielseitigkeit",
+      "description": "<p>Du erhältst ein @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj] deiner Wahl. @UUID[Compendium.dnd-players-handbook.feats.Item.phbftSkilled0000] wird empfohlen.</p><section id=\"secret-9E1yve6WHohyBage\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Du wirst bei der Auswahl dieser Spezies nach deiner Wahl gefragt.</p></section>"
+    },
+    "Elven Lineage, Wood Elf": {
+      "name": "Elven Lineage, Wood Elf",
+      "description": "<p>Du gehörst einer Abstammung an, die dir übernatürliche Fähigkeiten verleiht.</p><p>Wenn du die Charakterstufen 3 und 5 erreichst, erlernst du einen Zauber höherer Stufe, wie in der Tabelle angegeben. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberslot wirken, und du erlangst die Fähigkeit, ihn auf diese Weise erneut zu wirken, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit allen dir vorhandenen Zauberslots der entsprechenden Stufe wirken. Intelligenz, Weisheit oder Charisma ist deine Zauberwirkungsfähigkeit für die Zauber, die du mit diesem Merkmal wirkst (wähle die Fähigkeit, wenn du die Abstammung wählst).</p><table><caption>Wood Elf Lineage Features</caption><thead><tr><td>Stufe 1</td><td>Stufe 3</td><td>Stufe 5</td></tr></thead><tbody><tr><td>Deine Geschwindigkeit erhöht sich auf 10m. Du kennst außerdem den @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplDruidcraft] Zaubertrick.</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplLongstride]</td><td>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplPasswithou]</td></tr></tbody></table><section class=\"secret\" id=\"secret-9CEnkbCgcLTJ03JL\"><p><strong>Foundry Note</strong></p><p>Du erhältst automatisch die relevanten Merkmale und Zauber, sobald du die Spezies auswählst und mit dem Aufstieg Stufe für Stufe weitergehst.</p></section>"
+    }
+  }
+}

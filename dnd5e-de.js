@@ -174,18 +174,18 @@ function onRenderSheetPCSystem(app, html, options) {
 
 function registerConverters() {
     game.babele.registerConverters({
-        // 'classNameFormula': convertClass,
-        // 'classRequirements': convertClassRequirements,
-        // 'alignment': convertAlignment,
-        // 'type': convertType,
-        // 'languages': convertLanguages,
-        // 'race': convertRace,
-        // 'monstername': convertMonsterName,
-        // 'source': convertSource,
-        // 'monsterenvironment': convertMonsterEnvironment,
-        // 'monstertoken': convertMonsterToken,
-        // 'range': convertRange,
-        // 'weight': convertWeight,
+        'classNameFormula': convertClass,
+        'classRequirements': convertClassRequirements,
+        'alignment': convertAlignment,
+        'type': convertType,
+        'languages': convertLanguages,
+        'race': convertRace,
+        'monstername': convertMonsterName,
+        'source': convertSource,
+        'monsterenvironment': convertMonsterEnvironment,
+        'monstertoken': convertMonsterToken,
+        'range': convertRange,
+        'weight': convertWeight,
         'advancement': convertAdvancement,
     });
 }
