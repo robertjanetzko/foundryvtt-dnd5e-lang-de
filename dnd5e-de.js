@@ -174,18 +174,18 @@ function onRenderSheetPCSystem(app, html, options) {
 
 function registerConverters() {
     game.babele.registerConverters({
-        'classNameFormula': convertClass,
-        'classRequirements': convertClassRequirements,
-        'alignment': convertAlignment,
-        'type': convertType,
-        'languages': convertLanguages,
-        'race': convertRace,
-        'monstername': convertMonsterName,
-        'source': convertSource,
-        'monsterenvironment': convertMonsterEnvironment,
-        'monstertoken': convertMonsterToken,
-        'range': convertRange,
-        'weight': convertWeight,
+        // 'classNameFormula': convertClass,
+        // 'classRequirements': convertClassRequirements,
+        // 'alignment': convertAlignment,
+        // 'type': convertType,
+        // 'languages': convertLanguages,
+        // 'race': convertRace,
+        // 'monstername': convertMonsterName,
+        // 'source': convertSource,
+        // 'monsterenvironment': convertMonsterEnvironment,
+        // 'monstertoken': convertMonsterToken,
+        // 'range': convertRange,
+        // 'weight': convertWeight,
         'advancement': convertAdvancement,
     });
 }
@@ -617,20 +617,33 @@ function convertWeight(value) {
 }
 
 function convertAdvancement(m, translation, data) {
+    console.log("convertAdvancement:", m, translation, data);
     if (translation == null) {
         return m;
     }
 
     for (let key in translation) {
         const t = translation[key];
-        const found = m.find(a => a._id === key);
+
+        const found = Array.isArray(m) ? m.find(a => a._id === key) : m[key];
         if (found) {
-            if (t.title)
-                found.title = t.title;
-            if (t.hint)
-                found.hint = t.hint;
+            for (let field in t) {
+                translateField(field, found, t[field]);
+            }
         }
     }
 
     return m;
+}
+
+function translateField(field, old_value, new_value) {
+    if (field.indexOf('.') === -1) {
+        old_value[field] = new_value;
+    } else {
+        const key = field.substring(0, field.indexOf('.'));
+        const sub_field = field.substring(field.indexOf('.') + 1);
+        translateField(sub_field,
+            old_value[key],
+            new_value);
+    }
 }
