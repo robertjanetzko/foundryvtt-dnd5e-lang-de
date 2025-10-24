@@ -5,6 +5,14 @@
     "advancements": {
       "path": "system.advancement",
       "converter": "advancement"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "advancement"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "advancement"
     }
   },
   "folders": {
@@ -436,7 +444,12 @@
     },
     "Adrenaline Rush": {
       "name": "Adrenalinschub",
-      "description": "<p>Du kannst die Aktion Sprinten als Bonusaktion ausführen. Wenn du dies tust, erhältst du eine Anzahl an temporären Trefferpunkten, die deinem Übungsbonus entspricht. Du kannst dieses Merkmal so oft einsetzen, wie dein Übungsbonus beträgt, und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Kurze oder Lange Rast beendest.</p>"
+      "description": "<p>Du kannst die Aktion Sprinten als Bonusaktion ausführen. Wenn du dies tust, erhältst du eine Anzahl an temporären Trefferpunkten, die deinem Übungsbonus entspricht. Du kannst dieses Merkmal so oft einsetzen, wie dein Übungsbonus beträgt, und erhältst alle verbrauchten Anwendungen zurück, wenn du eine Kurze oder Lange Rast beendest.</p>",
+      "activities": {
+        "jN5Zo6mDXll3c4Cz": {
+          "name": "Adrenalinschub: Rennen"
+        }
+      }
     },
     "Brave": {
       "name": "Tapferkeit",
@@ -449,6 +462,14 @@
         "xY9Dhqm7e1PUp8FD": {
           "title": "Atemwaffen-Schaden"
         }
+      },
+      "activities": {
+        "4sH1AHKZndhRFTkD": {
+          "name": "Kegel ausatmen"
+        },
+        "aZ8ttfiUNwht6Xtz": {
+          "name": "Linie ausatmen"
+        }
       }
     },
     "Fiendish Legacy, Chthonic": {
@@ -457,11 +478,26 @@
     },
     "Cloud's Jaunt": {
       "name": "Wolken-Ausflug",
-      "description": "<p>Als Bonusaktion teleportierst du dich magisch bis zu 9m zu einem unbesetzten Raum, den du sehen kannst.</p>"
+      "description": "<p>Als Bonusaktion teleportierst du dich magisch bis zu 9m zu einem unbesetzten Raum, den du sehen kannst.</p>",
+      "activities": {
+        "t4npBWLqABsnPZwL": {
+          "name": "Wolken-Ausflug"
+        }
+      }
     },
     "Draconic Flight": {
       "name": "Drakonischer Flug",
-      "description": "<p>Wenn du Stufe 5 erreichst, kannst du drakonische Magie kanalisieren, um dir vorübergehende Flugfähigkeit zu verleihen. Als Bonusaktion wachsen spektrale Flügel auf deinem Rücken, die 10 Minuten lang halten oder bis du die Flügel wieder einziehst (keine Aktion erforderlich) oder dich im Zustand incapacitated befindest. In dieser Zeit hast du eine Fluggeschwindigkeit gleich deiner Geschwindigkeit. Deine Flügel scheinen aus derselben Energie wie deine Atemwaffe zu bestehen. Nachdem du diese Eigenschaft einmal benutzt hast, kannst du sie erst wieder verwenden, nachdem du eine Lange Rast beendet hast.</p><section class=\"secret\" id=\"secret-pP4PH5jVYBp1OEa3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft enthält einen Active Effect, der deine Fluggeschwindigkeit auf 30 ft. erhöht, wodurch sie der Basisschritt-Gehgeschwindigkeit der Spezies entspricht.</p></section>"
+      "description": "<p>Wenn du Stufe 5 erreichst, kannst du drakonische Magie kanalisieren, um dir vorübergehende Flugfähigkeit zu verleihen. Als Bonusaktion wachsen spektrale Flügel auf deinem Rücken, die 10 Minuten lang halten oder bis du die Flügel wieder einziehst (keine Aktion erforderlich) oder dich im Zustand incapacitated befindest. In dieser Zeit hast du eine Fluggeschwindigkeit gleich deiner Geschwindigkeit. Deine Flügel scheinen aus derselben Energie wie deine Atemwaffe zu bestehen. Nachdem du diese Eigenschaft einmal benutzt hast, kannst du sie erst wieder verwenden, nachdem du eine Lange Rast beendet hast.</p><section class=\"secret\" id=\"secret-pP4PH5jVYBp1OEa3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft enthält einen Active Effect, der deine Fluggeschwindigkeit auf 30 ft. erhöht, wodurch sie der Basisschritt-Gehgeschwindigkeit der Spezies entspricht.</p></section>",
+      "activities": {
+        "FrsJbUcch66Cr7OZ": {
+          "name": "Drakonischer Flug"
+        }
+      },
+      "effects": {
+        "waI4oHqhpbKUem0M": {
+          "name": "Drakonischer Flug"
+        }
+      }
     },
     "Elven Lineage, Drow": {
       "name": "Elbenlinie, Drow",
@@ -473,7 +509,12 @@
     },
     "Dwarven Toughness": {
       "name": "Dwarven Toughness",
-      "description": "<p>Deine Trefferpunkte-Maximum erhöhen sich um 1 und steigt um weitere 1, jedes Mal, wenn du eine Stufe aufsteigst.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry-Hinweis</strong></p><p>Die Erhöhung des Trefferpunkte-Maximums wird automatisch mit jeder Stufe gehandhabt.</p></section>"
+      "description": "<p>Deine Trefferpunkte-Maximum erhöhen sich um 1 und steigt um weitere 1, jedes Mal, wenn du eine Stufe aufsteigst.</p><section class=\"secret\" id=\"secret-FK9DFLudP5EzEss9\"><p><strong>Foundry-Hinweis</strong></p><p>Die Erhöhung des Trefferpunkte-Maximums wird automatisch mit jeder Stufe gehandhabt.</p></section>",
+      "effects": {
+        "Na7W3p67eT9YqW87": {
+          "name": "Dwarven Toughness"
+        }
+      }
     },
     "Fey Ancestry": {
       "name": "Feenblut",
@@ -481,7 +522,13 @@
     },
     "Fire's Burn": {
       "name": "Feuers Brennen",
-      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm außerdem 1d10 Feuerschaden zufügen.</p>"
+      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm außerdem 1d10 Feuerschaden zufügen.</p>",
+      "activities": {
+        "002cv19dj8WGzSl2": {
+          "name": "Verbrennen",
+          "condition": "When you hit a target with an attack roll and deal damage to it"
+        }
+      }
     },
     "Gnomish Lineage, Forest": {
       "name": "Gnomenabstammung, Wald",
@@ -489,7 +536,18 @@
     },
     "Frost's Chill": {
       "name": "Frosts Kälte",
-      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1d6 Kälteschaden zufügen und seine Bewegungsweite um 3m verringern, bis zum Beginn deines nächsten Zugs.</p><section id=\"secret-jxuUuY0r33aiP0zL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Dieser Eigenschaft enthält einen Aktiven Effekt, der zur Verfolgung verwendet werden kann und seine Bewegungsweite um 10 verringert.</p></section>"
+      "description": "<p>Wenn du ein Ziel mit einem Angriffswurf triffst und ihm Schaden zufügst, kannst du ihm zusätzlich 1d6 Kälteschaden zufügen und seine Bewegungsweite um 3m verringern, bis zum Beginn deines nächsten Zugs.</p><section id=\"secret-jxuUuY0r33aiP0zL\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Dieser Eigenschaft enthält einen Aktiven Effekt, der zur Verfolgung verwendet werden kann und seine Bewegungsweite um 10 verringert.</p></section>",
+      "activities": {
+        "6goWQaWLexUqgig8": {
+          "name": "Unterkühlen",
+          "condition": "When you hit a target with an attack roll and deal damage to it"
+        }
+      },
+      "effects": {
+        "YHKgdj2KIbQRBZWW": {
+          "name": "Unterkühlt"
+        }
+      }
     },
     "Giant Ancestry": {
       "name": "Riesenabstammung",
@@ -497,11 +555,21 @@
     },
     "Gnomish Cunning": {
       "name": "Gnomenlist",
-      "description": "<p>Du hast Vorteil bei Rettungswürfen gegen Intelligenz-, Weisheit- und Charisma-Würfe.</p>"
+      "description": "<p>Du hast Vorteil bei Rettungswürfen gegen Intelligenz-, Weisheit- und Charisma-Würfe.</p>",
+      "effects": {
+        "KNWLGPsZSHtINp6L": {
+          "name": "Gnomenlist"
+        }
+      }
     },
     "Halfling Nimbleness": {
       "name": "Halblingsgewandheit",
-      "description": "<p>Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, doch du kannst nicht im selben Raum anhalten.</p>"
+      "description": "<p>Du kannst dich durch den Raum jeder Kreatur bewegen, die eine Größe größer ist als du, doch du kannst nicht im selben Raum anhalten.</p>",
+      "effects": {
+        "GQdaDsAEio14WFfG": {
+          "name": "Halblingsgewandheit"
+        }
+      }
     },
     "Elven Lineage, High Elf": {
       "name": "Elfenabstammung, Hochelf",
@@ -509,7 +577,13 @@
     },
     "Hill's Tumble": {
       "name": "Hügelsturz",
-      "description": "<p>Wenn du eine Kreatur der Größe Groß oder kleiner mit einem Angriffswurf triumphierst und ihr Schaden zufügst, kannst du diesem Ziel die &amp;Reference[Liegend] Bedingung geben.</p>"
+      "description": "<p>Wenn du eine Kreatur der Größe Groß oder kleiner mit einem Angriffswurf triumphierst und ihr Schaden zufügst, kannst du diesem Ziel die &amp;Reference[Liegend] Bedingung geben.</p>",
+      "activities": {
+        "I2wKOUDxhIb5hHb7": {
+          "name": "Hügelsturz",
+          "condition": "When you hit a Large or smaller creature with an attack roll and deal damage to it"
+        }
+      }
     },
     "Fiendish Legacy, Infernal": {
       "name": "Fiendish Legacy, Infernal",
@@ -521,11 +595,26 @@
     },
     "Large Form": {
       "name": "Large Form",
-      "description": "<p>Ab Charakterstufe 5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest (keine Aktion erforderlich). In diesem Zeitraum hast du Vorteil bei Stärke-Checks, und deine Bewegungsgeschwindigkeit erhöht sich um 3m. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p><section class=\"secret\" id=\"secret-MnS2QCGjgh6nXxEa\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die deine Größe automatisch erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>"
+      "description": "<p>Ab Charakterstufe 5 kannst du deine Größe als Bonusaktion auf Groß ändern, wenn du dich in einem ausreichend großen Raum befindest. Diese Verwandlung dauert 10 Minuten oder bis du sie beendest (keine Aktion erforderlich). In diesem Zeitraum hast du Vorteil bei Stärke-Checks, und deine Bewegungsgeschwindigkeit erhöht sich um 3m. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p><section class=\"secret\" id=\"secret-MnS2QCGjgh6nXxEa\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die deine Größe automatisch erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>",
+      "activities": {
+        "5jJ0wfYo2b4k26Em": {
+          "name": "Vergrößern"
+        }
+      },
+      "effects": {
+        "QI7POclNlvX9a8VD": {
+          "name": "Large Form"
+        }
+      }
     },
     "Luck": {
       "name": "Luck",
-      "description": "<p>Wenn du eine 1 bei einem D20-Wurf eines Tests würfelst, kannst du den Würfel erneut werfen, und du musst das neue Ergebnis verwenden.</p>"
+      "description": "<p>Wenn du eine 1 bei einem D20-Wurf eines Tests würfelst, kannst du den Würfel erneut werfen, und du musst das neue Ergebnis verwenden.</p>",
+      "effects": {
+        "k1FDpZEBCHzRsFSA": {
+          "name": "Luck"
+        }
+      }
     },
     "Naturally Stealthy": {
       "name": "Angeborene Verstohlenheit",
@@ -537,11 +626,22 @@
     },
     "Powerful Build": {
       "name": "Powerful Build",
-      "description": "<p>Du hast Vorteil bei allen Fähigkeitstests, die du machst, um den &amp;Reference[Grappled] Zustand zu beenden. Du zählst außerdem als eine Größe größer, wenn du deine Tragfähigkeit bestimmst.</p><section class=\"secret\" id=\"secret-7qaTRjmRe4PD41G3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die automatisch deine Größe erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>"
+      "description": "<p>Du hast Vorteil bei allen Fähigkeitstests, die du machst, um den &amp;Reference[Grappled] Zustand zu beenden. Du zählst außerdem als eine Größe größer, wenn du deine Tragfähigkeit bestimmst.</p><section class=\"secret\" id=\"secret-7qaTRjmRe4PD41G3\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft umfasst eine aktive Wirkung, die automatisch deine Größe erhöht, wenn du deine Tragfähigkeit bestimmst.</p></section>",
+      "effects": {
+        "ge1u3EIFvsoj3jZu": {
+          "name": "Powerful Build"
+        }
+      }
     },
     "Relentless Endurance": {
       "name": "Durchhaltevermögen",
-      "description": "<p>Wenn du auf 0 Trefferpunkte reduziert wirst, aber nicht sofort tot bist, kannst du stattdessen auf 1 Trefferpunkt fallen. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p>"
+      "description": "<p>Wenn du auf 0 Trefferpunkte reduziert wirst, aber nicht sofort tot bist, kannst du stattdessen auf 1 Trefferpunkt fallen. Sobald du dieses Merkmal einsetzt, kannst du es erst wieder nutzen, nachdem du eine Lange Rast beendet hast.</p>",
+      "activities": {
+        "DULUqgjDy0u99UKM": {
+          "name": "Unerbittlich durchhalten",
+          "condition": "When you are reduced to 0 Hit Points but not killed outright"
+        }
+      }
     },
     "Resourceful": {
       "name": "Resourceful",
@@ -557,15 +657,36 @@
     },
     "Stonecunning": {
       "name": "Steingespür",
-      "description": "<p>Als Bonusaktion erhältst du Tremorsense mit einer Reichweite von 20m für 10 Minuten. Du musst dich auf einer Steinoberfläche befinden oder diese berühren, um Tremorsense zu nutzen. Der Stein kann natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl von Mal verwenden, die deinem Beherrschungsbonus entspricht, und alle verbrauchten Nutzungen wiederherstellen, wenn du eine Lange Rast beendest.</p><section class=\"secret\" id=\"secret-7BtT80083mC3Eavg\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst die begrenzten Nutzungen und einen Active Effect, der dir die 20m Tremorsense gewährt. Sie aktualisiert nicht automatisch die Sicht deines Tokens.</p></section>"
+      "description": "<p>Als Bonusaktion erhältst du Tremorsense mit einer Reichweite von 20m für 10 Minuten. Du musst dich auf einer Steinoberfläche befinden oder diese berühren, um Tremorsense zu nutzen. Der Stein kann natürlich oder bearbeitet sein. Du kannst diese Bonusaktion eine Anzahl von Mal verwenden, die deinem Beherrschungsbonus entspricht, und alle verbrauchten Nutzungen wiederherstellen, wenn du eine Lange Rast beendest.</p><section class=\"secret\" id=\"secret-7BtT80083mC3Eavg\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst die begrenzten Nutzungen und einen Active Effect, der dir die 20m Tremorsense gewährt. Sie aktualisiert nicht automatisch die Sicht deines Tokens.</p></section>",
+      "activities": {
+        "NTjnXm1AYqdOUJOB": {
+          "name": "Steingespür"
+        }
+      },
+      "effects": {
+        "SAbuNo2AO3XXtkdv": {
+          "name": "Steingespür"
+        }
+      }
     },
     "Stone's Endurance": {
       "name": "Stone's Endurance",
-      "description": "<p>Wenn du Schaden nimmst, kannst du eine Reaktion verwenden, um 1W12 zu würfeln. Füge deinen Konstitutionsmodifikator zu dem Würfelergebnis hinzu und reduziere den Schaden um diese Summe.</p>"
+      "description": "<p>Wenn du Schaden nimmst, kannst du eine Reaktion verwenden, um 1W12 zu würfeln. Füge deinen Konstitutionsmodifikator zu dem Würfelergebnis hinzu und reduziere den Schaden um diese Summe.</p>",
+      "activities": {
+        "vrWhAQ6Bj4gznxHq": {
+          "condition": "When you take damage"
+        }
+      }
     },
     "Storm's Thunder": {
       "name": "Storm's Thunder",
-      "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 20m von dir erleidest, kannst du eine Reaktion verwenden, um dieser Kreatur 1W8 Donner-Schaden zuzufügen.</p>"
+      "description": "<p>Wenn du Schaden von einer Kreatur innerhalb von 20m von dir erleidest, kannst du eine Reaktion verwenden, um dieser Kreatur 1W8 Donner-Schaden zuzufügen.</p>",
+      "activities": {
+        "3eWfDnXfYJVJqT1z": {
+          "name": "Storm's Thunder",
+          "condition": "When you take damage from a creature within 60 feet of you"
+        }
+      }
     },
     "Trance": {
       "name": "Trance",

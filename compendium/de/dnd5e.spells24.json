@@ -2,7 +2,15 @@
   "label": "Zauber",
   "mapping": {
     "description": "system.description.value",
-    "material": "system.materials.value"
+    "material": "system.materials.value",
+    "effects": {
+      "path": "effects",
+      "converter": "advancement"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "advancement"
+    }
   },
   "folders": {
     "Cantrips": "Zaubertricks",

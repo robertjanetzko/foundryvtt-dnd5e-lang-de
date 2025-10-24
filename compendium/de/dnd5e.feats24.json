@@ -1,7 +1,15 @@
 {
   "label": "Talente",
   "mapping": {
-    "description": "system.description.value"
+    "description": "system.description.value",
+    "effects": {
+      "path": "effects",
+      "converter": "advancement"
+    },
+    "activities": {
+      "path": "system.activities",
+      "converter": "advancement"
+    }
   },
   "folders": {
     "Origin Feats": "Herkunfts-Talente",
@@ -16,11 +24,23 @@
     },
     "Boon of Dimensional Travel": {
       "name": "Gabe des Dimensionsreisens",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Blinkschritte.</strong> Unmittelbar nachdem du die Angriffsaktion oder die Magieaktion durchgeführt hast, kannst du dich bis zu 9m zu einem unbesetzten Raum teleportieren, den du sehen kannst.</p>"
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Blinkschritte.</strong> Unmittelbar nachdem du die Angriffsaktion oder die Magieaktion durchgeführt hast, kannst du dich bis zu 9m zu einem unbesetzten Raum teleportieren, den du sehen kannst.</p>",
+      "activities": {
+        "2nds7MCSvJOeZ3Ar": {
+          "name": "Teleportieren",
+          "condition": "Immediately after you take the Attack action"
+        }
+      }
     },
     "Boon of Fate": {
       "name": "Gabe des Schicksals",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Schicksal verbessern.</strong> Wenn du oder eine andere Kreatur im Umkreis von 20m von dir bei einem D20-Test gelingt oder scheitert, kannst du 2W4 würfeln und die Gesamtsumme als Bonus oder Malus auf den Wurf anwenden. Sobald du diesen Vorteil nutzt, kannst du ihn nicht erneut verwenden, bis du Initiative würfelst oder eine kurze oder lange Rast beendest.</p><section id=\"secret-zl5SPZXJtl1mEKOl\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Die <strong>Improve Fate</strong>-Aktivität enthält einen Wurf und stellt eine Nutzung nach einer kurzen oder langen Rast automatisch wieder her. Nach deiner Initiative wird sie jedoch nicht automatisch erneuert.</p></section>"
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe einen Eigenschaftswert deiner Wahl um 1, maximal 30.</p><p><strong>Schicksal verbessern.</strong> Wenn du oder eine andere Kreatur im Umkreis von 20m von dir bei einem D20-Test gelingt oder scheitert, kannst du 2W4 würfeln und die Gesamtsumme als Bonus oder Malus auf den Wurf anwenden. Sobald du diesen Vorteil nutzt, kannst du ihn nicht erneut verwenden, bis du Initiative würfelst oder eine kurze oder lange Rast beendest.</p><section id=\"secret-zl5SPZXJtl1mEKOl\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Die <strong>Improve Fate</strong>-Aktivität enthält einen Wurf und stellt eine Nutzung nach einer kurzen oder langen Rast automatisch wieder her. Nach deiner Initiative wird sie jedoch nicht automatisch erneuert.</p></section>",
+      "activities": {
+        "BSFYZ98EvNknWsaE": {
+          "name": "Schicksal verbessern",
+          "condition": "When you or another creature within 60 feet of you succeeds or fails a D20 Test"
+        }
+      }
     },
     "Boon of Irresistible Offense": {
       "name": "Gabe des unwiderstehlichen Angriffs",
@@ -28,23 +48,57 @@
     },
     "Boon of Spell Recall": {
       "name": "Gabe der Zaubererinnerung",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe deinen Intelligenz-, Weisheits- oder Charisma-Wert um 1, maximal 30.</p><p><strong>Freies Wirken.</strong> Immer wenn du einen Zauber mit einem Zauberplatz der Stufe 1–4 wirkst, würfle [[/r 1d4]]. Wenn die gewürfelte Zahl die Stufe des Slots entspricht, wird der Slot nicht verbraucht.</p><section id=\"secret-KMAFFZCOzi6Cuemh\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Wenn die Zahl dieselbe ist, deaktiviere bei der Verwendung des Zaubers die Verbrauch-Option.</p></section>"
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Eigenschaftswert-Erhöhung.</strong> Erhöhe deinen Intelligenz-, Weisheits- oder Charisma-Wert um 1, maximal 30.</p><p><strong>Freies Wirken.</strong> Immer wenn du einen Zauber mit einem Zauberplatz der Stufe 1–4 wirkst, würfle [[/r 1d4]]. Wenn die gewürfelte Zahl die Stufe des Slots entspricht, wird der Slot nicht verbraucht.</p><section id=\"secret-KMAFFZCOzi6Cuemh\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Wenn die Zahl dieselbe ist, deaktiviere bei der Verwendung des Zaubers die Verbrauch-Option.</p></section>",
+      "activities": {
+        "mN72GMXgdNXQJhJN": {
+          "name": "Freies Zauberwirken (Wurf)",
+          "condition": "Whenever you cast a spell with a level 1-4 spell slot"
+        }
+      }
     },
     "Boon of Truesight": {
       "name": "Gabe des Wahren Blicks",
-      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Eigenschaftswerte um 1, bis maximales 30.</p><p><strong>Wahres Sehen.</strong> Du verfügst über Wahres Sehen mit einer Reichweite von 20m.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Dieser aktive Effekt gewährt dir Wahres Sehen mit einer Reichweite von 20m.</p></section>"
+      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Eigenschaftswerte um 1, bis maximales 30.</p><p><strong>Wahres Sehen.</strong> Du verfügst über Wahres Sehen mit einer Reichweite von 20m.</p><section id=\"secret-MmPASAH8hA8METnP\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Dieser aktive Effekt gewährt dir Wahres Sehen mit einer Reichweite von 20m.</p></section>",
+      "effects": {
+        "IY36CpEENqnz03c5": {
+          "name": "Gabe des Wahren Blicks"
+        }
+      }
     },
     "Boon of the Night Spirit": {
       "name": "Segen des Nachtgeistes",
-      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Attributswerte um 1, bis maximal 30.</p><p><strong>Merge with Shadows.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, kannst du dir als Bonusaktion den Zustand Unsichtbar verleihen. Der Zustand endet sofort, nachdem du eine Aktion, eine Bonusaktion oder eine Reaktion ausführst.</p><p><strong>Shadowy Form.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, bist du allen Schadenarten resistent, mit Ausnahme von Psychischem Schaden und Lichtschaden.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Der aktive Effekt der Eigenschaft <strong>Boon of the Night Spirit</strong> umfasst die Resistenzen, muss aber im Reiter Effekte deines Blatts ein-/ausgeschaltet werden.</p><p>Die Aktivität <strong>Merge with Shadows</strong> umfasst einen aktiven Effekt, der den Zustand Unsichtbar anwendet.</p></section>"
+      "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Eigenschaftswertsteigerung.</strong> Erhöhe einen deiner Attributswerte um 1, bis maximal 30.</p><p><strong>Merge with Shadows.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, kannst du dir als Bonusaktion den Zustand Unsichtbar verleihen. Der Zustand endet sofort, nachdem du eine Aktion, eine Bonusaktion oder eine Reaktion ausführst.</p><p><strong>Shadowy Form.</strong> Solange du dich in Dämmerlicht oder Dunkelheit befindest, bist du allen Schadenarten resistent, mit Ausnahme von Psychischem Schaden und Lichtschaden.</p><section id=\"secret-fpWHPSTNYUeGtg0w\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Der aktive Effekt der Eigenschaft <strong>Boon of the Night Spirit</strong> umfasst die Resistenzen, muss aber im Reiter Effekte deines Blatts ein-/ausgeschaltet werden.</p><p>Die Aktivität <strong>Merge with Shadows</strong> umfasst einen aktiven Effekt, der den Zustand Unsichtbar anwendet.</p></section>",
+      "activities": {
+        "z2BNb47xtdCmqViA": {
+          "name": "Mit den Schatten verschmelzen"
+        }
+      },
+      "effects": {
+        "f6JofmGpxquX9bqb": {
+          "name": "Segen des Nachtgeistes"
+        },
+        "Zusz9sywPycPxb1N": {
+          "name": "Mit Schatten verschmolzen"
+        }
+      }
     },
     "Archery": {
       "name": "Bogenschiessen",
-      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Du erhältst einen +2 Bonus auf Angriffswürfe, die du mit Fernkampfwaffen machst.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst einen aktiven Effekt, der den Bonus zu Fernkampf-Angriffswürfen hinzufügt.</p></section>"
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Du erhältst einen +2 Bonus auf Angriffswürfe, die du mit Fernkampfwaffen machst.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>Diese Eigenschaft umfasst einen aktiven Effekt, der den Bonus zu Fernkampf-Angriffswürfen hinzufügt.</p></section>",
+      "effects": {
+        "kigkIjyf2OGWqdVU": {
+          "name": "Kampfstil: Bogenschießen"
+        }
+      }
     },
     "Defense": {
       "name": "Verteidigung",
-      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Solange du leichte, mittlere oder schwere Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Diese Eigenschaft enthält einen aktiven Effekt, der den Bonus auf die Rüstungsklasse gewährt. Deaktiviere ihn, wenn du keine Rüstung trägst.</p></section>"
+      "description": "<p><em>(Voraussetzung: Kampfstil-Fertigkeit)</em></p><p>Solange du leichte, mittlere oder schwere Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse.</p><section id=\"secret-y8skH0HHunT4I5NR\" class=\"secret\"><p><strong>Foundry Hinweis</strong></p><p>Diese Eigenschaft enthält einen aktiven Effekt, der den Bonus auf die Rüstungsklasse gewährt. Deaktiviere ihn, wenn du keine Rüstung trägst.</p></section>",
+      "effects": {
+        "W0ObItz7sS8ZJ09Y": {
+          "name": "Verteidigung"
+        }
+      }
     },
     "Great Weapon Fighting": {
       "name": "Kampf mit grossen Waffen",
@@ -60,7 +114,12 @@
     },
     "Alert": {
       "name": "Wachsam",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiativ-Fertigkeit.</strong> Wenn du Initiative würfelst, kannst du deinen Beherrschungsbonus auf den Wurf anwenden.</p><p><strong>Initiativ-Tausch.</strong> Unmittelbar nachdem du Initiative würfelst, kannst du deine Initiative mit der Initiative eines willigen Verbündeten im gleichen Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den Zustand &Reference[Incapacitated] hat.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft berücksichtigt automatisch den Bonus auf deine Initiative.</p></section>"
+      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiativ-Fertigkeit.</strong> Wenn du Initiative würfelst, kannst du deinen Beherrschungsbonus auf den Wurf anwenden.</p><p><strong>Initiativ-Tausch.</strong> Unmittelbar nachdem du Initiative würfelst, kannst du deine Initiative mit der Initiative eines willigen Verbündeten im gleichen Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den Zustand &Reference[Incapacitated] hat.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft berücksichtigt automatisch den Bonus auf deine Initiative.</p></section>",
+      "effects": {
+        "uvZy4Zzi0oPd54qs": {
+          "name": "Wachsam"
+        }
+      }
     },
     "Grappler": {
       "name": "Ringer",
