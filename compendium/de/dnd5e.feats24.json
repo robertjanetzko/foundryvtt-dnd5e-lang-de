@@ -12,8 +12,8 @@
     }
   },
   "folders": {
-    "Origin Feats": "Herkunfts-Talente",
-    "Epic Boon Feats": "Epische Gaben-Talente",
+    "Origin Feats": "Herkunftstalente",
+    "Epic Boon Feats": "Epische-Gaben-Talente",
     "Fighting Style Feats": "Kampfstil-Talente",
     "General Feats": "Allgemeine Talente"
   },
@@ -114,7 +114,7 @@
     },
     "Alert": {
       "name": "Wachsam",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Initiativ-Fertigkeit.</strong> Wenn du Initiative würfelst, kannst du deinen Beherrschungsbonus auf den Wurf anwenden.</p><p><strong>Initiativ-Tausch.</strong> Unmittelbar nachdem du Initiative würfelst, kannst du deine Initiative mit der Initiative eines willigen Verbündeten im gleichen Kampf tauschen. Du kannst diesen Tausch nicht vornehmen, wenn du oder der Verbündete den Zustand &Reference[Incapacitated] hat.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft berücksichtigt automatisch den Bonus auf deine Initiative.</p></section>",
+      "description": "<p>Du erhältst folgende Vorzüge:</p><p><strong>Initiative-Übung:</strong> Wenn du die Initiative auswürfelst, kannst du dem Ergebnis deinen Übungsbonus hinzufügen.</p><p><strong>Initiativetausch:</strong>Sofort nach dem Auswürfeln der Initiative kannst du deine Initiative mit der eines bereitwilligen Verbündeten im selben Kampf tauschen.Der Tausch ist nicht möglich, wenn mindestens einer von euch beiden &amp;Reference[Incapacitated] ist.</p><section class=\"secret\" id=\"secret-yzfXk3D5M1jv9ixH\"><p><strong>Foundry-Hinweis</strong></p><p>Diese Eigenschaft berücksichtigt automatisch den Bonus auf deine Initiative.</p></section>",
       "effects": {
         "uvZy4Zzi0oPd54qs": {
           "name": "Wachsam"
@@ -126,16 +126,16 @@
       "description": "<p>Sie erhalten die folgenden Vorteile.</p><p><strong>Attributserhöhung.</strong> Erhöhe deinen Stärke- oder Geschicklichkeitswert um 1, bis maximal 20.</p><p><strong>Schlagen und Greifen.</strong> Wenn du eine Kreatur mit einem Unbewaffneten Treffer als Teil der Attack-Aktion in deinem Zug triffst, kannst du sowohl Schaden als auch Grapple-Option verwenden. Du kannst diesen Vorteil nur einmal pro Zug verwenden.</p><p><strong>Angriffs-Vorteil.</strong> Du hast Vorteil bei Angriffswürfen gegen eine Kreatur, die von dir festgehalten wird.</p><p><strong>Schneller Kämpfer.</strong> Du musst keine zusätzliche Bewegung aufwenden, um eine Kreatur in deiner Nähe zu bewegen, sofern die Kreatur deine Größe hat oder kleiner ist.</p><section class=\"secret\" id=\"secret-LAjjGo55LPacAy8v\"><p><strong>Foundry-Hinweis</strong></p><p>Der Vorteil wird nicht automatisiert.</p></section>"
     },
     "Magic Initiate": {
-      "name": "Magiebegabter",
-      "description": "<p>Du erhältst die folgenden Vorteile.</p><p><strong>Zwei Zaubertricks.</strong> Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj], @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU] oder @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]. Intelligenz, Weisheit oder Charisma ist dein Zauberattribut für die Zauber dieses Talents (wähle beim Erwerb des Talents).</p><p><strong>Zauber des 1. Grades.</strong> Wähle einen Zauber des 1. Grades aus derselben Liste, die du für deine Zaubertricks gewählt hast. Du hast diesen Zauber immer vorbereitet. Du kannst ihn einmal ohne Zauberplatz wirken und erhältst diese Fähigkeit zurück, wenn du eine Lange Rast beendest. Du kannst den Zauber auch mit beliebigen dir zur Verfügung stehenden Zauberplätzen wirken.</p><p><strong>Zauberwechsel.</strong> Immer wenn du eine neue Stufe erreichst, kannst du einen der Zauber, die du mit diesem Talent gelernt hast, durch einen anderen Zauber gleichen Grades aus der gewählten Zauberliste ersetzen.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehrmals wählen, musst aber jedes Mal eine andere Zauberliste wählen.</p><section id=\"secret-7JQCSgnGrtu9huzf\" class=\"secret\"><p><strong>Foundry-Hinweis</strong></p><p>Die Zauber müssen mit den obigen Änderungen manuell zu deinem Charakterbogen hinzugefügt werden.</p></section>"
+      "name": "Eingeweihter der Magie",
+      "description": "<p>Du erhältst folgende Vorzüge:</p><p><strong>Zwei Zaubertricks:</strong> Du beherrschst zwei Zaubertricks deiner Wahl aus der Zauberliste des @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druiden}, des @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Klerikers} oder des @UUID[Compendium.dnd-players-handbook.content.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Magiers}. Dein Attribut zum Wirken der Zauber dieses Talents ist Intelligenz, Weisheit oder Charisma (wähle aus, wenn du dieses Talent auswählst).</p><p><strong>Zauber des 1. Grades:</strong> Wähle einen Zauber des 1. Grades von der Liste aus, die du für die Zaubertricks dieses Talents ausgewählt hast. Du hast diesen Zauber stets vorbereitet. Du kannst ihn einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück. Du kannst den Zauber auch mit einem beliebigen verfügbaren Zauberplatz wirken.</p><p><strong>Zauberwechsel:</strong> Wann immer du eine neue Stufe erhältst, kannst du einen der Zauber, die du für dieses Talent ausgewählt hast, durch einen anderen Zauber des gleichen Grades von der ausgewählten Zauberliste ersetzen.</p><p><strong>Kann wiederholt werden:</strong> Du kannst dieses Talent mehr als einmal verwenden, aber du musst jedes Mal eine andere Zauberliste auswählen.</p><section class=\"secret\" id=\"secret-7JQCSgnGrtu9huzf\"><p><strong>Foundry-Hinweis</strong></p><p>Die Zauber müssen mit den obigen Änderungen manuell zu deinem Charakterbogen hinzugefügt werden.</p></section>"
     },
     "Savage Attacker": {
       "name": "Wilder Angreifer",
-      "description": "<p>Du hast gelernt, besonders verheerende Treffer zu landen. Einmal pro Runde, wenn du eine Ziel mit einer Waffe triffst, kannst du die Schadenswürfel der Waffe zweimal würfeln und jeden der Würfe gegen das Ziel verwenden.</p>"
+      "description": "<p>Dein Trefferpunktemaximum wird um einen Betrag in doppelter Höhe deiner Charakterstufe erhöht, wenn du dieses Talent erhältst. Wann immer du danach eine Charakterstufe erhältst, wird dein Trefferpunktemaximum um weitere 2 Trefferpunkte erhöht.</p>"
     },
     "Skilled": {
-      "name": "Vielseitig",
-      "description": "<p>Du erlangst Begabung in jeder beliebigen Kombination von drei Fertigkeiten oder Werkzeugen deiner Wahl.</p><p><strong>Wiederholbar.</strong> Du kannst dieses Talent mehr als einmal erlangen.</p>"
+      "name": "Begabt",
+      "description": "<p>Du bist in drei Fertigkeiten oder Werkzeugen deiner Wahl in beliebiger Kombination geübt.</p><p><strong>Kann wiederholt werden:</strong> Du kannst dieses Talent mehr als einmal verwenden.</p>"
     }
   }
 }

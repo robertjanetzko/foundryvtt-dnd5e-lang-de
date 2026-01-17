@@ -130,17 +130,17 @@
       "name": "Bohnenbeutel",
       "description": "",
       "results": {
-        "1-1": "[[/r 5d4#Toadstools]] Fliegenpilze sprießen. Wenn eine Kreatur einen Fliegenpilz isst, würfle [[/r 1d2#Toadstool side-effect]]. Bei einer ungeraden Würfelzahl muss der Verzehrer einen [[/save ability=con dc=15 format=long]] bestehen oder erleidet [[/damage 5d6 type=poison]] Schaden und hat den Zustand &Reference[Poisoned] für 1 Stunde. Bei einer geraden Würfelzahl erhält der Verzehrer [[/healing 5d6 type=temphp]] für 1 Stunde.",
+        "1-1": "[[/r 5d4#Toadstools]] Fliegenpilze sprießen. Wenn eine Kreatur einen Fliegenpilz isst, würfle [[/r 1d2#Toadstool side-effect]]{beliebiger Würfel}. Bei einer ungeraden Würfelzahl muss der Verzehrer einen [[/save ability=con dc=15 format=long]] bestehen oder erleidet [[/damage 5d6 type=poison]] Schaden und hat den Zustand &Reference[Poisoned] für 1 Stunde. Bei einer geraden Würfelzahl erhält der Verzehrer [[/healing 5d6 type=temphp]] für 1 Stunde.",
         "2-10": "Ein Geysir bricht aus und spült Wasser, Bier, Mayonnaise, Tee, Essig, Wein oder Öl (Wunsch des Spielleiters) 9m in die Luft für [[/r 1d4#Geyser duration (minutes)]] Minuten.",
-        "11-20": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000] sproßt. Würfle [[/r 1d2#Treant alignment]]. Bei einer ungeraden Würfelzahl ist der Treant Chaotisch böse. Bei einer geraden Würfelzahl ist der Treant Chaotisch gut.",
+        "11-20": "Ein @UUID[Compendium.dnd5e.actors24.Actor.mmTreant00000000]{Treant} sproßt. Würfle [[/r 1d2#Treant alignment]]{beliebiger Würfel}. Bei einer ungeraden Würfelzahl ist der Treant Chaotisch böse. Bei einer geraden Würfelzahl ist der Treant Chaotisch gut.",
         "21-30": "Eine animierte, aber unbewegliche Stein Statue in deiner Gestalt erhebt sich und bedroht dich. Wenn du sie verlässt und andere sich nähern, beschreibt sie dich als den abscheulichsten Bösewicht und weist die Neuankömmlinge an, dich zu finden und dich anzugreifen. Wenn du dich auf derselben Ebene der Existenz wie die Statue befindest, weiß sie, wo du bist. Die Statue wird nach 24 Stunden unbeweglich.",
         "31-40": "Ein Lagerfeuer mit grünen Flammen springt hervor und brennt 24 Stunden oder bis es gelöscht wird.",
-        "41-50": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus] sprießen.",
-        "51-60": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend pinke @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000] kriechen hervor. Jedes Mal, wenn ein Frosch berührt wird, verwandelt es sich in ein Großes oder kleineres Monster nach Wahl des Spielleiters, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute, verschwindet dann in einer Wolke leuchtend-pinken Rauchs.",
-        "61-70": "Ein hungriger @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000] gräbt sich auf und greift an.",
+        "41-50": "Drei @UUID[Compendium.dnd5e.actors24.Actor.mmShriekerFungus]{Shrieker Fungi} sprießen.",
+        "51-60": "[[/r 1d4 + 4#Bright-pink toads]] leuchtend pinke @UUID[Compendium.dnd5e.actors24.Actor.mmFrog0000000000]{Frösche} kriechen hervor. Jedes Mal, wenn ein Frosch berührt wird, verwandelt es sich in ein Großes oder kleineres Monster nach Wahl des Spielleiters, das gemäß seiner Gesinnung und Natur handelt. Das Monster bleibt 1 Minute, verschwindet dann in einer Wolke leuchtend-pinken Rauchs.",
+        "61-70": "Ein hungriger @UUID[Compendium.dnd5e.actors24.Actor.mmBulette0000000]{Bulette} gräbt sich auf und greift an.",
         "71-80": "Ein Obstbaum wächst. Er trägt [[/r 1d10 + 20#Pieces of fruit]] Früchte, [[/gmr 1d8#Fruits acting as Potions]] von denen als zufällig bestimmte Tränke wirken. Der Baum verschwindet nach 1 Stunde. Geerntete Früchte bleiben erhalten, behalten Magie für 30 Tage.",
         "81-90": "Ein Nest von [[/r 1d4 + 3#Rainbow-colored eggs]] regenbogenfarbener Eier taucht auf. Jede Kreatur, die ein Ei isst, macht einen [[/save ability=con dc=20 format=long]]. Bei erfolgreicher Rettung erhöht eine Kreatur dauerhaft ihren niedrigsten Fähigkeitswert um 1, zufällig aus gleich niedrigen Werten. Bei einer fehlgeschlagenen Rettung erleidet die Kreatur [[/damage 10d6 type=force]] Schaden durch eine innere Explosion.",
-        "91-95": "Eine Pyramide mit einer 20m Quadrat-Basis bricht nach oben. Drinnen befindet sich eine Grabkammer, die eine @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000], eine @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000] oder ein anderes Untotes Wesen nach Wahl des Spielleiters enthält. Ihr Sarkophag enthält Schätze nach Wahl des Spielleiters.",
+        "91-95": "Eine Pyramide mit einer 20m Quadrat-Basis bricht nach oben. Drinnen befindet sich eine Grabkammer, die eine @UUID[Compendium.dnd5e.actors24.Actor.mmMummy000000000]{Mummy}, eine @UUID[Compendium.dnd5e.actors24.Actor.mmMummyLord00000]{Mummy Lord} oder ein anderes Untotes Wesen nach Wahl des Spielleiters enthält. Ihr Sarkophag enthält Schätze nach Wahl des Spielleiters.",
         "96-100": "Eine riesige Bohnenstange schießt aus dem Boden, wächst auf eine vom Spielleiter gewählte Höhe. Die Spitze führt dorthin, wo der Spielleiter wählt, z. B. zu einer großartigen Aussicht, zur Burg eines Wolkenriesen oder zu einer anderen Ebene der Existenz."
       }
     },
@@ -180,49 +180,49 @@
       "name": "Deck of Illusions",
       "description": "<p>Stat blocks for these creatures (except the card drawer) appear in Monsters.</p>",
       "results": {
-        "1-3": "@UUID[Compendium.dnd5e.actors24.Actor.mmAdultRedDragon]",
-        "4-6": "@UUID[Compendium.dnd5e.actors24.Actor.mmArchmage000000]",
-        "7-9": "@UUID[Compendium.dnd5e.actors24.Actor.mmAssassin000000]",
-        "10-12": "@UUID[Compendium.dnd5e.actors24.Actor.mmBanditCaptain0]",
-        "13-15": "@UUID[Compendium.dnd5e.actors24.Actor.mmBasilisk000000]",
-        "16-18": "@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]",
-        "19-21": "@UUID[Compendium.dnd5e.actors24.Actor.mmBugbearWarrior]",
-        "22-24": "@UUID[Compendium.dnd5e.actors24.Actor.mmCloudGiant0000]",
-        "25-27": "@UUID[Compendium.dnd5e.actors24.Actor.mmDruid000000000]",
-        "28-30": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]",
-        "31-33": "@UUID[Compendium.dnd5e.actors24.Actor.mmEttin000000000]",
-        "34-36": "@UUID[Compendium.dnd5e.actors24.Actor.mmFireGiant00000]",
-        "37-39": "@UUID[Compendium.dnd5e.actors24.Actor.mmFrostGiant0000]",
-        "40-42": "@UUID[Compendium.dnd5e.actors24.Actor.mmGnollWarrior00]",
-        "43-45": "@UUID[Compendium.dnd5e.actors24.Actor.mmGoblinWarrior0]",
-        "46-48": "@UUID[Compendium.dnd5e.actors24.Actor.mmGuardianNaga00]",
-        "49-51": "@UUID[Compendium.dnd5e.actors24.Actor.mmHillGiant00000]",
-        "52-54": "@UUID[Compendium.dnd5e.actors24.Actor.mmHobgoblinWarri]",
-        "55-57": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]",
-        "58-60": "@UUID[Compendium.dnd5e.actors24.Actor.mmIronGolem00000]",
-        "61-63": "@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]",
-        "64-66": "@UUID[Compendium.dnd5e.actors24.Actor.mmKoboldWarrior0]",
-        "67-69": "@UUID[Compendium.dnd5e.actors24.Actor.mmLich0000000000]",
-        "70-72": "@UUID[Compendium.dnd5e.actors24.Actor.mmMedusa00000000]",
-        "73-75": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]",
-        "76-78": "@UUID[Compendium.dnd5e.actors24.Actor.mmOgre0000000000]",
-        "79-81": "@UUID[Compendium.dnd5e.actors24.Actor.mmOni00000000000]",
-        "82-84": "@UUID[Compendium.dnd5e.actors24.Actor.mmPriest00000000]",
-        "85-87": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]",
-        "88-90": "@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]",
-        "91-93": "@UUID[Compendium.dnd5e.actors24.Actor.mmWarriorVeteran]",
-        "94-96": "@UUID[Compendium.dnd5e.actors24.Actor.mmWyvern00000000]",
+        "1-3": "@UUID[Compendium.dnd5e.actors24.Actor.mmAdultRedDragon]{Adult Red Dragon}",
+        "4-6": "@UUID[Compendium.dnd5e.actors24.Actor.mmArchmage000000]{Archmage}",
+        "7-9": "@UUID[Compendium.dnd5e.actors24.Actor.mmAssassin000000]{Assassin}",
+        "10-12": "@UUID[Compendium.dnd5e.actors24.Actor.mmBanditCaptain0]{Bandit Captain}",
+        "13-15": "@UUID[Compendium.dnd5e.actors24.Actor.mmBasilisk000000]{Basilisk}",
+        "16-18": "@UUID[Compendium.dnd5e.actors24.Actor.mmBerserker00000]{Berserker}",
+        "19-21": "@UUID[Compendium.dnd5e.actors24.Actor.mmBugbearWarrior]{Bugbear Warrior}",
+        "22-24": "@UUID[Compendium.dnd5e.actors24.Actor.mmCloudGiant0000]{Cloud Giant}",
+        "25-27": "@UUID[Compendium.dnd5e.actors24.Actor.mmDruid000000000]{Druid}",
+        "28-30": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}",
+        "31-33": "@UUID[Compendium.dnd5e.actors24.Actor.mmEttin000000000]{Ettin}",
+        "34-36": "@UUID[Compendium.dnd5e.actors24.Actor.mmFireGiant00000]{Fire Giant}",
+        "37-39": "@UUID[Compendium.dnd5e.actors24.Actor.mmFrostGiant0000]{Frost Giant}",
+        "40-42": "@UUID[Compendium.dnd5e.actors24.Actor.mmGnollWarrior00]{Gnoll Warrior}",
+        "43-45": "@UUID[Compendium.dnd5e.actors24.Actor.mmGoblinWarrior0]{Goblin Warrior}",
+        "46-48": "@UUID[Compendium.dnd5e.actors24.Actor.mmGuardianNaga00]{Guardian Naga}",
+        "49-51": "@UUID[Compendium.dnd5e.actors24.Actor.mmHillGiant00000]{Hill Giant}",
+        "52-54": "@UUID[Compendium.dnd5e.actors24.Actor.mmHobgoblinWarri]{Hobgoblin Warrior}",
+        "55-57": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}",
+        "58-60": "@UUID[Compendium.dnd5e.actors24.Actor.mmIronGolem00000]{Iron Golem}",
+        "61-63": "@UUID[Compendium.dnd5e.actors24.Actor.mmKnight00000000]{Knight}",
+        "64-66": "@UUID[Compendium.dnd5e.actors24.Actor.mmKoboldWarrior0]{Kobold Warrior}",
+        "67-69": "@UUID[Compendium.dnd5e.actors24.Actor.mmLich0000000000]{Lich}",
+        "70-72": "@UUID[Compendium.dnd5e.actors24.Actor.mmMedusa00000000]{Medusa}",
+        "73-75": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}",
+        "76-78": "@UUID[Compendium.dnd5e.actors24.Actor.mmOgre0000000000]{Ogre}",
+        "79-81": "@UUID[Compendium.dnd5e.actors24.Actor.mmOni00000000000]{Oni}",
+        "82-84": "@UUID[Compendium.dnd5e.actors24.Actor.mmPriest00000000]{Priest}",
+        "85-87": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}",
+        "88-90": "@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]{Troll}",
+        "91-93": "@UUID[Compendium.dnd5e.actors24.Actor.mmWarriorVeteran]{Veteran Warrior}",
+        "94-96": "@UUID[Compendium.dnd5e.actors24.Actor.mmWyvern00000000]{Wyvern}",
         "97-100": "The card drawer"
       },
       "error": "'Deck of Illusions'"
     },
     "Efreeti Bottle": {
       "name": "Ifriti-Flasche",
-      "description": "<p>The first time the @UUID[Compendium.dnd5e.equipment24.Item.dmgEfreetiBottle] is opened, the DM rolls on the following table to determine what happens.</p>",
+      "description": "<p>The first time the @UUID[Compendium.dnd5e.equipment24.Item.dmgEfreetiBottle]{bottle} is opened, the DM rolls on the following table to determine what happens.</p>",
       "results": {
         "1-10": "Der Ifriti greift dich an. Nachdem er fünf Runden gekämpft hat, verschwindet der Ifriti und die Flasche verliert ihre Magie.",
         "11-90": "Der Ifriti dient dir eine Stunde lang. In dieser Zeit gehorcht er deinen Befehlen. Dann kehrt der Ifriti in die Flasche zurück und ein neuer Stopfen verschließt diese. Der Stopfen kann 24 Stunden lang nicht entfernt werden. Wenn die Flasche die nächsten zwei Male geöffnet wird, tritt derselbe Effekt ein. Wenn die Flasche ein viertes Mal geöffnet wird, entflieht der Ifriti und die Flasche verliert ihre Magie.",
-        "10-10": "Der Ifriti kann dreimal den Zauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em> für dich wirken. Er verschwindet, nachdem er den letzten Wunsch gewährt hat oder nach einer Stunde. Die Flasche verliert ihre Magie."
+        "10-10": "Der Ifriti kann dreimal den Zauber <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]{Wish}</em> für dich wirken. Er verschwindet, nachdem er den letzten Wunsch gewährt hat oder nach einer Stunde. Die Flasche verliert ihre Magie."
       }
     },
     "Gray Bag of Tricks": {
@@ -243,15 +243,15 @@
       "name": "Hat of Many Spells",
       "description": "",
       "results": {
-        "1-50": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei 1 @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed] (Vergrößern-Effekt); bei 2 Vergrößern/Verkleinern (Verkleinern-Effekt); bei 3 @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]; bei 4 @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]; bei 5 @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]; bei 6 @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili] (auf dich selbst gewirkt); bei 7 @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]; bei 8 @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]; bei 9 @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]; bei 10 @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl].",
+        "1-50": "Du wirkst einen zufälligen Zauber, der durch einen Wurf von [[/r 1d10]] bestimmt wird: bei 1 @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Vergrößern/Verkleinern} (Vergrößern-Effekt); bei 2 Vergrößern/Verkleinern (Verkleinern-Effekt); bei 3 @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Feenfeuer}; bei 4 @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Feuerball}; bei 5 @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Windstoß}; bei 6 @UUID[Compendium.dnd5e.spells24.Item.phbsplInvisibili]{Unsichtbarkeit} (auf dich selbst gewirkt); bei 7 @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Blitzschlag}; bei 8 @UUID[Compendium.dnd5e.spells24.Item.phbPhantasmalFor]{Phantastische Trugbilder}; bei 9 @UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Verwandlung}; bei 10 @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinkende Wolke}.",
         "51-55": "Du erhältst bis zum Ende deines nächsten Zuges den Zustand &amp;Reference[Stunned] (Benommen), weil du glaubst, dass gerade etwas Großartiges passiert ist.",
         "56-60": "Ein harmloser Schwarm von Schmetterlingen füllt einen 3-Meter-Würfel (3m) innerhalb von 9 Metern um dich. Der Schwarm löst sich nach 1 Minute auf.",
-        "61-65": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Würfle [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1 eine Phiole @UUID[Compendium.dnd5e.equipment24.Item.phbagAcid0000000]; bei 2 einen @UUID[Compendium.dnd5e.equipment24.Item.phbagAlchemistsF]; bei 3 ein @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]; bei 4 eine brennende @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000].",
+        "61-65": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Würfle [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1 eine Phiole @UUID[Compendium.dnd5e.equipment24.Item.phbagAcid0000000]{Säure}; bei 2 einen @UUID[Compendium.dnd5e.equipment24.Item.phbagAlchemistsF]{Flakon Alchemistisches Feuer}; bei 3 ein @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Brecheisen}; bei 4 eine brennende @UUID[Compendium.dnd5e.equipment24.Item.phbagTorch000000]{Fackel}.",
         "66-70": "Du leidest an einer Episode von „magischer Übelkeit“ und erhältst für 1 Stunde den Zustand &amp;Reference[Poisoned] (Vergiftet).",
         "71-75": "Du erhältst bis zum Ende deines nächsten Zuges den Zustand &amp;Reference[Petrified] (Versteinert).",
-        "76-80": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Würfle [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1 einen @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]; bei 2 ein @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000] mit einem @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo] an einem Ende; bei 3 einen Beutel @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]; bei 4 einen Edelstein im Wert von 50 GM.",
-        "81-85": "Eine Kreatur erscheint in einem unbesetzten Feld so nah wie möglich bei dir. Sie steht nicht unter deiner Kontrolle und verhält sich wie üblich. Sie verschwindet nach 1 Stunde oder wenn sie auf 0 Trefferpunkte fällt. Würfle [[/r 1d4]], um die Kreatur zu bestimmen: bei 1 ein @UUID[Compendium.dnd5e.actors24.Actor.mmCamel000000000]; bei 2 eine @UUID[Compendium.dnd5e.actors24.Actor.mmConstrictorSna]; bei 3 ein @UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]; bei 4 ein @UUID[Compendium.dnd5e.actors24.Actor.mmMule0000000000].",
-        "86-90": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9] fliegt aus dem Hut, besetzt dein Feld und greift dich an.",
+        "76-80": "Du ziehst einen nichtmagischen Gegenstand aus dem Hut. Würfle [[/r 1d4]], um den Gegenstand zu bestimmen: bei 1 einen @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Dolch}; bei 2 ein @UUID[Compendium.dnd5e.equipment24.Item.phbagRope0000000]{Seil} mit einem @UUID[Compendium.dnd5e.equipment24.Item.phbagGrapplingHo]{Kletterhaken} an einem Ende; bei 3 einen Beutel @UUID[Compendium.dnd5e.equipment24.Item.phbagCaltrops000]{Krähenfüße}; bei 4 einen Edelstein im Wert von 50 GM.",
+        "81-85": "Eine Kreatur erscheint in einem unbesetzten Feld so nah wie möglich bei dir. Sie steht nicht unter deiner Kontrolle und verhält sich wie üblich. Sie verschwindet nach 1 Stunde oder wenn sie auf 0 Trefferpunkte fällt. Würfle [[/r 1d4]], um die Kreatur zu bestimmen: bei 1 ein @UUID[Compendium.dnd5e.actors24.Actor.mmCamel000000000]{Kamel}; bei 2 eine @UUID[Compendium.dnd5e.actors24.Actor.mmConstrictorSna]{Würgeschlange}; bei 3 ein @UUID[Compendium.dnd5e.actors24.Actor.mmElephant000000]{Elefant}; bei 4 ein @UUID[Compendium.dnd5e.actors24.Actor.mmMule0000000000]{Maultier}.",
+        "86-90": "Ein feindlicher @UUID[Compendium.dnd5e.actors24.Actor.PcZ0QjIG6bHpffp9]{Fledermausschwarm} fliegt aus dem Hut, besetzt dein Feld und greift dich an.",
         "91-95": "Ein vertikales, 3 Meter (3m) breites, zweiseitiges Portal zu einer anderen Dimension öffnet sich in einem unbesetzten Feld innerhalb von 9 Metern um dich und bleibt bis zum Ende deines nächsten Zuges bestehen. Der SL bestimmt, wohin es führt.",
         "96-100": "Du ziehst einen magischen Gegenstand aus dem Hut. Würfle [[/r 1d6]], um die Seltenheit zu bestimmen: bei 1–3 gewöhnlich, bei 4–5 ungewöhnlich, bei 6 selten. Der SL wählt den Gegenstand, der nach 1 Stunde verschwindet, falls er bis dahin nicht verbraucht oder zerstört wurde."
       }
@@ -260,10 +260,10 @@
       "name": "Horn von Walhalla: Typ und Voraussetzung",
       "description": "",
       "results": {
-        "1-40": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSilverHornOfV] (2 Geister); Keine Voraussetzung",
-        "41-75": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBrassHornOfVa] (3 Geister); Fertigkeit im Umgang mit allen einfachen Waffen erforderlich",
-        "76-90": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBronzeHornOfV] (4 Geister); Ausbildung im Tragen aller mittleren Rüstungen erforderlich",
-        "91-100": "@UUID[Compendium.dnd5e.equipment24.Item.dmgIronHornOfVal] (5 Geister); Fertigkeit im Umgang mit allen Kriegswaffen erforderlich"
+        "1-40": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSilverHornOfV]{Silbernes Horn} (2 Geister); Keine Voraussetzung",
+        "41-75": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBrassHornOfVa]{Messinghorn} (3 Geister); Fertigkeit im Umgang mit allen einfachen Waffen erforderlich",
+        "76-90": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBronzeHornOfV]{Bronzenes Horn} (4 Geister); Ausbildung im Tragen aller mittleren Rüstungen erforderlich",
+        "91-100": "@UUID[Compendium.dnd5e.equipment24.Item.dmgIronHornOfVal]{Eisernes Horn} (5 Geister); Fertigkeit im Umgang mit allen Kriegswaffen erforderlich"
       }
     },
     "Iron Flask Contents": {
@@ -272,34 +272,34 @@
       "results": {
         "1-50": "No creature",
         "51-51": "Arcanaloth",
-        "52-54": "@UUID[Compendium.dnd5e.actors24.Actor.mmBoneDevil00000]",
+        "52-54": "@UUID[Compendium.dnd5e.actors24.Actor.mmBoneDevil00000]{Bone Devil}",
         "55-56": "Cambion",
         "57-58": "Dao",
-        "59-59": "@UUID[Compendium.dnd5e.actors24.Actor.mmDeva0000000000]",
-        "60-61": "@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]",
-        "62-63": "Efreeti@UUID[Compendium.dnd5e.actors24.Actor.mmEfreeti0000000]",
-        "64-65": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]",
+        "59-59": "@UUID[Compendium.dnd5e.actors24.Actor.mmDeva0000000000]{Deva}",
+        "60-61": "@UUID[Compendium.dnd5e.actors24.Actor.mmDjinni00000000]{Djinni}",
+        "62-63": "Efreeti@UUID[Compendium.dnd5e.actors24.Actor.mmEfreeti0000000]{Efreeti}",
+        "64-65": "@UUID[Compendium.dnd5e.actors24.Actor.mmErinyes0000000]{Erinyes}",
         "66-67": "Fomorian",
         "68-68": "Githyanki Knight",
         "69-69": "Githzerai Zerth",
-        "70-71": "@UUID[Compendium.dnd5e.actors24.Actor.mmGlabrezu000000]",
-        "72-74": "@UUID[Compendium.dnd5e.actors24.Actor.mmHezrou00000000]",
-        "75-75": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]",
-        "76-77": "@UUID[Compendium.dnd5e.actors24.Actor.mmInvisibleStalk]",
+        "70-71": "@UUID[Compendium.dnd5e.actors24.Actor.mmGlabrezu000000]{Glabrezu}",
+        "72-74": "@UUID[Compendium.dnd5e.actors24.Actor.mmHezrou00000000]{Hezrou}",
+        "75-75": "@UUID[Compendium.dnd5e.actors24.Actor.mmIncubus0000000]{Incubus}",
+        "76-77": "@UUID[Compendium.dnd5e.actors24.Actor.mmInvisibleStalk]{Invisible Stalker}",
         "78-79": "Marid",
-        "80-80": "@UUID[Compendium.dnd5e.actors24.Actor.mmMarilith000000]",
+        "80-80": "@UUID[Compendium.dnd5e.actors24.Actor.mmMarilith000000]{Marilith}",
         "81-82": "Mezzoloth",
-        "83-84": "@UUID[Compendium.dnd5e.actors24.Actor.mmNalfeshnee0000]",
-        "85-86": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]",
+        "83-84": "@UUID[Compendium.dnd5e.actors24.Actor.mmNalfeshnee0000]{Nalfeshnee}",
+        "85-86": "@UUID[Compendium.dnd5e.actors24.Actor.mmNightHag000000]{Night Hag}",
         "87-88": "Nycaloth",
-        "89-89": "@UUID[Compendium.dnd5e.actors24.Actor.mmPlanetar000000]",
+        "89-89": "@UUID[Compendium.dnd5e.actors24.Actor.mmPlanetar000000]{Planetar}",
         "90-91": "Red Slaad",
-        "92-93": "@UUID[Compendium.dnd5e.actors24.Actor.mmSalamander0000]",
-        "94-94": "@UUID[Compendium.dnd5e.actors24.Actor.mmSolar000000000]",
-        "95-95": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]",
+        "92-93": "@UUID[Compendium.dnd5e.actors24.Actor.mmSalamander0000]{Salamander}",
+        "94-94": "@UUID[Compendium.dnd5e.actors24.Actor.mmSolar000000000]{Solar}",
+        "95-95": "@UUID[Compendium.dnd5e.actors24.Actor.mmSuccubus000000]{Succubus}",
         "96-96": "Ultroloth",
-        "97-99": "@UUID[Compendium.dnd5e.actors24.Actor.mmVrock000000000]",
-        "100-100": "@UUID[Compendium.dnd5e.actors24.Actor.mmXorn0000000000]"
+        "97-99": "@UUID[Compendium.dnd5e.actors24.Actor.mmVrock000000000]{Vrock}",
+        "100-100": "@UUID[Compendium.dnd5e.actors24.Actor.mmXorn0000000000]{Xorn}"
       }
     },
     "Manual of Golems: Type, Time, and Cost": {
@@ -316,12 +316,12 @@
       "name": "Necklace of Prayer Beads Type",
       "description": "",
       "results": {
-        "1-6": "Bead of Blessing: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]",
-        "7-12": "Bead of Curing: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds] (level 2 version)",
-        "13-16": "Bead of Favor: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]",
-        "17-18": "Bead of Smiting: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]",
-        "19-19": "Bead of Summons: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]",
-        "20-20": "Bead of Wind Walking: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]"
+        "1-6": "Bead of Blessing: @UUID[Compendium.dnd5e.spells24.Item.phbsplBless00000]{Bless}",
+        "7-12": "Bead of Curing: @UUID[Compendium.dnd5e.spells24.Item.phbsplCureWounds]{Cure Wounds} (level 2 version)",
+        "13-16": "Bead of Favor: @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration}",
+        "17-18": "Bead of Smiting: @UUID[Compendium.dnd5e.spells24.Item.phbsplShiningSmi]{Shining Smite}",
+        "19-19": "Bead of Summons: @UUID[Compendium.dnd5e.spells24.Item.phbsplGuardianof]{Guardian of Faith}",
+        "20-20": "Bead of Wind Walking: @UUID[Compendium.dnd5e.spells24.Item.phbsplWindWalk00]{Wind Walk}"
       },
       "error": "'Necklace of Prayer Beads Type'"
     },
@@ -330,7 +330,7 @@
       "description": "",
       "results": {
         "1-1": "Beide Tränke verlieren ihre Wirkung, und die Mischung verursacht eine magische Explosion in einer Kugel mit einem Radius von 1,5 Metern, die auf sich selbst zentriert ist. Jede Kreatur in diesem Bereich erleidet [[/damage 4d10 type=force]] Schaden.",
-        "2-8": "Beide Tränke verlieren ihre Wirkung, und die Mischung wird zu einem Gift zum Einnehmen deiner Wahl (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.dmgDmsToolbox000.JournalEntryPage.UfAEdm3LbTzvQHC5]).",
+        "2-8": "Beide Tränke verlieren ihre Wirkung, und die Mischung wird zu einem Gift zum Einnehmen deiner Wahl (siehe @UUID[Compendium.dnd5e.content24.JournalEntry.dmgDmsToolbox000.JournalEntryPage.UfAEdm3LbTzvQHC5]{Gift}).",
         "9-15": "Beide Tränke verlieren ihre Wirkung.",
         "16-25": "Einer der Tränke verliert seine Wirkung.",
         "26-35": "Beide Tränke wirken, aber ihre numerischen Effekte und Wirkungsdauern werden halbiert. Wenn ein Trank keine numerischen Effekte oder Dauer hat, verliert er stattdessen seine Wirkung.",
@@ -359,28 +359,28 @@
       "name": "Federzeichen",
       "description": "",
       "results": {
-        "1-20": "@UUID[Compendium.dnd5e.equipment24.Item.dmgAnchorQuaalsF]",
-        "21-35": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBirdQuaalsFea]",
-        "36-50": "@UUID[Compendium.dnd5e.equipment24.Item.dmgFanQuaalsFeat]",
-        "51-65": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSwanBoatQuaal]",
-        "66-90": "@UUID[Compendium.dnd5e.equipment24.Item.dmgTreeQuaalsFea]",
-        "91-100": "@UUID[Compendium.dnd5e.equipment24.Item.dmgWhipQuaalsFea]"
+        "1-20": "@UUID[Compendium.dnd5e.equipment24.Item.dmgAnchorQuaalsF]{Anker (Ungewöhnlich)}",
+        "21-35": "@UUID[Compendium.dnd5e.equipment24.Item.dmgBirdQuaalsFea]{Vogel (Selten)}",
+        "36-50": "@UUID[Compendium.dnd5e.equipment24.Item.dmgFanQuaalsFeat]{Fächer (Ungewöhnlich)}",
+        "51-65": "@UUID[Compendium.dnd5e.equipment24.Item.dmgSwanBoatQuaal]{Schwanenboot (Selten)}",
+        "66-90": "@UUID[Compendium.dnd5e.equipment24.Item.dmgTreeQuaalsFea]{Baum (Ungewöhnlich)}",
+        "91-100": "@UUID[Compendium.dnd5e.equipment24.Item.dmgWhipQuaalsFea]{Peitsche (Selten)}"
       }
     },
     "Ring of Resistance: Damage Type and Gemstone": {
       "name": "Ring der Resistenz: Schadensart und Edelstein",
       "description": "",
       "results": {
-        "1-1": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.dBl3gfYXWn7YguDb]",
-        "2-2": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.P5fYc9OEg5GKGgkR]",
-        "3-3": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.8IIAYzI3gqAJIBYo]",
-        "4-4": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ivnRnslXhD6UZH0L]",
-        "5-5": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.96wcenml9tk62g37]",
-        "6-6": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]",
-        "7-7": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]",
-        "8-8": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ls5HwdyGS36zGNsf]",
-        "9-9": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.zgCVJEc1e9dCj7Ut]",
-        "10-10": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.JA9aLSXZ6W3O0W9l]"
+        "1-1": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.dBl3gfYXWn7YguDb]{Säure (Perle)}",
+        "2-2": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.P5fYc9OEg5GKGgkR]{Feuer (Granat)}",
+        "3-3": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.8IIAYzI3gqAJIBYo]{Feuer (Granat)}",
+        "4-4": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ivnRnslXhD6UZH0L]{Kraft (Saphir)}",
+        "5-5": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.96wcenml9tk62g37]{Blitzschaden (Zitrin)}",
+        "6-6": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]{Nekrotischer Schaden (Jet)}",
+        "7-7": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.9r8SX6QYbeLa780J]{Gift (Amethyst)}",
+        "8-8": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.ls5HwdyGS36zGNsf]{Psychischer Schaden (Jade)}",
+        "9-9": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.zgCVJEc1e9dCj7Ut]{Lichtschaden (Topas)}",
+        "10-10": "@UUID[Compendium.dnd5e.equipment24.Item.dmgRingOfResista.ActiveEffect.JA9aLSXZ6W3O0W9l]{Donnerschaden (Spinell)}"
       }
     },
     "Robe of Useful Items": {
@@ -392,10 +392,10 @@
         "16-22": "Eisentür (bis zu 3m breit und 3m hoch, an einer Seite deiner Wahl mit Gittern versehen), die du in eine Öffnung einsetzen kannst, die du erreichen kannst; sie passt sich der Öffnung an, befestigt sich daran und schwingt sich eigenständig an",
         "23-30": "10 Edelsteine im Wert von je 100 GP",
         "31-44": "Holzleiter (7,5m lang)",
-        "45-51": "@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000] mit Reitsattel",
+        "45-51": "@UUID[Compendium.dnd5e.actors24.Actor.mmRidingHorse000]{Reitpferd} mit Reitsattel",
         "52-59": "Offene Grube (ein 3m Würfel), die du innerhalb von 3m von dir auf dem Boden platzieren kannst",
         "60-68": "4 Heiltränke",
-        "69-75": "@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000] (3,5m lang)",
+        "69-75": "@UUID[Compendium.dnd5e.actors24.Actor.phbmobRowboat000]{Ruderboot} (3,5m lang)",
         "76-83": "Zauberrolle, die einen Zauber der Stufe 1, 2 oder 3 enthält (nach deiner Wahl)",
         "84-90": "2 Mastiffs",
         "91-96": "Fenster (0,5m mal 1m, bis 0,5m tief), das du an einer vertikalen Oberfläche platzieren kannst, die du erreichen kannst",
@@ -511,16 +511,16 @@
     },
     "Wand of Wonder Effects": {
       "name": "Zauberstab der Wunder: Effekte",
-      "description": "<p>A roll table of effects for the @UUID[Compendium.dnd5e.equipment24.Item.dmgWandOfWonder0] which implements the effects as activities where possible.</p>",
+      "description": "<p>A roll table of effects for the @UUID[Compendium.dnd5e.equipment24.Item.dmgWandOfWonder0]{Wand of Wonder} which implements the effects as activities where possible.</p>",
       "results": {
-        "1-20": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1d10, um den Zauber zu bestimmen: bei 1–2 @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]; bei 3–4 @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]; bei 5–6 @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]; bei 7–8 @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]; bei 9–10 @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl].",
+        "1-20": "Du wirkst einen Zauber, der von dem gewählten Punkt ausgeht. Wirf 1d10, um den Zauber zu bestimmen: bei 1–2 @UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}; bei 3–4 @UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie Fire}; bei 5–6 @UUID[Compendium.dnd5e.spells24.Item.phbsplFireball00]{Fireball}; bei 7–8 @UUID[Compendium.dnd5e.spells24.Item.phbsplSlow000000]{Slow}; bei 9–10 @UUID[Compendium.dnd5e.spells24.Item.phbsplStinkingCl]{Stinking Cloud}.",
         "21-25": "Nichts passiert am gewählten Ursprungspunkt. Stattdessen erhältst du bis zum Beginn deines nächsten Zugs den Zustand &Reference[Stunned], weil du glaubst, dass gerade etwas Großartiges passiert ist.",
-        "26-30": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]. Die durch den Zauber erzeugte Linie erstreckt sich von dir zum gewählten Ursprungspunkt.",
+        "26-30": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplGustofWind]{Gust of Wind}. Die durch den Zauber erzeugte Linie erstreckt sich von dir zum gewählten Ursprungspunkt.",
         "31-35": "An dem gewählten Ursprungspunkt passiert nichts. Stattdessen erleidest du [[/damage 1d6 type=psychic]] Schaden.",
         "36-40": "Starker Regen fällt für 1 Minute in einem 40m hohen, 20m Radius Zylinder, der auf dem gewählten Ursprungspunkt zentriert ist. In dieser Zeit ist der Wirkbereich &Reference[Lightly Obscured].",
         "41-45": "Eine Wolke von 600 übergroßen Schmetterlingen füllt einen 20m hohen, 9m Radius Zylinder, der auf dem gewählten Ursprungspunkt zentriert ist. Die Schmetterlinge bleiben 10 Minuten, während derer der Wirkbereich &Reference[Heavily Obscured].",
-        "46-50": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]. Die durch den Zauber erzeugte Linie erstreckt sich von dir zum gewählten Ursprungspunkt.",
-        "51-55": "Die dem gewählten Ursprungspunkt am nächsten stehende Kreatur wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed] darauf gewirkt. Falls das Ziel nicht du bist und von diesem Zauber nicht betroffen werden kann, wirst du stattdessen zum Ziel.",
+        "46-50": "Du wirkst @UUID[Compendium.dnd5e.spells24.Item.phbsplLightningB]{Lightning Bolt}. Die durch den Zauber erzeugte Linie erstreckt sich von dir zum gewählten Ursprungspunkt.",
+        "51-55": "Die dem gewählten Ursprungspunkt am nächsten stehende Kreatur wird vergrößert, als hättest du @UUID[Compendium.dnd5e.spells24.Item.phbsplEnlargeRed]{Enlarge/Reduce} darauf gewirkt. Falls das Ziel nicht du bist und von diesem Zauber nicht betroffen werden kann, wirst du stattdessen zum Ziel.",
         "56-60": "Eine magisch geformte Kreatur erscheint in einem unbesetzten Raum so nah wie möglich am gewählten Ursprungspunkt. Die Kreatur steht nicht unter deiner Kontrolle, verhält sich wie gewöhnlich und verschwindet nach 1 Stunde oder wenn sie 0 Trefferpunkte erreicht. Würfle [[/r 1d4]] um zu bestimmen, welche Kreatur erscheint. Bei 1 erscheint ein Nashorn; bei 2 erscheint ein Elefant; bei 3–4 erscheint eine Ratte.",
         "61-64": "Gras bedeckt einen Kreis mit einem Radius von 20m um den Ursprungspunkt, dessen Mittelpunkt so nah wie möglich am gewählten Ursprungspunkt liegt. Das dort bereits vorhandene Gras wächst auf das Zehnfache seiner normalen Größe und bleibt 1 Minute lang überwuchert.",
         "65-68": "Ein vom Spielleiter gewähltes Objekt verschwindet in die Ätherebene. Das Objekt darf weder getragen noch angelegt sein, sich im Umkreis von 40m zum gewählten Ursprungspunkt befinden und nicht größer als 3m in irgendeiner Abmessung sein. Falls im Wirkbereich keine solchen Objekte vorhanden sind, passiert nichts.",
@@ -530,7 +530,7 @@
         "83-87": "Nichts passiert am gewählten Ursprungspunkt. Stattdessen wirkst du Unsichtbarkeit auf dich selbst.",
         "88-92": "Stattdessen schießt ein Strom von [[/r 1d4*10 #Gems]] Edelsteinen, jeder im Wert von 1 GP, aus der Spitze des Zauberstabs in eine Linie von 9m Länge und 1,5m Breite zum gewählten Ursprungspunkt. Jeder Edelstein verursacht [[/damage 1 type=bludgeoning]] Schaden, und der Gesamtschaden der Edelsteine wird gleichmäßig auf alle Kreaturen in der Linie verteilt.",
         "93-97": "Du wirkst Polymorph auf die Kreatur in der Nähe des gewählten Ursprungspunktes. Würfle [[/r 1d4]], um die neue Gestalt des Ziels zu bestimmen. Bei 1 ist die neue Gestalt ein Schwarzer Bär; bei 2 die neue Gestalt ist eine Riesige Wespe; bei 3–4 die neue Gestalt ist ein Frosch.",
-        "98-100": "Die Kreatur in der Nähe des gewählten Ursprungspunktes muss einen Konstitutions-Sicherungswurf machen. Bei einem misslungenen Wurf hat die Kreatur den &Reference[Restrained]-Zustand und beginnt zu Stein zu werden. Solange sie auf diese Weise Festgehalten ist, wiederholt sie den Rettungswurf am Ende ihrer nächsten Runde. Bei einem Erfolg endet der Effekt. Bei einem misslungenen Wurf hat die Kreatur stattdessen den &Reference[Petrified]-Zustand. Die Versteinerung hält an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes] oder ähnliche Magie befreit wird."
+        "98-100": "Die Kreatur in der Nähe des gewählten Ursprungspunktes muss einen Konstitutions-Sicherungswurf machen. Bei einem misslungenen Wurf hat die Kreatur den &Reference[Restrained]-Zustand und beginnt zu Stein zu werden. Solange sie auf diese Weise Festgehalten ist, wiederholt sie den Rettungswurf am Ende ihrer nächsten Runde. Bei einem Erfolg endet der Effekt. Bei einem misslungenen Wurf hat die Kreatur stattdessen den &Reference[Petrified]-Zustand. Die Versteinerung hält an, bis die Kreatur durch den Zauber @UUID[Compendium.dnd5e.spells24.Item.phbsplGreaterRes]{Greater Restoration} oder ähnliche Magie befreit wird."
       }
     },
     "Animated Object Catalysts": {
@@ -824,17 +824,17 @@
       "name": "Dämonische Erbschaft",
       "description": "<p>Du bist der Empfänger einer Erbschaft, die dir übernatürliche Fähigkeiten verleiht.</p>",
       "results": {
-        "1-1": "Tiefling, Abyssal",
-        "2-2": "Tiefling, Chthonic",
-        "3-3": "Tiefling, Infernal"
+        "1-1": "Tiefling, Abyssisch",
+        "2-2": "Tiefling, Chthonisch",
+        "3-3": "Tiefling, Infernalisch"
       }
     },
     "Gnomish Lineage": {
       "name": "Gnomische Abstammung",
       "description": "<p>Du bist Teil einer Abstammung, die dir übernatürliche Fähigkeiten verleiht.</p>",
       "results": {
-        "1-1": "Gnom, Waldgnom",
-        "2-2": "Gnom, Felsgnom"
+        "1-1": "Waldgnom",
+        "2-2": "Felsengnom"
       }
     },
     "Prismatic Layers": {
@@ -1023,14 +1023,14 @@
         "7-7": "Halbling",
         "8-8": "Mensch",
         "9-9": "Ork",
-        "4-4": "Elbenstamm",
+        "4-4": "Elf",
         "10-10": "Tiefling",
         "5-5": "Gnom"
       }
     },
     "Teleport Mishap": {
       "name": "Teleportationsmisgeschick",
-      "description": "<p><strong>Missgeschick-Schaden:</strong> [[/damage 3d10 type=force]]</p><p><strong>Entfernung zum Ziel:</strong> [[/r 2d12#Miles]] [[/r 1d8#Direction]]</p>",
+      "description": "<p><strong>Missgeschick-Schaden:</strong> [[/damage 3d10 type=force]]</p><p><strong>Entfernung zum Ziel:</strong> [[/r 2d12#Miles]]{2d12 Meilen} [[/r 1d8#Direction]]{Richtung}</p>",
       "results": {
         "1-100": "<strong>Verknüpftes Objekt:</strong> Ziel getroffen",
         "1-5": "<strong>Sehr vertraut:</strong> Missgeschick",

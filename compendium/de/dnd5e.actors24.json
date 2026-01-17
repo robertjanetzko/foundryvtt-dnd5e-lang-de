@@ -90,7 +90,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriffe",
-          "description": "<p>Der Avatar führt eine Anzahl von [[/item .dmgaoiReapingScy]] Angriffen durch, die der Hälfte des Beherrschungsbonus des Beschwörers entspricht (aufrundet).</p><p>[[ceil(@prof/2)]]</p>"
+          "description": "<p>Der Avatar führt eine Anzahl von [[/item .dmgaoiReapingScy]]{Ernte-Sichel} Angriffen durch, die der Hälfte des Beherrschungsbonus des Beschwörers entspricht (aufrundet).</p><p>[[ceil(@prof/2)]]{Anzahl der Angriffe}</p>"
         },
         "Reaping Scythe": {
           "name": "Ernte-Sichel",
@@ -3033,7 +3033,7 @@
         },
         "Wishes": {
           "name": "Wünsche",
-          "description": "<p class=\\\"feature\\\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]] Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
+          "description": "<p class=\\\"feature\\\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]]{30 Prozent} Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
         },
         "Create Whirlwind": {
           "name": "Wirbelwind erzeugen",
@@ -3426,7 +3426,7 @@
         },
         "Wishes": {
           "name": "Wünsche",
-          "description": "<p class=\\\"feature\\\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]] Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
+          "description": "<p class=\\\"feature\\\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]]{30 Prozent} Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
         },
         "Heated Blade": {
           "name": "Beheizte Klinge",
@@ -3902,7 +3902,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriffe",
-          "description": "<p>Das Insekt führt eine Anzahl von Angriffen aus, die der Hälfte dieser Zauberstufe entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]</p>"
+          "description": "<p>Das Insekt führt eine Anzahl von Angriffen aus, die der Hälfte dieser Zauberstufe entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Anzahl der Angriffe}</p>"
         },
         "Poison Jab": {
           "name": "Giftstich",
@@ -4265,7 +4265,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>Das Insekt führt eine Anzahl von Angriffen durch, die der Hälfte der Stufe dieses Zaubers entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]</p>"
+          "description": "<p>Das Insekt führt eine Anzahl von Angriffen durch, die der Hälfte der Stufe dieses Zaubers entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Anzahl der Angriffe}</p>"
         },
         "Poison Jab": {
           "name": "Giftstich",
@@ -5992,7 +5992,7 @@
         },
         "Rotting Fist": {
           "name": "Verrottete Faust",
-          "description": "<p class=\\\"feature\\\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]] alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
+          "description": "<p class=\\\"feature\\\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]]{10 (3d6)} alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
         }
       }
     },
@@ -6039,7 +6039,7 @@
         },
         "Rotting Fist": {
           "name": "Verrottete Faust",
-          "description": "<p class=\\\"feature\\\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]] alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
+          "description": "<p class=\\\"feature\\\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]]{10 (3d6)} alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
         },
         "Channel Negative Energy": {
           "name": "Negativenergie kanalisieren",
@@ -8384,7 +8384,7 @@
         },
         "Troll Spawn": {
           "name": "Trollbrut",
-          "description": "<p class=\\\"feature\\\">Das Glied besitzt seltsamerweise dieselben Sinne wie das ganze [[lookup @name]]. Wenn das Glied nicht innerhalb von 24 Stunden zerstört wird, würfle [[/r 1d12#On a 12, the limb turns into a troll]]. Bei einer 12 verwandelt sich das Glied in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]</strong>. Andernfalls verwelkt das Glied.</p>"
+          "description": "<p class=\\\"feature\\\">Das Glied besitzt seltsamerweise dieselben Sinne wie das ganze [[lookup @name]]. Wenn das Glied nicht innerhalb von 24 Stunden zerstört wird, würfle [[/r 1d12#On a 12, the limb turns into a troll]]{roll 1d12}. Bei einer 12 verwandelt sich das Glied in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]</strong>. Andernfalls verwelkt das Glied.</p>"
         },
         "Rend": {
           "name": "Zerreißen",
@@ -8496,7 +8496,7 @@
       "items": {
         "Multiattack (Vampire Form Only)": {
           "name": "Multiattack (Vampire Form Only)",
-          "description": "<p>Der [[lookup @name]] führt zwei [[/item .mmGraveStrike000]]-Angriffe aus und verwendet [[/item .mmBite0000000000]].</p>"
+          "description": "<p>Der [[lookup @name]] führt zwei [[/item .mmGraveStrike000]]{Grave Strike}-Angriffe aus und verwendet [[/item .mmBite0000000000]]{Bite}.</p>"
         },
         "Grave Strike (Vampire Form Only)": {
           "name": "Grave Strike (Vampire Form Only)",
@@ -8508,7 +8508,7 @@
         },
         "Charm": {
           "name": "Charm",
-          "description": "<p>Die [[lookup @name]] wirkt <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]</em>, benötigt keine Zauberkomponenten und verwendet Charisma als Zauberwirkungsfähigkeit (Zauberrettungswurf-DC [[lookup @abilities.cha.dc]]), und die Dauer beträgt [[lookup @duration.value activity=fcRXSTOlFJShCl52]] Stunden. Das &amp;Reference[Charmed apply=false]-Ziel ist ein williger Empfänger des [[lookup @name]]'s [[/item .mmBite0000000000]], dessen Schaden den Zauber nicht beendet. Wenn der Zauber endet, merkt das Ziel nicht, dass es von dem [[lookup @name]] verzaubert wurde.</p>"
+          "description": "<p>Die [[lookup @name]] wirkt <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplCharmPerso]</em>, benötigt keine Zauberkomponenten und verwendet Charisma als Zauberwirkungsfähigkeit (Zauberrettungswurf-DC [[lookup @abilities.cha.dc]]), und die Dauer beträgt [[lookup @duration.value activity=fcRXSTOlFJShCl52]] Stunden. Das &amp;Reference[Charmed apply=false]-Ziel ist ein williger Empfänger des [[lookup @name]]'s [[/item .mmBite0000000000]]{Bite}, dessen Schaden den Zauber nicht beendet. Wenn der Zauber endet, merkt das Ziel nicht, dass es von dem [[lookup @name]] verzaubert wurde.</p>"
         },
         "Shape-Shift": {
           "name": "Shape-Shift",
@@ -8516,7 +8516,7 @@
         },
         "Deathless Strike": {
           "name": "Deathless Strike",
-          "description": "<p class=\"feature\">Der [[lookup @name]] bewegt sich bis zur Hälfte seiner Geschwindigkeit und führt einen [[/item .mmGraveStrike000]]-Angriff aus.</p>"
+          "description": "<p class=\"feature\">Der [[lookup @name]] bewegt sich bis zur Hälfte seiner Geschwindigkeit und führt einen [[/item .mmGraveStrike000]]{Grave Strike}-Angriff aus.</p>"
         },
         "Legendary Resistance": {
           "name": "Legendäre Resistenz",
@@ -8773,7 +8773,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .JIRP6xpVCOyZotXc]] oder [[/item .mmRend0000000000]] in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]] Angriff ersetzen.</p>"
+          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .JIRP6xpVCOyZotXc]]{Handaxe} oder [[/item .mmRend0000000000]]{Rend} in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]]{Bite} Angriff ersetzen.</p>"
         },
         "Bite (Bear or Hybrid Form Only)": {
           "name": "Biss (Bär- oder Hybridform Nur)",
@@ -8799,7 +8799,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .hhfnX7eT1ZFun8oQ]] oder [[/item .mmTusk0000000000]] in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmGore0000000000]] Angriff ersetzen.</p>"
+          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .hhfnX7eT1ZFun8oQ]]{Speer} oder [[/item .mmTusk0000000000]]{Tusk} in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmGore0000000000]]{Gore} Angriff ersetzen.</p>"
         },
         "Gore  (Boar or Hybrid Form Only)": {
           "name": "Gore  (Keiler- oder Hybridform Nur)",
@@ -8825,7 +8825,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p class=\"feature\">Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]] oder [[/item .hd3JZprvOwTX7QK1]] in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]] Angriff ersetzen.</p>"
+          "description": "<p class=\"feature\">Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]]{Scratch} oder [[/item .hd3JZprvOwTX7QK1]]{Hand Crossbow} in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]]{Bite} Angriff ersetzen.</p>"
         },
         "Bite (Rat or Hybrid Form Only)": {
           "name": "Biss (Ratte oder Hybridform Nur)",
@@ -8851,7 +8851,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>The [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]] oder [[/item .Spw5gbTlI2AKsGWd]] in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]] Angriff ersetzen.</p>"
+          "description": "<p>The [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]]{Scratch} oder [[/item .Spw5gbTlI2AKsGWd]]{Longbow} in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen [[/item .mmBite0000000000]]{Bite} Angriff ersetzen.</p>"
         },
         "Bite (Tiger or Hybrid Form Only)": {
           "name": "Biss (Tiger- oder Hybridform Nur)",
@@ -8881,7 +8881,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]] oder [[/item .mYM6o8kM9SDVm45w]] in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen  [[/item .mmBite0000000000]] Angriff ersetzen.</p>"
+          "description": "<p>Der [[lookup @name]] führt zwei Angriffe aus, wobei [[/item .mmScratch0000000]]{Scratch} oder [[/item .mYM6o8kM9SDVm45w]]{Longbow} in beliebiger Kombination verwendet werden. Er kann einen Angriff durch einen  [[/item .mmBite0000000000]]{Bite} Angriff ersetzen.</p>"
         },
         "Bite (Wolf or Hybrid Form Only)": {
           "name": "Biss (Wolf- oder Hybridform Nur)",
@@ -9424,7 +9424,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriffe",
-          "description": "<p>Der Geist führt eine Anzahl von [[/item Zerreißen]]-Angriffen durch, die der Hälfte der Zauberstufe entspricht (abgerundet), und er verwendet [[/item Atemwaffe]].</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]</p>"
+          "description": "<p>Der Geist führt eine Anzahl von [[/item Zerreißen]]-Angriffen durch, die der Hälfte der Zauberstufe entspricht (abgerundet), und er verwendet [[/item Atemwaffe]].</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Anzahl der Angriffe}</p>"
         },
         "Rend": {
           "name": "Zerreißen",
@@ -9460,7 +9460,7 @@
         },
         "Multiattack": {
           "name": "Mehrfachangriff",
-          "description": "<p>Das Insekt führt eine Anzahl von Angriffen durch, die der Hälfte der Stufe dieses Zaubers entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]</p>"
+          "description": "<p>Das Insekt führt eine Anzahl von Angriffen durch, die der Hälfte der Stufe dieses Zaubers entspricht (abgerundet).</p><p>[[floor(@flags.dnd5e.summon.level / 2)]]{Anzahl der Angriffe}</p>"
         },
         "Poison Jab": {
           "name": "Giftstich",
@@ -9614,7 +9614,7 @@
         },
         "Grasping Hand": {
           "name": "Grasping Hand",
-          "description": "<p>Die Hand versucht, eine Große oder kleinere Kreatur innerhalb von 1,5m zu fesseln. Das Ziel muss einen Geschicklichkeits-Sicherungswurf bestehen, oder es hat die &amp;Reference[Grappled] Bedingung (Flucht-DC entspricht deinem Zauber-Save-DC). Während die Hand das Ziel festhält, kannst du eine Bonusaktion verwenden, damit die Hand es zerdrückt und dem Ziel Bludgeoning-Schaden in Höhe von 4d6 plus deinem Zauberattribut-Modifikator zufügt.</p><h3>Flucht-Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]] [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]</p>"
+          "description": "<p>Die Hand versucht, eine Große oder kleinere Kreatur innerhalb von 1,5m zu fesseln. Das Ziel muss einen Geschicklichkeits-Sicherungswurf bestehen, oder es hat die &amp;Reference[Grappled] Bedingung (Flucht-DC entspricht deinem Zauber-Save-DC). Während die Hand das Ziel festhält, kannst du eine Bonusaktion verwenden, damit die Hand es zerdrückt und dem Ziel Bludgeoning-Schaden in Höhe von 4d6 plus deinem Zauberattribut-Modifikator zufügt.</p><h3>Flucht-Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Stärke (Athletik)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{Geschicklichkeit (Akrobatik)}</p>"
         },
         "Interposing Hand": {
           "name": "Interposing Hand",
@@ -9672,7 +9672,7 @@
       "items": {
         "Vine Attack": {
           "name": "Vine Attack",
-          "description": "<p>Führe einen Nahkampf-Zauberangriffsprobe gegen eine Kreatur in 9m Entfernung der Ranke durch. Bei einem Treffer erleidet das Ziel 4d8 Wucht-Schaden und wird bis zu 9m in Richtung der Ranke gezogen; ist das Ziel Huge oder kleiner, hat es die &amp;Reference[Grappled] Bedingung (Flucht-DC entspricht deinem Zauber-Save-DC).</p><p>Die Ranke kann [[@flags.dnd5e.summon.level - 3]] Kreatur(en) gleichzeitig festhalten, und du kannst die Ranke dazu bringen, eine gefesselte Kreatur freizulassen (ohne Aktion erforderlich).</p><h3>Flucht-Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]] [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]</p>"
+          "description": "<p>Führe einen Nahkampf-Zauberangriffsprobe gegen eine Kreatur in 9m Entfernung der Ranke durch. Bei einem Treffer erleidet das Ziel 4d8 Wucht-Schaden und wird bis zu 9m in Richtung der Ranke gezogen; ist das Ziel Huge oder kleiner, hat es die &amp;Reference[Grappled] Bedingung (Flucht-DC entspricht deinem Zauber-Save-DC).</p><p>Die Ranke kann [[@flags.dnd5e.summon.level - 3]] Kreatur(en) gleichzeitig festhalten, und du kannst die Ranke dazu bringen, eine gefesselte Kreatur freizulassen (ohne Aktion erforderlich).</p><h3>Flucht-Tests</h3><p>[[/check ability=str skill=ath dc=8+@prof+@flags.dnd5e.summon.mod]]{Stärke (Athletik)} [[/check ability=dex skill=acr dc=8+@prof+@flags.dnd5e.summon.mod]]{Geschicklichkeit (Akrobatik)}</p>"
         }
       }
     },

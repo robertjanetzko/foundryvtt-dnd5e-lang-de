@@ -628,6 +628,10 @@ function convertAdvancement(m, translation, data) {
         const found = Array.isArray(m) ? m.find(a => a._id === key) : m[key];
         if (found) {
             for (let field in t) {
+                if (field === 'title' && found['type'] === 'ScaleValue' && found['configuration']['identifier'] === '') {
+                    found['configuration']['identifier'] = found[field].toLowerCase().replace(/\s+/g, '-');
+                }
+
                 translateField(field, found, t[field]);
             }
         }

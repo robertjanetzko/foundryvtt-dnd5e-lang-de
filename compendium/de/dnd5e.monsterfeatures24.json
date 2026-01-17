@@ -1120,7 +1120,7 @@
     },
     "Rotting Fist": {
       "name": "Verrottete Faust",
-      "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]] alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
+      "description": "<p class=\"feature\">[[/attack extended]]. [[/damage average extended]]. Wenn das Ziel eine Kreatur ist, ist es verflucht. Solange es verflucht ist, kann das Ziel keine Trefferpunkte regenerieren, sein Trefferpunktemaximum kehrt nach Beendigung einer Langen Rast nicht zum Normalwert zurück, und sein Trefferpunktemaximum verringert sich um [[/r 3d6#HP Max Decrease]]{10 (3d6)} alle 24 Stunden, die vergehen. Eine Kreatur stirbt und verwandelt sich in Staub, wenn sie durch diesen Angriff auf 0 Trefferpunkte reduziert wird.</p>"
     },
     "Rotting Touch": {
       "name": "Verrottete Berührung",
@@ -1440,7 +1440,7 @@
     },
     "Troll Spawn": {
       "name": "Trollbrut",
-      "description": "<p class=\"feature\">Das Glied besitzt seltsamerweise dieselben Sinne wie das ganze [[lookup @name]]. Wenn das Glied nicht innerhalb von 24 Stunden zerstört wird, würfle [[/r 1d12#On a 12, the limb turns into a troll]]. Bei einer 12 verwandelt sich das Glied in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]</strong>. Andernfalls verwelkt das Glied.</p>"
+      "description": "<p class=\"feature\">Das Glied besitzt seltsamerweise dieselben Sinne wie das ganze [[lookup @name]]. Wenn das Glied nicht innerhalb von 24 Stunden zerstört wird, würfle [[/r 1d12#On a 12, the limb turns into a troll]]{roll 1d12}. Bei einer 12 verwandelt sich das Glied in einen <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmTroll000000000]</strong>. Andernfalls verwelkt das Glied.</p>"
     },
     "Tunneler": {
       "name": "Tunnelbauer",
@@ -1560,7 +1560,7 @@
     },
     "Wishes": {
       "name": "Wünsche",
-      "description": "<p class=\"feature\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]] Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
+      "description": "<p class=\"feature\">Die [[lookup @name]] hat eine [[/r 1d100cs&lt;31#Knows Wish on 1]]{30 Prozent} Chance, den <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplWish000000]</em>-Zauber zu kennen. Wenn die [[lookup @name]] ihn kennt, kann die [[lookup @name]] ihn nur im Auftrag einer Kreatur wirken, die kein Dschinn ist und ihren Wunsch auf eine Weise äußert, die die [[lookup @name]] verstehen kann. Wenn die [[lookup @name]] den Zauber für die Kreatur wirkt, erleidet die [[lookup @name]] keinen Stress des Zaubers. Sobald die [[lookup @name]] ihn dreimal gewirkt hat, kann sie ihn für 365 Tage nicht erneut wirken.</p>"
     },
     "Withering Sword": {
       "name": "Verwelktes Schwert",
